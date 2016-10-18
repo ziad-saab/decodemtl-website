@@ -52,7 +52,10 @@ var configuration = {
   },
 	progress: true,
   resolve: {
-		extensions: ['', '.json', '.js', '.jsx']
+		extensions: ['', '.json', '.js', '.jsx'],
+    alias: {
+      APP: './src'
+    }
 	},
 	plugins: [],
   regularExpressions: regularExpressions

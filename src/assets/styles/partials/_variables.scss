@@ -1,0 +1,33 @@
+// Typography 
+// ------------------------------
+$font_regular:'DIN Next W01 Regular', 'Verdana', 'Helvetica Neue', 'Arial', sans-serif;
+$font_medium:'DIN Next W01 Medium', 'Verdana', 'Helvetica Neue', 'Arial', sans-serif;
+$font_bold:'DIN Next W01 Bold', sans-serif;
+$font_cond_bold:'DINNextW01-CondensedBol', 'Verdana', 'Helvetica Neue', 'Arial', sans-serif;
+$font_italic:'DIN Next W01 Italic', 'Verdana', 'Helvetica Neue', 'Arial', sans-serif;
+$font_decode: 'icomoon';
+
+// Decode icons
+// ------------------------------
+$icon-petal: "\e900";
+
+// Color 
+// ------------------------------
+$red: #D6252C;
+$black: #212121;
+$white: #FAFAFA;
+$blue: #17BECF;
+$lightgrey: #F0F0F0;
+$grey: #D6D6D6;
+$midgrey: #999999;
+$hardgrey: #666666;
+$darkgrey: #303030;
+
+// Utility
+// -----------------------------
+// $transition_all: all 0.2s ease;
+
+// Layout
+// -----------------------------
+$module-vert-pd: 3rem;
+$module-inner-vert-spacing: $module-vert-pd;

@@ -1,0 +1,193 @@
+// ======================
+// Defaults
+// ======================
+input,
+select,
+fieldset,
+textarea {
+	border: 0;
+	background:$lightgrey;
+	padding: 1em;
+	margin: 0.5em 0;
+	border-radius: 0;
+	max-width: 100%;
+}
+// textarea -------------
+textarea {
+	width: 100%;
+	min-height: 10rem;
+}
+// focus ----------------
+input:focus,
+textarea:focus {
+	outline-color: $blue;
+	border: none;
+	background: $white;
+}
+// select ---------------
+select {
+	appearance: none;
+	outline: none;
+	display: block;
+	background: url("../../assets/images/select-chevron.svg") 95% 48% no-repeat $lightgrey;
+	padding-right: 2.8em;
+	border: none;
+	color: #6F6F6F;
+}
+// radio & checkbox -----
+fieldset {
+	border: none;
+	color: $hardgrey;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 0.3em;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	position: relative;
+  top: -0.06em;
+}
+// required fields ------
+div.required::before,
+span.required {
+	color: $red;
+	line-height: 0;
+	font-family: inherit;
+	font-size: 1.5em;
+}
+div.required {
+	position: relative;
+	&::before {
+		position: absolute;
+		top: 45%;
+		right: 3%;
+		content: '*';
+	}
+}
+span.required {
+	margin-left: 0.2em;
+	position: relative;
+	top: 0.1em;
+}
+// buttons --------------
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	@include btn-color();
+	cursor: pointer;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+	color: $black;
+	font-family: $font_medium;
+}
+
+// ===================
+// Optin form
+// ===================
+.optin-form {
+	display: flex;
+	flex-flow: column wrap;
+	@include breakpoint(mintablet) {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		input:not([type="submit"]) {
+			flex: 1 1 auto;
+			margin-right: 1em;
+		}
+	}
+}
+
+// ===================
+// Footer Optin Form
+// ===================
+.optin-footer {
+	input[type="email"] {
+		background:$midgrey;
+		outline: none;
+		&:focus {
+			background:$lightgrey;
+		}
+		&::placeholder {
+			color: $black;
+			opacity: 1;
+		}
+	}
+	@include breakpoint(mintablet) {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		input[type="submit"] {
+			flex: 0 0 22%;
+		}
+	}
+	@include breakpoint(mindesktop) {
+		max-width: 80%;
+	}
+}
+
+// ===================
+// Forms general
+// ===================
+form {
+	.contact-details-section {
+		input {
+			width: 100%;
+		}
+		@include breakpoint(mintablet) {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			div, input {
+				flex: 0 1 calc(50% - 0.5em);
+			}
+		}
+	}
+	.optin-checkbox {
+		margin: 1rem 0;
+		width: 100%;
+	}
+	.module-title-medium {
+		width: 100%;
+	}
+}
+
+// ===================
+// Application form
+// ===================
+.application-form {
+	select {
+		width: 100%;
+		@include breakpoint(mintablet) {
+			width: 60%;
+		}
+	}
+	@include breakpoint(mintablet) {
+		section:not(.contact-details-section):not(.submit-section) {
+			max-width: 80%;
+		}
+	}
+}
+
+// =====================
+// Confirmation messages
+// =====================
+.message-container.module-boxed {
+	text-align: center;
+	border: 2px solid;
+}
+.message-icon::before {
+	font-size: 2rem;
+}
+// Success
+.message-container.message-container-success {
+	border-color: $black;
+	color: $black;
+}
+// Error
+.message-container.message-container-error {
+	border-color: $red;
+	color:$red
+}
