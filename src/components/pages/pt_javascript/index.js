@@ -87,12 +87,12 @@ const Courses = React.createClass({
                         {property: 'description', content: 'In this course you will learn the fundamentals of programming, as well as the fundamentals of JavaScript and its unique asynchronous programming model.'},
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='https://decode-main.herokuapp.com/downloads/javascript_syllabus.pdf'/>
+                              syllabus='/downloads/javascript_syllabus.pdf'/>
                 <CourseHero
                     CTAPText="Apply Now"
                     CTASText="Syllabus"
                     CTAPLink="/apply"
-                    CTASLink="https://decode-main.herokuapp.com/downloads/javascript_syllabus.pdf"
+                    CTASLink="/downloads/javascript_syllabus.pdf"
                     CTAP={CTAPrimaryLarge}
                     CTAS={CTASecondaryLarge}
                     ref={hero => {
@@ -127,5 +127,3 @@ const Courses = React.createClass({
 
 
 export default Courses;
-
-

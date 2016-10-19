@@ -91,11 +91,11 @@ const Courses = React.createClass({
                         {property: 'description', content: '8 week intensive web development course. Gain enough practical experience to launch your new career or startup.'},
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='https://decode-main.herokuapp.com/downloads/immersive_syllabus.pdf'/>
+                              syllabus='/downloads/immersive_syllabus.pdf'/>
                 <CourseHero CTAPText="Apply Now"
                             CTASText="Syllabus"
                             CTAPLink="/apply"
-                            CTASLink="https://decode-main.herokuapp.com/downloads/immersive_syllabus.pdf"
+                            CTASLink="/downloads/immersive_syllabus.pdf"
                             CTAP={CTAPrimaryLarge}
                             CTAS={CTASecondaryLarge}
                             ref={hero => {
