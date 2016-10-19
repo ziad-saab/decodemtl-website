@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import ConfirmModal from '../modules/ConfirmModal';
-import {subscribe} from '../../api/api';
+import {subscribe} from 'APP/api';
 
 
 const MainFooter = React.createClass({

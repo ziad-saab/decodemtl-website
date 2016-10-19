@@ -6,6 +6,8 @@ const UpcomingEvents = (props) => {
         return props.filterOld ? new Date(startDate).getTime() >= new Date().getTime() : startDate;
     };
 
+    const showAllLink = !!props.showAllEventsLink;
+
     return (
         <section className="module module-events">
             <div className="wrapper">
@@ -28,7 +30,7 @@ const UpcomingEvents = (props) => {
                 </ul>
                 {/*<!-- /.events-list -->*/}
                 <div className="link-more text-body-small">
-                    {window.location.pathname !== '/events'
+                    {showAllLink
                         ? <Link to="/events">View all events
                         <span className="fa fa-caret-right" aria-hidden="true"/>
                     </Link>
@@ -41,7 +43,8 @@ const UpcomingEvents = (props) => {
 };
 
 UpcomingEvents.defaultProps = {
-    filterOld: false
+    filterOld: false,
+    showAllEventsLink: false
 };
 
 UpcomingEvents.propTypes = {
@@ -49,7 +52,8 @@ UpcomingEvents.propTypes = {
     title: React.PropTypes.string,
     text: React.PropTypes.string,
     limit: React.PropTypes.number,
-    filterOld: React.PropTypes.bool
+    filterOld: React.PropTypes.bool,
+    showAllEventsLink: React.PropTypes.bool
 };
 
 export default UpcomingEvents;

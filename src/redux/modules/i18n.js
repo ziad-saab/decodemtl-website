@@ -1,5 +1,4 @@
 import frenchMessages from 'APP/language/fr';
-import LOAD_COURSE_SUCCESS from './courses';
 
 const SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
 

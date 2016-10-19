@@ -2,7 +2,7 @@ import React from 'react';
 import formSerialize from 'form-serialize';
 import {withRouter} from 'react-router';
 
-import {contact} from '../../api/api';
+import {contact} from 'APP/api';
 
 const ContactForm = React.createClass({
     propTypes: {

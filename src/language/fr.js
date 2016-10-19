@@ -1,5 +1,5 @@
 module.exports = {
-  "homePage.title": "Maison!",
+  "homePage.learntocode": "Apprenez à coder",
 
   "loadingBox.text": "Chargement...",
 

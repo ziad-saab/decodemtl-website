@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {FormattedMessage} from 'react-intl';
 
 import screenShot from '../../assets/images/video-screenshot.jpg';
 
@@ -43,7 +44,14 @@ const HomeHero = React.createClass({
         return (
             <header className="module module-home hero-home">
                 <div className="wrapper">
-                    <h1 className="module-title"><span className="module-title-jumbo">Learn To Code</span></h1>
+                    <h1 className="module-title">
+                      <span className="module-title-jumbo">
+                        <FormattedMessage
+                          id="homePage.learntocode"
+                          defaultMessage="Learn To Code"
+                        />
+                      </span>
+                    </h1>
                     <div className="hero-content">
                         <div className="hero-text">
                             <p className="text-body-large text-subtle">We offer Montreal’s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.</p>

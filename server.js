@@ -1,3 +1,4 @@
+/* global __DEV__, __PROD__ */
 // Define some global constants. The client defines the opposite values
 global.__CLIENT__ = false;
 global.__SERVER__ = true;
@@ -11,14 +12,18 @@ import createHistory from 'react-router/lib/createMemoryHistory';
 import {syncHistoryWithStore} from 'react-router-redux';
 import {Provider} from 'react-redux';
 import Helmet from 'react-helmet';
+import morgan from 'morgan';
 
-import makeStore from './src/js/redux/store';
-import createRoutes from './src/js/routes';
+import makeStore from './src/redux/store';
+import createRoutes from './src/routes';
 
 // Le Français
 import {addLocaleData} from 'react-intl';
 import frLocaleData from 'react-intl/locale-data/fr';
 addLocaleData(frLocaleData);
+
+// API
+import serverApi from './server-api';
 
 export default function server(parameters) {
   const app = express();
@@ -27,6 +32,19 @@ export default function server(parameters) {
   if (__PROD__) {
     app.use('/assets', express.static('./build/assets'));
   }
+
+  if (__DEV__) {
+    require('longjohn');
+  }
+
+  // Logs
+  app.use(morgan('combined'));
+
+  // Tiny API, mostly for mailing
+  app.use('/api', serverApi);
+
+  // Static files
+  app.use('/downloads', express.static(__dirname + '/downloads'));
 
   /*
     This will be the most visited route of our application: it responds to all paths.
@@ -47,13 +65,14 @@ export default function server(parameters) {
       if (redirectLocation) {
         res.redirect(redirectLocation.pathname + redirectLocation.search);
       } else if (err) {
-        console.error('ROUTER ERROR:', error);
+        console.error('ROUTER ERROR:', err);
         res.status(500);
       } else if (renderProps) {
         loadOnServer({...renderProps, store})
         .then(() => {
           // Check if there's a 404 after loading data on server
-          if (store.getState().ssr.error404) {
+          const state = store.getState();
+          if (state.ssr && state.ssr.error404) {
             res.status(404);
           }
 
@@ -66,6 +85,7 @@ export default function server(parameters) {
             );
           }
           catch(e) {
+            console.error(e.stack);
             html = '';
           }
 
@@ -100,7 +120,7 @@ export default function server(parameters) {
   const server = require('http').createServer(app);
   server.listen(process.env.PORT || 4200, process.env.IP || '0.0.0.0', function(err) {
     if (err) {
-      console.log(err.stack);
+      console.error(err.stack);
     }
     else {
       console.log("Server listening on http://%s:%s", server.address().address, server.address().port);

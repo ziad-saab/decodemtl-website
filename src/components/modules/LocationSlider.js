@@ -38,14 +38,14 @@ const LocationSlider = React.createClass({
     },
     componentWillMount() {
         //Preload images when component mounts
-        this.props.req.keys().forEach(src => {
+        typeof window !== 'undefined' && this.props.req.keys().forEach(src => {
             const img = document.createElement('img');
             img.src = this.props.req(src); // Assigning the img src immediately requests the image
         });
     },
     render() {
         //TODO REMOVE ESLINT EXCEPTION ONCE REFACTORED
-        const {slide, images} = this.state; // eslint-disable-line no-unused-vars
+        const {slide, images} = this.state;
         const req = this.props.req;
 
         const imageContainer = {

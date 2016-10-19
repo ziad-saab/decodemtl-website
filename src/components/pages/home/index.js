@@ -1,15 +1,15 @@
 import React from 'react';
 
-import HomeHero from 'APP/modules/HomeHero';
-import HomeUpcomingCourses from 'APP/modules/HomeUpcomingCourses';
-import CourseTestimonial from 'APP/modules/CourseTestimonial';
-import FormOptin from 'APP/modules/FormOptin';
-import UpcomingEvents from 'APP/modules/UpcomingEvents';
-import PartnersLogos from 'APP/modules/PartnersLogos';
-import HomeEvolving from 'APP/modules/HomeEvolving';
-import LocationSlider from 'APP/modules/LocationSlider';
-import ConfirmModal from 'APP/modules/ConfirmModal';
-import ScheduleVisit from 'APP/modules/ScheduleVisit';
+import HomeHero from 'APP/components/modules/HomeHero';
+import HomeUpcomingCourses from 'APP/components/modules/HomeUpcomingCourses';
+import CourseTestimonial from 'APP/components/modules/CourseTestimonial';
+import FormOptin from 'APP/components/modules/FormOptin';
+import UpcomingEvents from 'APP/components/modules/UpcomingEvents';
+import PartnersLogos from 'APP/components/modules/PartnersLogos';
+import HomeEvolving from 'APP/components/modules/HomeEvolving';
+import LocationSlider from 'APP/components/modules/LocationSlider';
+import ConfirmModal from 'APP/components/modules/ConfirmModal';
+import ScheduleVisit from 'APP/components/modules/ScheduleVisit';
 import Helmet from 'react-helmet';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -64,8 +64,8 @@ const HomePage = React.createClass({
                            text="Enter your email to receive info about new courses, workshops and events."
                            submitButton="Submit"/>
                 <LocationSlider req={req}/>
-                <UpcomingEvents events={events} title='Upcoming Events' limit={5} text='' filterOld={true}/>
-                <PartnersLogos/>
+                <UpcomingEvents showAllEventsLink events={events} title='Upcoming Events' limit={5} text='' filterOld={true}/>
+                <PartnersLogos isEmployersPage={false} />
             </div>
         );
     }

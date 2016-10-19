@@ -39,14 +39,14 @@ const Courses = React.createClass({
     },
     componentWillMount() {
         //Necessary for smooth fade transitions when routing from parent component.
-        window.scrollTo(0, 0);
+        typeof window !== 'undefined' && window.scrollTo(0, 0);
     },
     componentDidMount() {
         scrollSpy.update();
         window.addEventListener('scroll', this._handleScroll);
     },
     componentWillUnmount() {
-        window.removeEventListener('scroll', this._handleScroll);
+        typeof window !== 'undefined' && window.removeEventListener('scroll', this._handleScroll);
     },
     _handleScroll(e) {
         const headerWrapper = this._hero._headerWrapper;
@@ -137,5 +137,3 @@ const Courses = React.createClass({
 
 
 export default Courses;
-
-

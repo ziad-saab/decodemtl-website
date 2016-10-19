@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 
-import {visit} from '../../api/api';
+import {visit} from 'APP/api';
 
 const ScheduleVisit = React.createClass({
     propTypes: {

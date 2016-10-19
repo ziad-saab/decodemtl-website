@@ -8,14 +8,15 @@ global.__CLIENT__ = true;
 global.__SERVER__ = false;
 
 // SASS is handled by Webpack with sass-loader
-import 'APP/assets/styles/toolkit.css';
+import 'APP/assets/styles/toolkit.scss';
 
 import React from 'react';
 import {render} from 'react-dom';
-import {Router, browserHistory} from 'react-router';
+import {Router, browserHistory, applyRouterMiddleware} from 'react-router';
 import {ReduxAsyncConnect} from 'redux-connect';
 import {syncHistoryWithStore} from 'react-router-redux';
 import {Provider} from 'react-redux';
+import {useScroll} from 'react-router-scroll'
 
 import createRoutes from 'APP/routes';
 import makeStore from 'APP/redux/store';

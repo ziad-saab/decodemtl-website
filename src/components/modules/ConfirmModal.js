@@ -32,7 +32,7 @@ const ConfirmModal = React.createClass({
     _preventMobileScroll (e) {
         e.preventDefault();
     },
-    componentWillMount() {
+    componentDidMount() {
         window.addEventListener('touchmove', this._preventMobileScroll);
     },
     componentWillUnmount() {

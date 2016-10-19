@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 
+import LanguageSwitcher from 'APP/components/LanguageSwitcher';
+
 const SiteNav = React.createClass({
     propTypes: {
         activeClass: React.PropTypes.string.isRequired
@@ -16,10 +18,10 @@ const SiteNav = React.createClass({
         };
     },
     componentWillMount() {
-        window.addEventListener('keyup', this._toggleNav);
+        typeof window !== 'undefined' && window.addEventListener('keyup', this._toggleNav);
     },
     componentWillUnmount() {
-        window.removeEventListener('keyup', this._toggleNav);
+        typeof window !== 'undefined' && window.removeEventListener('keyup', this._toggleNav);
     },
     _toggleNav(modal, e) {
         if (!e) {
@@ -120,7 +122,9 @@ const SiteNav = React.createClass({
                                 <li><Link onClick={this.props.handleScheduleVisit}
                                           activeClassName={this.props.activeClass} to="/schedule">Schedule a
                                     visit</Link></li>
-                                <li className="lang-switcher"><Link to="#">fr</Link></li>
+                                <li className="lang-switcher">
+                                  <LanguageSwitcher/>
+                                </li>
                             </ul>
                         </nav>
                         {/* /.site-header-nav */}

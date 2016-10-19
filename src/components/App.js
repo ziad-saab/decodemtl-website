@@ -8,7 +8,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import config from 'APP/app-config';
 import Loading from 'APP/components/Loading';
-import LanguageSwitcher from 'APP/components/LanguageSwitcher';
 
 import RouteTransition from 'APP/components/RouteTransition';
 
@@ -54,7 +53,6 @@ class App extends React.Component {
         <div className="App">
           <Loading/>
           <Helmet {...config.app.head[i18n.language]}/>
-          <LanguageSwitcher/>
           <ReactCSSTransitionGroup
             transitionName="video"
             transitionEnterTimeout={500}

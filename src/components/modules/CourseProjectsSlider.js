@@ -87,7 +87,7 @@ const CourseProjectsSlider = React.createClass({
     },
     componentWillMount() {
         //Preload images when component mounts
-        this.props.projects.forEach(project => {
+        typeof window !== 'undefined' && this.props.projects.forEach(project => {
             const img = document.createElement('img');
             img.src = project.img; // Assigning the img src immediately requests the image
         });

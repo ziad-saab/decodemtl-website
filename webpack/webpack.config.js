@@ -13,7 +13,7 @@ var regularExpressions = {
 var configuration = {
 	context: rootDir,
 	entry: {
-		main: './src/js/app.js'
+		main: './src/app.js'
 	},
 	output: {
 		path: path.resolve(rootDir, 'build/assets'),
@@ -42,7 +42,7 @@ var configuration = {
 				]
 			},
 			{
-				test: /\.(jpg|png)$/,
+				test: /\.(jpg|png|((svg|woff|eot|ttf).*))$/,
 				loaders: ['url-loader?limit=10000']
 			}
 		]
@@ -54,7 +54,7 @@ var configuration = {
   resolve: {
 		extensions: ['', '.json', '.js', '.jsx'],
     alias: {
-      APP: './src'
+      APP: path.join(rootDir, 'src')
     }
 	},
 	plugins: [],

@@ -6,7 +6,7 @@ const req = require.context("../../assets/images/partner-logos", true, /^.*\.png
 
 const PartnersLogos = (props) => {
     let employerLink = '/employers';
-    if (window.location.pathname === '/employers') {
+    if (props.isEmployersPage) {
         employerLink = 'mailto:hello@decodemtl.com?subject=Tell me more about your students!&body=Hello Decode! Please let me know more about your awesome students!'
     }
     return (
@@ -33,6 +33,12 @@ const PartnersLogos = (props) => {
     );
 };
 
-PartnersLogos.propTypes = {};
+PartnersLogos.propTypes = {
+  isEmployersPage: React.PropTypes.bool
+};
+
+PartnersLogos.defaultProps = {
+  isEmployersPage: true
+};
 
 export default PartnersLogos;

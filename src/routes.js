@@ -1,7 +1,6 @@
 import React from 'react';
 
-import {Route, IndexRoute, Router, Redirect, browserHistory, applyRouterMiddleware} from 'react-router';
-import {useScroll} from 'react-router-scroll'
+import {Route, IndexRoute, Redirect} from 'react-router';
 
 import App from 'APP/components/App';
 import BootcampCourse from 'APP/components/pages/wd_bootcamp/index';
