@@ -63,7 +63,7 @@ export default function server(parameters) {
 
     match({ history, routes, location: req.originalUrl }, (err, redirectLocation, renderProps) => {
       if (redirectLocation) {
-        res.redirect(redirectLocation.pathname + redirectLocation.search);
+        res.redirect(301, redirectLocation.pathname + redirectLocation.search);
       } else if (err) {
         console.error('ROUTER ERROR:', err);
         res.status(500);
