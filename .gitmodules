@@ -1,0 +1,3 @@
+[submodule "decodemtl-front-end"]
+	path = decodemtl-front-end
+	url = git@github.com:luclemo/decodemtl-front-end.git
