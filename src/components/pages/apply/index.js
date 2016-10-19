@@ -72,9 +72,10 @@ const Apply = React.createClass({
                                                required/>
                                     </div>
                                     {/* /email */}
-
-                                    <label htmlFor="linkedin" className="visually-hidden">LinkedIn URL</label>
-                                    <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/>
+                                    <div>
+                                      <label htmlFor="linkedin" className="visually-hidden">LinkedIn URL</label>
+                                      <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/>
+                                    </div>
                                     {/* /linkedin */}
                                 </section>
                                 {/* /.contact-details-section */}
