@@ -8,7 +8,7 @@ global.__CLIENT__ = true;
 global.__SERVER__ = false;
 
 // SASS is handled by Webpack with sass-loader
-import 'APP/assets/styles/toolkit.scss';
+import 'APP/assets/toolkit/styles/toolkit.scss';
 
 import React from 'react';
 import {render} from 'react-dom';
