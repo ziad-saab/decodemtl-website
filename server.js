@@ -31,7 +31,7 @@ export default function server(parameters) {
   app.set('view engine', 'ejs');
 
   if (__PROD__) {
-    app.use('/assets', express.static('./build/assets'));
+    app.use('/assets', express.static(global.__ROOT__ + '/build/assets'));
   }
 
   if (__DEV__) {
@@ -48,7 +48,7 @@ export default function server(parameters) {
   app.use('/api', serverApi);
 
   // Static files
-  app.use('/downloads', express.static(__dirname + '/downloads'));
+  app.use('/downloads', express.static(global.__ROOT__ + '/downloads'));
 
   /*
     This will be the most visited route of our application: it responds to all paths.
