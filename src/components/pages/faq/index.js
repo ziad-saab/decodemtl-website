@@ -26,10 +26,10 @@ const Faq = (props) => {
                     {property: 'description', content: 'View DecodeMTL\'s frequently asked questions here.'},
                 ]}/>
             <Hero moduleTitle="Frequently Asked" jumboTitle="Questions"/>
-            <FAQ title='general' faq={generalFAQ} />
-            <FAQ title='financials' faq={financialsFAQ} />
-            <FAQ title='immersive' faq={immersiveFAQ} />
-            <FAQ title='part time' faq={partTimeFAQ} />
+            <FAQ isFaqPage title='general' faq={generalFAQ} />
+            <FAQ isFaqPage title='financials' faq={financialsFAQ} />
+            <FAQ isFaqPage title='immersive' faq={immersiveFAQ} />
+            <FAQ isFaqPage title='part time' faq={partTimeFAQ} />
             <GenericTextModule title="wait i still have questions!" paragraphs={paragraphs}/>
         </div>
     );

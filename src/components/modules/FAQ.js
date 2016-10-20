@@ -6,7 +6,8 @@ import {Link} from 'react-router';
 const FAQ = React.createClass({
     propTypes: {
         faq: React.PropTypes.array.isRequired,
-        title: React.PropTypes.string.isRequired
+        title: React.PropTypes.string.isRequired,
+        isFaqPage: React.PropTypes.bool
     },
     getInitialState() {
         return {
@@ -65,7 +66,7 @@ const FAQ = React.createClass({
 
                     </ul>
                     <div className="link-more text-body-small">
-                        {window.location.pathname !== '/faq' ? <Link to="/faq">View all FAQs<span className="fa fa-caret-right" aria-hidden="true"/></Link> : null}
+                        {!this.props.isFaqPage ? <Link to="/faq">View all FAQs<span className="fa fa-caret-right" aria-hidden="true"/></Link> : null}
                     </div>
                 </div>
             </section>
