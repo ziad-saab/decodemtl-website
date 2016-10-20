@@ -13,6 +13,7 @@ import {syncHistoryWithStore} from 'react-router-redux';
 import {Provider} from 'react-redux';
 import Helmet from 'react-helmet';
 import morgan from 'morgan';
+import favicon from 'serve-favicon';
 
 import makeStore from './src/redux/store';
 import createRoutes from './src/routes';
@@ -36,6 +37,9 @@ export default function server(parameters) {
   if (__DEV__) {
     require('longjohn');
   }
+
+  // Favicon!
+  app.use(favicon(global.__ROOT__ + '/src/assets/images/favicons/favicon.ico'));
 
   // Logs
   app.use(morgan('combined'));

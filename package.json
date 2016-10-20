@@ -71,6 +71,7 @@
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "sass-loader": "^3.2.0",
+    "serve-favicon": "^2.3.0",
     "style-loader": "^0.13.1",
     "universal-webpack": "^0.1.12",
     "url-loader": "^0.5.7",
