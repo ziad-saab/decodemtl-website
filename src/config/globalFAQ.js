@@ -48,10 +48,6 @@ export const immersiveFAQ = [
         answer: 'If you are looking to quickly advance into the field of Web Development, either as a career move or to launch your own product, DecodeMTL will equip you with the skills to do so. Our teachers are top-notch, our curriculum teaches the most in-demand technologies, and our work environment is awesome.'
     },
     {
-        question: 'Why Fullstack JavaScript?',
-        answer: 'Be cool, be very cool.'
-    },
-    {
         question: 'What are the technical qualifications?',
         answer: 'Most of our students have dabbled in code, either in school, professionally, or out of curiosity. You should have a high-level knowledge of the different types of programming and languages that exist, and have at the very least tinkered with sites like CodeSchool or Codecademy. Our admissions process and pre-course work are designed to get you up to speed and ready for the bootcamp, so you don\'t need to be a coding ninja to apply. If you\'re not sure if you are ready to apply, contact us and we will point you in the right direction.',
     },
