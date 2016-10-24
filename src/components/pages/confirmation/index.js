@@ -11,7 +11,7 @@ const Confirmation = (props) => {
                     <h2 className="module-title">Success!</h2>
                     <p>Your application has been received. Our team is currently reviewing it and will get back to you
                         within 48 hours (not including weekends or holidays).</p>
-                    <p>If you have any questions in the mean time, please <a href="mailto:hello@decodemtl.com">email us</a>.</p>
+                    <p>If you have any questions in the meantime, please <a href="mailto:hello@decodemtl.com">email us</a>.</p>
                 </div>
             </section>
         );

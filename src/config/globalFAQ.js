@@ -15,7 +15,7 @@ export const generalFAQ = [
     },
     {
         question: 'Do you accept international students?',
-        answer: 'As long as your aloud in the country for the duration of the course, we are happy to have you. However, job placement assistance is only available for Canadians or those eligible to work in Canada.'
+        answer: 'As long as you\'re aloud in the country for the duration of the course, we are happy to have you. However, job placement assistance is only available for Canadians or those eligible to work in Canada.'
     },
     {
         question: 'Are your courses taught in English or French?',
