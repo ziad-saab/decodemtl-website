@@ -31,7 +31,7 @@ const Hero = React.createClass({
                 }} className="wrapper">
                     <h1 itemProp='name' className="module-title">{moduleTitle}<span className="module-title-jumbo">{jumboTitle}</span>
                     </h1>
-                    {text ? <p itemType='description' className="text-body-large text-subtle text-measure">{text}</p> : null}
+                    {text ? <p itemProp='description' className="text-body-large text-subtle text-measure">{text}</p> : null}
                     {subText ? <p className="text-body-small text-subtle text-measure">{subText}</p> : null}
                     {CTAS || CTAP ? renderButtons() : null}
                 </div>
