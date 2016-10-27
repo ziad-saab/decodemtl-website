@@ -5,6 +5,8 @@ import Hero from '../../../components/modules/Hero';
 import ContactForm from '../../../components/modules/ContactForm';
 import OneHalfColumn from '../../../components/modules/OneHalfColumn';
 
+import googleMap from '../../../assets/images/map.png'
+
 const Contact = (props) => {
 
     const columnLeft = (
@@ -32,7 +34,7 @@ const Contact = (props) => {
         </ul>);
 
     const columnRight = (
-        <img src="http://placekitten.com/600/378" alt=""/>
+        <img src={googleMap} alt="DecodeMTL Google Map Location"/>
     );
     return (
         <div>

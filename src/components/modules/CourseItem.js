@@ -17,8 +17,8 @@ const CourseItem = (props) => {
                             <div className="module-boxed course-item-container itemScope itemType ='http://schema.org/Event'">
                                 <Link to={`/courses/${encodeURI(course.link)}`}>
                                     <div className="course-description">
-                                        <h1 itemProp="name" className="module-title-medium">{course.title}<span
-                                            className="module-title-jumbo">{course.jumboTitle}</span></h1>
+                                        <h2 itemProp="name" className="module-title-medium">{course.title}<span
+                                            className="module-title-jumbo">{course.jumboTitle}</span></h2>
                                         <p itemProp="description">{course.text}</p>
                                     </div>
                                 </Link>
