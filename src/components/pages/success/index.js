@@ -17,7 +17,7 @@ const Success = (props) => {
     return (
         <section className="module">
             <Helmet
-                title="Confirmation | DecodeMTL"
+                title="Contact Submission Confirmation"
                 meta={[
                     {property: 'description', content: ''},
                 ]}/>

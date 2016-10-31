@@ -19,7 +19,7 @@ const Confirmation = (props) => {
     return (
         <section className="module">
             <Helmet
-                title="Confirmation | DecodeMTL"
+                title="Application Confirmation"
                 meta={[
                     {property: 'description', content: ''},
                 ]}/>

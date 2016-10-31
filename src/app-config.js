@@ -7,7 +7,7 @@ module.exports = {
         titleTemplate: '%s | DecodeMTL',
         meta: [
           {charset: 'utf-8'},
-          {name: 'description', content: 'Become a web developer, launch a start-up, or add a new skill to your resume with DecodeMTL’s coding courses. Click to learn more.'},
+          {name: 'description', content: ''},
           {property: 'og:site_name', content: 'DecodeMTL'},
           {property: 'og:image', content: 'favicon-large'},
           {property: 'og:title', content: 'DecodeMTL'},

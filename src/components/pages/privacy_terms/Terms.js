@@ -8,7 +8,7 @@ const Terms = (props) => {
     const termsBody = [(
         <div>
             <Helmet
-                title="Terms of Service | DecodeMTL"
+                title="Terms of Service"
                 meta={[
                     {property: 'description', content: ''},
                 ]}/>

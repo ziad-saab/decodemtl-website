@@ -39,9 +39,9 @@ const Contact = (props) => {
     return (
         <div>
             <Helmet
-                title="Contact | DecodeMTL"
+                title="Contact DecodeMTL"
                 meta={[
-                    {property: 'description', content: 'Contact DecodeMTL here.'},
+                    {property: 'description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. Contact us here if you have any questions.'},
                 ]}/>
             <Hero moduleTitle="Questions?" jumboTitle="Contact Us"/>
             <ContactForm/>
@@ -50,7 +50,6 @@ const Contact = (props) => {
     );
 };
 
-//todo collect data send it to hello decode
 
 Contact.propTypes = {};
 

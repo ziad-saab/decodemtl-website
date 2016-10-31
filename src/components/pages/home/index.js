@@ -17,7 +17,6 @@ import upcomingCourses from 'APP/config/upcomingCourses';
 import testimonials from 'APP/components/pages/wd_bootcamp/testimonials';
 import events from 'APP/config/events';
 
-//TODO CHANGE PLACEHOLDER IMAGES
 // /^\.\/wework(.*)\.jpg$/i will match all files starting with wework and ending with .jpg
 var req = require.context('APP/assets/images', true, /^\.\/wework(.*)\.jpg$/i);
 
@@ -38,11 +37,11 @@ const HomePage = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Learn to Code in Montreal"
+                    title="Learn Web Development - Montreal Coding Bootcamp"
                     meta={[
                         {
                           property: 'description',
-                          content: 'Become a web developer, launch a start-up, or add a new skill to your resume with DecodeMTL’s coding courses. Click to learn more.'
+                          content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'
                         },
                     ]}/>
                 <HomeHero/>
