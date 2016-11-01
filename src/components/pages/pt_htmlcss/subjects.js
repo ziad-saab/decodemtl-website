@@ -4,17 +4,17 @@ import iconLearn from '../../../assets/icons/icon-learn.svg';
 export default [
     {
         title: 'HTML',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at distinctio earum iusto nihil numquam perferendis similique voluptatem. Debitis, ipsa maxime nisi possimus quae quaerat reiciendis totam voluptatibus? Nisi, quia?',
+        text: 'Whether you load a simple web page or a huge web application like Facebook, it all ends up as HTML in the browser. You will learn how to write your content content using semantic elements and following SEO and accessibility best practices. This is the first building block of the web.',
         icon: iconApi
     },
     {
         title: 'CSS',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi maiores quae totam voluptate! Alias asperiores, corporis expedita iste porro reiciendis saepe similique! Assumenda fugit ipsam labore repudiandae sint ullam.',
+        text: 'Once you have mastered the basics of HTML, it\'s time to take your content from boring black & white text to vibrant designs complete with media, animations, and smooth effects. Oh, and of course all of this will look great from your phone to your wide-screen display!',
         icon: iconLearn
     },
     {
         title: 'Design Fundamentals',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur explicabo molestiae odio praesentium. Adipisci aliquam at, blanditiis dicta eius labore libero, officia omnis pariatur quidem ratione rem repellat repellendus tempore!',
+        text: 'Not only will you learn to code from an existing design, you will also get introduced to the design fundamentals which will make your own creations look polished and professional. Already a graphic designer? You will learn how to adapt your work-flow for the dynamic context of the web and become every developer\'s favorite designer!',
         icon: iconStrategy
     },
 ];

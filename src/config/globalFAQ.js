@@ -15,7 +15,7 @@ export const generalFAQ = [
     },
     {
         question: 'Do you accept international students?',
-        answer: 'As long as your aloud in the country for the duration of the course, we are happy to have you. However, job placement assistance is only available for Canadians or those eligible to work in Canada.'
+        answer: 'As long as you\'re aloud in the country for the duration of the course, we are happy to have you. However, job placement assistance is only available for Canadians or those eligible to work in Canada.'
     },
     {
         question: 'Are your courses taught in English or French?',
@@ -46,10 +46,6 @@ export const immersiveFAQ = [
     {
         question: 'Why Should I attend DecodeMTL?',
         answer: 'If you are looking to quickly advance into the field of Web Development, either as a career move or to launch your own product, DecodeMTL will equip you with the skills to do so. Our teachers are top-notch, our curriculum teaches the most in-demand technologies, and our work environment is awesome.'
-    },
-    {
-        question: 'Why Fullstack JavaScript?',
-        answer: 'Be cool, be very cool.'
     },
     {
         question: 'What are the technical qualifications?',

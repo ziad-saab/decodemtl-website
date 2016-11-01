@@ -6,27 +6,22 @@ import iconLearn from '../../../assets/icons/icon-learn.svg';
 export default [
     {
         title: 'Programming Fundamentals',
-        text: 'Explore the core syntax of JavaScript, and learn how to write and execute your first application. Review loops, conditions, variables, expressions, and how to write clean, modular code.',
+        text: 'Learn the fundamentals of programming by building various terminal applications. You will have the chance to build a command-line weather app and a command-line Reddit browser that uses the Reddit JSON API.',
         icon: iconApi
     },
     {
-        title: 'Databases',
-        text: 'Master data modelling by building your own SQL database. Learn to model, store, and query your applications data, and how to integrate these into your applications.',
+        title: 'Databases and Back-End Web Development',
+        text: 'In this section, we will concentrate on data modeling and persistence with MySQL. We will also practice exposing data from our database by creating Reddit.com web server clone using ExpressJS, Node and MySQL.',
         icon: iconLearn
     },
     {
-        title: 'Back-End Web Development',
-        text: 'Using Node.js and a variety of other JavaScript libraries and APIs, you will continue writting JavaScript code to build data driven applications.',
+        title: 'Front-End Web Development',
+        text: 'After having learned how to create a web server that talks to a database, this section will make us practice our design chops as we get in the world of front-end development. By working to bring our previous projects to the front-end world, we will practice various frameworks and tools such as jQuery and React. On the CSS front, we will be building a small responsive framework from scratch, and comparing it to popular frameworks such as Bootstrap and Foundation.',
         icon: iconStrategy
     },
     {
-        title: 'Front-End Web Development',
-        text: 'Learn modern Front-End languages such as HTML5 and CSS, as well as advanced frameworks like React.',
-        icon: iconTeam
-    },
-    {
         title: 'Build an MVP',
-        text: 'In the last two weeks of the course, you will be tasked to build a web application from the ground-up.',
+        text: 'In this section, you will work with a team of two to three of your peers to build an MVP. Under the supervision of your instructor and TAs, you will spend two weeks building a web or mobile application using the technologies and skills you have learned. In addition to learning a popular Git workflow, you will also learn about many new topics during this time.',
         icon: iconTeam
     }
 ];
