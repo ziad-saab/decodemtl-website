@@ -46,7 +46,7 @@ const WeWork = (props) => {
             <Helmet
                 title="DecodeMTL at WeWork Place Ville Marie"
                 meta={[
-                    {property: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'}
+                    {name: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'}
                 ]}/>
             <Hero moduleTitle="WeWork" jumboTitle="Montreal"/>
             <OneHalfColumn mainTitle='Community' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>

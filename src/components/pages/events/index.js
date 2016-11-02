@@ -18,7 +18,7 @@ const Events = (props) => {
             <Helmet
                 title="Web Development and Coding Events"
                 meta={[
-                    {property: 'description', content: 'Web developer events, coding workshops, and free web developer hiring events at DecodeMTL.'},
+                    {name: 'description', content: 'Web developer events, coding workshops, and free web developer hiring events at DecodeMTL.'},
                 ]}/>
             <Hero moduleTitle="decodemtl" jumboTitle="events" text="Browse our upcoming events."/>
             <UpcomingEvents events={events} />

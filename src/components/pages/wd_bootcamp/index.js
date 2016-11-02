@@ -88,7 +88,7 @@ const Courses = React.createClass({
                 <Helmet
                     title="Software Engineering Course - Coding Bootcamp"
                     meta={[
-                        {property: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
+                        {name: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/immersive_syllabus.pdf'/>

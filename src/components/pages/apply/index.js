@@ -34,7 +34,7 @@ const Apply = React.createClass({
                 <Helmet
                     title="Apply to DecodeMTL"
                     meta={[
-                        {property: 'description', content: 'Submit your application to DecodeMTL here.'},
+                        {name: 'description', content: 'Submit your application to DecodeMTL here.'},
                     ]}/>
                 <Hero moduleTitle="Submit your" jumboTitle="Application"/>
                 <section className="module">
