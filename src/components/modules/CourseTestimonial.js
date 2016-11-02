@@ -4,11 +4,11 @@ export const CourseTestimonial = (props) => {
     return (
         <section className="module module-course testimonial-course">
             <div className="wrapper">
-                    <div className="img-text-container profile-block itemScope itemType='https://schema.org/Review'">
+                    <div className="img-text-container profile-block'">
                         <div className="img-text-pic">
                             <img src={props.testimonial.img} alt=""/>
                         </div>
-                        <blockquote className="img-text-details">
+                        <blockquote className="img-text-details" itemScope itemType='https://schema.org/Review'>
                             <p itemProp="reviewBody">{props.testimonial.text}
                             </p>
                             <span className="credit" itemProp="author">{props.testimonial.fullName}</span>
