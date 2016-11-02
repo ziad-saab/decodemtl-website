@@ -9,7 +9,7 @@ const Privacy = (props) => {
             <Helmet
                 title="Privacy Policy"
                 meta={[
-                    {property: 'description', content: ''},
+                    {name: 'description', content: ''},
                 ]}/>
             <p>The following policy outlines how 9320-7223 Québec inc. (the “Company”) will collect, use, protect and
                 disclose personal information. Please note that this policy also applies to Internet and e-mail use by

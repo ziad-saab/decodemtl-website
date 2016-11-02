@@ -23,7 +23,7 @@ const Faq = (props) => {
             <Helmet
                 title="Everything you need to know about DecodeMTL"
                 meta={[
-                    {property: 'description', content: 'Everything you need to know about DecodeMTL! View DecodeMTL\'s frequently asked questions here.'},
+                    {name: 'description', content: 'Everything you need to know about DecodeMTL! View DecodeMTL\'s frequently asked questions here.'},
                 ]}/>
             <Hero moduleTitle="Frequently Asked" jumboTitle="Questions"/>
             <FAQ isFaqPage title='general' faq={generalFAQ} />

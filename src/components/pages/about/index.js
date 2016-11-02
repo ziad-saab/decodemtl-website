@@ -58,7 +58,7 @@ const About = React.createClass({
                 <Helmet
                     title="About DecodeMTL - Montreal Coding Bootcamp"
                     meta={[
-                        {property: 'description', content: 'DecodeMTL is a computer programming bootcamp in Montreal. Learn to code with our web development programs and learn how to become a web developer.'},
+                        {name: 'description', content: 'DecodeMTL is a computer programming bootcamp in Montreal. Learn to code with our web development programs and learn how to become a web developer.'},
                     ]}/>
                 <Hero moduleTitle={'made in'} jumboTitle={'montreal'} text={""} subText={''}/>
                 <OneHalfColumn mainTitle={'How we started'} text={''} contentLeft={contentLeft} contentRight={contentRight}/>

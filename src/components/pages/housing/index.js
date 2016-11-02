@@ -38,7 +38,7 @@ const Housing = (props) => {
             <Helmet
                 title="Student Housing at EVO"
                 meta={[
-                    {property: 'description', content: 'Need a place to live during your time at DecodeMTL? We\'ve partnered with EVO to provide full-service, furnished, beautiful housing nearby.'},
+                    {name: 'description', content: 'Need a place to live during your time at DecodeMTL? We\'ve partnered with EVO to provide full-service, furnished, beautiful housing nearby.'},
                 ]}/>
             <Hero styles={{marginBottom: '3rem'}} moduleTitle="Student" jumboTitle="Housing"/>
             <OneHalfColumn mainTitle='Move-in ready housing' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
