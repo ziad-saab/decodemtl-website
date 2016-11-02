@@ -212,8 +212,7 @@ const SiteNav = React.createClass({
                         </ul>
                         {/* /.social-list */}
                         {/* contact details */}
-                        <ul className="contact-details-list slideout-contact-details" itemScope
-                            itemType="http://schema.org/ContactPoint">
+                        <ul className="contact-details-list slideout-contact-details">
                             <li itemScope itemType="schema.org/PostalAddress">
                                 <a href="https://goo.gl/maps/RmSE1PKEiXH2">
                                     <span itemProp="streetAddress">4-3 Place Ville Marie,</span>
@@ -223,10 +222,10 @@ const SiteNav = React.createClass({
                                     <span itemProp="postalCode">H3B 2E3</span>
                                 </a>
                             </li>
-                            <li>
+                            <li itemScope itemType="schema.org/PostalAddress">
                                 <a itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
                             </li>
-                            <li>
+                            <li itemScope itemType="schema.org/PostalAddress">
                                 <a itemProp="email" href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>
                             </li>
                         </ul>

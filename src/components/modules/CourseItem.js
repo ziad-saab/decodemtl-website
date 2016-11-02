@@ -4,22 +4,22 @@ import {Link} from 'react-router';
 //NOTE: It's assumed that each course item will only have TWO sessions. As such code limited to two sessions.
 const CourseItem = (props) => {
     return (
-        <div>
+        <div itemScope itemType ='http://schema.org/Event'>
             {props.courses.map((course, i) => {
                 // Convert to <sup>
                 const formatedDates = course.nextSessions.map((session, i) => {
                     const date = course.nextSessions[i].match(/([a-z]+.\d+)([a-z]+)(.+)/i);
-                    return <li>{date[1]}<sup>{date[2]}</sup>{date[3]}</li>
+                    return <li itemProp="startDate">{date[1]}<sup>{date[2]}</sup>{date[3]}</li>
                 });
                 return (
                     <article key={i} className="module course-item">
                         <div className="wrapper">
-                            <div className="module-boxed course-item-container">
+                            <div className="module-boxed course-item-container itemScope itemType ='http://schema.org/Event'">
                                 <Link to={`/courses/${encodeURI(course.link)}`}>
                                     <div className="course-description">
-                                        <h1 className="module-title-medium">{course.title}<span
-                                            className="module-title-jumbo">{course.jumboTitle}</span></h1>
-                                        <p>{course.text}</p>
+                                        <h2 itemProp="name" className="module-title-medium">{course.title}<span
+                                            className="module-title-jumbo">{course.jumboTitle}</span></h2>
+                                        <p itemProp="description">{course.text}</p>
                                     </div>
                                 </Link>
                                 <aside className="course-details module-boxed-medium">
@@ -39,7 +39,7 @@ const CourseItem = (props) => {
                                         </ul>
                                     </div>
                                     <Link to={`/courses/${encodeURI(course.link)}`}
-                                          className="cta btn-primary btn-small">View
+                                          className="cta btn-primary btn-small" itemProp='url'>View
                                         Course</Link>
                                 </aside>
                                 {/*<!-- /.course-details -->*/}

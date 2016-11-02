@@ -7,7 +7,7 @@ const Privacy = (props) => {
     const privacyBody = [(
         <div>
             <Helmet
-                title="Privacy Policy | DecodeMTL"
+                title="Privacy Policy"
                 meta={[
                     {property: 'description', content: ''},
                 ]}/>

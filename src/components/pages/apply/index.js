@@ -32,7 +32,7 @@ const Apply = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Apply to DecodeMTL | DecodeMTL"
+                    title="Apply to DecodeMTL"
                     meta={[
                         {property: 'description', content: 'Submit your application to DecodeMTL here.'},
                     ]}/>
