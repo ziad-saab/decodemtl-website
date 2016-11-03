@@ -45,9 +45,9 @@ const CourseCareerSupport = (props) => {
 
                 </div>
                 {/* /.module-boxed */}
-                <div className="info-block info-block-centered info-block-red" itemScope itemType="http://schema.org/ContactPoint">
+                <div className="info-block info-block-centered info-block-red">
                     <p>Want to know more about your future career options? Give us a call!</p>
-                    <a className="phone-link" itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
+                    <a className="phone-link" href="tel:1-888-511-9155">1-888-511-9155</a>
                 </div>
             </div>
             {/* /.wrapper */}
