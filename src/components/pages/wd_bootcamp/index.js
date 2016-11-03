@@ -130,6 +130,20 @@ const Courses = React.createClass({
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
                 <PartnersLogos/>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "http://schema.org",
+                        "@type": "Course",
+                        "name": "",
+                        "description": "Introductory CS course laying out the basics.",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "University of Technology - Eureka",
+                            "sameAs": "http://www.ut-eureka.edu"
+                        }
+                    })
+                    }
+                </script>
             </div>
         );
     }

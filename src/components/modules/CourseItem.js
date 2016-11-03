@@ -14,7 +14,7 @@ const CourseItem = (props) => {
                 return (
                     <article key={i} className="module course-item">
                         <div className="wrapper">
-                            <div className="module-boxed course-item-container itemScope itemType ='http://schema.org/Event'">
+                            <div className="module-boxed course-item-container itemScope itemType ='http://schema.org/event'">
                                 <Link to={`/courses/${encodeURI(course.link)}`}>
                                     <div className="course-description">
                                         <h2 itemProp="name" className="module-title-medium">{course.title}<span
