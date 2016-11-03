@@ -1,22 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const eventsListJson = JSON.stringify({
-    "@context": "http://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-                "@type": "Event",
-                "name": 'DecodeMTL',
-                "url": 'https://www.decodemtl.com',
-                "event": 'https://www.eventbrite.com/e/demo-day-web-developers-for-hire-tickets-27852866674'
-                }
+const eventsListJson = JSON.stringify(
+    {
+        "@context": "http://schema.org",
+        "@type": "BusinessEvent",
+        "name": "DecodeMTL Demo Day - Web Developers for Hire",
+        "startDate": "2016-11-25T13:00",
+        "location": {
+            "@type": "Place",
+            "name": "WeWork Place Ville Marie",
+            "address": "4-3 Place Ville Marie, Montreal QC H3B 2E3"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.eventbrite.com/e/demo-day-web-developers-for-hire-tickets-27852866674"
         }
-    ]
-});
+    });
 
 const UpcomingEvents = (props) => {
     const filterDates = ({startDate}) => {
