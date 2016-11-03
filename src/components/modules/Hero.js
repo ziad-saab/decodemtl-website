@@ -26,12 +26,12 @@ const Hero = React.createClass({
         }
         return (
             <header style={this.props.styles || null} className="module module-course hero-course">
-                <div itemScope itemType ='https://schema.org/Event' ref={wrapper => {
+                <div ref={wrapper => {
                     this._headerWrapper = wrapper
                 }} className="wrapper">
-                    <h1 itemProp='name' className="module-title">{moduleTitle}<span className="module-title-jumbo">{jumboTitle}</span>
+                    <h1 className="module-title">{moduleTitle}<span className="module-title-jumbo">{jumboTitle}</span>
                     </h1>
-                    {text ? <p itemProp='description' className="text-body-large text-subtle text-measure">{text}</p> : null}
+                    {text ? <p className="text-body-large text-subtle text-measure">{text}</p> : null}
                     {subText ? <p className="text-body-small text-subtle text-measure">{subText}</p> : null}
                     {CTAS || CTAP ? renderButtons() : null}
                 </div>
