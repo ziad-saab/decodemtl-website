@@ -1,12 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const eventsJson = JSON.stringify({
+const eventsListJson = JSON.stringify({
     "@context": "http://schema.org",
-    "@type": "BusinessEvent",
-    "organizer": "DecodeMTL",
-    "url": "http://www.decodemtl.com",
-    "event": "http://www.eventbrite.com/o/decodemtl-8462090876"
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Event",
+                "name": 'DecodeMTL',
+                "url": 'https://www.decodemtl.com',
+                "event": 'https://www.eventbrite.com/e/demo-day-web-developers-for-hire-tickets-27852866674'
+                }
+        }
+    ]
 });
 
 const UpcomingEvents = (props) => {
@@ -44,7 +53,7 @@ const UpcomingEvents = (props) => {
                     </Link>
                         : null}
                 </div>
-                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: eventsJson}}/>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: eventsListJson}}/>
             </div>
             {/*<!-- /.wrapper -->*/}
         </section>
