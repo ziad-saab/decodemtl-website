@@ -50,7 +50,7 @@ const Courses = React.createClass({
     },
     componentWillMount() {
         //Necessary for smooth fade transitions when routing from parent component.
-        window.scrollTo(0, 0);
+        typeof window !== 'undefined' && window.scrollTo(0, 0);
     },
     componentDidMount() {
         scrollSpy.update();
