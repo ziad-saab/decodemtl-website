@@ -5,6 +5,30 @@ import CourseHero from '../../modules/Hero';
 import courses from '../../../config/courses';
 import CourseItem from '../../modules/CourseItem';
 
+const courseListJson = JSON.stringify(
+    {
+        "@context":"http://schema.org",
+        "@type":"ItemList",
+        "itemListElement":[
+            {
+                "@type":"ListItem",
+                "position":1,
+                "url":"https://www.decodemtl.com/courses/web-development-immersive"
+            },
+            {
+                "@type":"ListItem",
+                "position":2,
+                "url":"https://www.decodemtl.com/courses/html-css"
+            },
+            {
+                "@type":"ListItem",
+                "position":3,
+                "url":"https://www.decodemtl.com/courses/javascript"
+            }
+        ]
+    }
+);
+
 const AllCourses = (props) => {
 
     return (
@@ -16,6 +40,7 @@ const AllCourses = (props) => {
                 ]}/>
             <CourseHero moduleTitle={"web development"} jumboTitle={"courses"} text={"Browse our upcoming Full-Time and Part-Time courses."}/>
             <CourseItem courses={courses}/>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseListJson}}/>
         </div>
     );
 
