@@ -39,7 +39,7 @@ const courseJson = JSON.stringify({
     "provider": {
         "@type": "Organization",
         "name": "DecodeMTL",
-        "sameAs": "http://www.decodemtl.com/courses/web-development-immersive"
+        "sameAs": "http://www.decodemtl.com/"
     }
 });
 
