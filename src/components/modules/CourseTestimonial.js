@@ -8,7 +8,7 @@ export const CourseTestimonial = (props) => {
                         <div className="img-text-pic">
                             <img src={props.testimonial.img} alt=""/>
                         </div>
-                        <blockquote className="img-text-details" itemScope itemType='https://schema.org/Review'>
+                        <blockquote className="img-text-details">
                             <p itemProp="reviewBody">{props.testimonial.text}
                             </p>
                             <span className="credit" itemProp="author">{props.testimonial.fullName}</span>

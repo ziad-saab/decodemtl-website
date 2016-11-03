@@ -34,12 +34,12 @@ import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 const courseJson = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "Course",
-    "name": "",
-    "description": "Introductory CS course laying out the basics.",
+    "name": "Web Development Immersive",
+    "description": "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup.",
     "provider": {
         "@type": "Organization",
-        "name": "University of Technology - Eureka",
-        "sameAs": "http://www.ut-eureka.edu"
+        "name": "DecodeMTL",
+        "sameAs": "http://www.decodemtl.com/courses/web-development-immersive"
     }
 });
 
