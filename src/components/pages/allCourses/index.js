@@ -13,17 +13,17 @@ const courseListJson = JSON.stringify(
             {
                 "@type":"ListItem",
                 "position":1,
-                "url":"https://www.decodemtl.com/courses/web-development-immersive"
+                "url":"hidden-gorge-79538.herokuapp.com/courses/web-development-immersive"
             },
             {
                 "@type":"ListItem",
                 "position":2,
-                "url":"https://www.decodemtl.com/courses/html-css"
+                "url":"hidden-gorge-79538.herokuapp.com/courses/html-css"
             },
             {
                 "@type":"ListItem",
                 "position":3,
-                "url":"https://www.decodemtl.com/courses/javascript"
+                "url":"hidden-gorge-79538.herokuapp.com/javascript"
             }
         ]
     }
