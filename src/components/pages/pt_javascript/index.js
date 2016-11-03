@@ -30,6 +30,18 @@ import overview from './courseOverview';
 // const req = require.context("../../../assets/images/", true, /^\.\/project-wd-bootcamp(.*)\.jpg$/i);
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const courseJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "Part-Time JavaScript",
+    "description": "Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks.",
+    "provider": {
+        "@type": "Organization",
+        "name": "DecodeMTL",
+        "sameAs": "http://www.decodemtl.com/"
+    }
+});
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -120,6 +132,7 @@ const Courses = React.createClass({
                 <Element name="faq">
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
         );
     }
