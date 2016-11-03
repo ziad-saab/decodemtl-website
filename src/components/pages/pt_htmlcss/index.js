@@ -31,6 +31,18 @@ import overview from './courseOverview';
 // const req = require.context("../../../assets/images/", true, /^\.\/project-htmlcss(.*)\.jpg$/i); //project-course-num //testimonial-firstlast
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const courseJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "Part-Time HTML & CSS",
+    "description": "Learn to write clean, standards-complient code, and become aquainted with the fundamentals of web design.",
+    "provider": {
+        "@type": "Organization",
+        "name": "DecodeMTL",
+        "sameAs": "http://www.decodemtl.com/"
+    }
+});
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -121,6 +133,7 @@ const Courses = React.createClass({
                 <Element name="faq">
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
         );
     }
