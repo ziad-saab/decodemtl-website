@@ -31,6 +31,18 @@ import overview from './courseOverview';
 const req = require.context("../../../assets/images/", true, /^\.\/project-wd-bootcamp(.*)\.jpg$/i);
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const courseJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "",
+    "description": "Introductory CS course laying out the basics.",
+    "provider": {
+        "@type": "Organization",
+        "name": "University of Technology - Eureka",
+        "sameAs": "http://www.ut-eureka.edu"
+    }
+});
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -130,20 +142,7 @@ const Courses = React.createClass({
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
                 <PartnersLogos/>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "http://schema.org",
-                        "@type": "Course",
-                        "name": "",
-                        "description": "Introductory CS course laying out the basics.",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "University of Technology - Eureka",
-                            "sameAs": "http://www.ut-eureka.edu"
-                        }
-                    })
-                    }
-                </script>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
         );
     }
