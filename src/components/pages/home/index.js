@@ -43,14 +43,9 @@ const HomePage = React.createClass({
                         {property: 'og:url', content: 'https://hidden-gorge-79538.herokuapp.com'},
                         {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
                         {property: 'og:description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
-                        {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.jpg'},
-                        {property: 'og:type', content: 'business.business'},
-                        {property: 'business:contact_data:street_address', content: '4-3 Place Ville Marie'},
-                        {property: 'business:contact_data:locality', content: 'Montreal'},
-                        {property: 'business:contact_data:postal_code', content: 'H3B 2E3'},
-                        {property: 'business:contact_data:country_name', content: 'Canada'},
-                        {property: 'place:location:latitude', content: '45.502057'},
-                        {property: 'place:location:longitude', content: '-73.569345'}
+                        {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'}
                     ]}/>
                 <HomeHero/>
                 <HomeEvolving handleClick={this._toggleModal}/>
