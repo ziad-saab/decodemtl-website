@@ -39,6 +39,13 @@ const Housing = (props) => {
                 title="Student Housing at EVO"
                 meta={[
                     {name: 'description', content: 'Need a place to live during your time at DecodeMTL? We\'ve partnered with EVO to provide full-service, furnished, beautiful housing nearby.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/housing'},
+                    {property: 'og:title', content: 'DecodeMTL Student Housing Available at EVO'},
+                    {property: 'og:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'}
                 ]}/>
             <Hero styles={{marginBottom: '3rem'}} moduleTitle="Student" jumboTitle="Housing"/>
             <OneHalfColumn mainTitle='Move-in ready housing' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>

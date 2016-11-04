@@ -56,7 +56,14 @@ const Employers = (props) => {
             <Helmet
                 title="Hire a Web Developer"
                 meta={[
-                    {name: 'description', content: 'Hire a web developer from DecodeMTL\'s code school. Hire our graduates as contract or full-time employees.'},
+                    {name: 'description', content: 'Are you looking to hire a web developer? DecodeMTL graduates can be hired as contract or full-time employees. Best of all, their are no hiring fees!'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/employers'},
+                    {property: 'og:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
+                    {property: 'og:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'}
                 ]}/>
             <Hero moduleTitle="find your next" jumboTitle="web developer" subText={heroSubText}/>
             <EmployerCTA/>

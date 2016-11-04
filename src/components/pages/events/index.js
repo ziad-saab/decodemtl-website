@@ -19,6 +19,13 @@ const Events = (props) => {
                 title="Web Development and Coding Events"
                 meta={[
                     {name: 'description', content: 'Web developer events, coding workshops, and free web developer hiring events at DecodeMTL.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/events'},
+                    {property: 'og:title', content: 'DecodeMTL Events'},
+                    {property: 'og:description', content: 'Check out DecodeMTL\'s web developer events, coding workshops, and free web developer hiring events.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'}
                 ]}/>
             <Hero moduleTitle="decodemtl" jumboTitle="events" text="Browse our upcoming events."/>
             <UpcomingEvents events={events} />

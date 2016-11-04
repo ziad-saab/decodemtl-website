@@ -37,6 +37,13 @@ const AllCourses = (props) => {
                 title="Web Development Courses"
                 meta={[
                     {name: 'description', content: 'Web Development Courses in HTML & CSS, JavaScript, and Full-Stack Web Development. Become a Web Developer with Montreal\'s leading Web Development programs.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/courses'},
+                    {property: 'og:title', content: 'Top Web Development Courses in Montreal'},
+                    {property: 'og:description', content: 'Web Development Courses in HTML & CSS, JavaScript, and Full-Stack Web Development. Become a Web Developer at Montreal\'s leading Web Development school.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'},
                 ]}/>
             <CourseHero moduleTitle={"web development"} jumboTitle={"courses"} text={"Browse our upcoming Full-Time and Part-Time courses."}/>
             <CourseItem courses={courses}/>

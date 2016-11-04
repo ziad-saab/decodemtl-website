@@ -46,7 +46,14 @@ const WeWork = (props) => {
             <Helmet
                 title="DecodeMTL at WeWork Place Ville Marie"
                 meta={[
-                    {name: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'}
+                    {name: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/wework'},
+                    {property: 'og:title', content: 'DecodeMTL + WeWork'},
+                    {property: 'og:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'}
                 ]}/>
             <Hero moduleTitle="WeWork" jumboTitle="Montreal"/>
             <OneHalfColumn mainTitle='Community' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>

@@ -40,13 +40,13 @@ const HomePage = React.createClass({
                     title="Learn Web Development - Montreal Coding Bootcamp"
                     meta={[
                         {name: 'description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
-                        {property: 'og:url', content: 'https://hidden-gorge-79538.herokuapp.com'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com'},
                         {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
                         {property: 'og:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
-                        {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.png'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {property: 'og:image:width', content: '1200'},
                         {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'},
+                        {property: 'fb:app_id', content: '215509578883196'}
                     ]}/>
                 <HomeHero/>
                 <HomeEvolving handleClick={this._toggleModal}/>

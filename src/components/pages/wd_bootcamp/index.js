@@ -101,6 +101,13 @@ const Courses = React.createClass({
                     title="Software Engineering Course - Coding Bootcamp"
                     meta={[
                         {name: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/web-development-immersive'},
+                        {property: 'og:title', content: 'Web Development Bootcamp - Become a Web Developer'},
+                        {property: 'og:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/immersive_syllabus.pdf'/>

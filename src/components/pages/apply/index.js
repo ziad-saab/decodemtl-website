@@ -34,7 +34,14 @@ const Apply = React.createClass({
                 <Helmet
                     title="Apply to DecodeMTL"
                     meta={[
-                        {name: 'description', content: 'Submit your application to DecodeMTL here.'},
+                        {name: 'description', content: 'Interested in applying to DecodeMTL? Fill out this quick application form to register for any of our courses.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/apply'},
+                        {property: 'og:title', content: 'Apply to DecodeMTL'},
+                        {property: 'og:description', content: 'Looking to launch a new career in tech? DecodeMTL offer\'s Montreal\'s leading courses in Web Development. Apply today to start learning something new!'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'}
                     ]}/>
                 <Hero moduleTitle="Submit your" jumboTitle="Application"/>
                 <section className="module">

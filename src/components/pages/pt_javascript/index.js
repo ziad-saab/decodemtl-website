@@ -97,6 +97,13 @@ const Courses = React.createClass({
                     title="Learn JavaScript - JavaScript Course"
                     meta={[
                         {name: 'description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming with our industry leading JavaScript training.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/javascript'},
+                        {property: 'og:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+                        {property: 'og:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>

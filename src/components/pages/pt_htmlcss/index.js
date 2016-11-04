@@ -98,6 +98,13 @@ const Courses = React.createClass({
                     title="Learn CSS - HTML Courses"
                     meta={[
                         {name: 'description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML and CSS, learn web design, and build websites with our HTML course.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/html-css'},
+                        {property: 'og:title', content: 'HTML & CSS Course at DecodeMTL'},
+                        {property: 'og:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/htmlcss_syllabus.pdf'/>
