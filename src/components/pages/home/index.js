@@ -39,10 +39,18 @@ const HomePage = React.createClass({
                 <Helmet
                     title="Learn Web Development - Montreal Coding Bootcamp"
                     meta={[
-                        {
-                          name: 'description',
-                          content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'
-                        },
+                        {name: 'description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
+                        {property: 'og:url', content: 'http://www.decodemtl.com'},
+                        {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
+                        {property: 'og:description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/assets/images/video-screenshot.jpg'},
+                        {property: 'og:type', content: 'business.business'},
+                        {property: 'business:contact_data:street_address', content: '4-3 Place Ville Marie'},
+                        {property: 'business:contact_data:locality', content: 'Montreal'},
+                        {property: 'business:contact_data:postal_code', content: 'H3B 2E3'},
+                        {property: 'business:contact_data:country_name', content: 'Canada'},
+                        {property: 'place:location:latitude', content: '45.502057'},
+                        {property: 'place:location:longitude', content: '-73.569345'}
                     ]}/>
                 <HomeHero/>
                 <HomeEvolving handleClick={this._toggleModal}/>
