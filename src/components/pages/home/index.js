@@ -46,7 +46,7 @@ const HomePage = React.createClass({
                         {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.png'},
                         {property: 'og:image:width', content: '1200'},
                         {property: 'og:image:height', content: '630'},
-                        {property: 'og:app_id', content: '215509578883196'},
+                        {property: 'fb:app_id', content: '215509578883196'},
                     ]}/>
                 <HomeHero/>
                 <HomeEvolving handleClick={this._toggleModal}/>
