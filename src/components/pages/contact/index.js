@@ -14,21 +14,21 @@ const Contact = (props) => {
             <li>
                 <h3 className="module-title-medium">OPERATING OUT OF WEWORK<br/>MONTREAL'S ICONIC PLACE VILLE MARIE</h3>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
+            <li>
                 <a href="https://goo.gl/maps/RmSE1PKEiXH2">
                     <span className="fa fa-map-marker fa-fw" aria-hidden="true"/>
-                    <span itemProp="streetAddress">4-3 Place Ville Marie, </span>
-                    <span itemProp="addressLocality">Montréal, </span>
-                    <span itemProp="addressRegion">Québec </span>
-                    <span itemProp="postalCode">H3B 2E3</span>
+                    <span>4-3 Place Ville Marie, </span>
+                    <span>Montréal, </span>
+                    <span>Québec </span>
+                    <span>H3B 2E3</span>
                 </a>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
-                <a itemProp="telephone" href="tel:1-888-511-9155"><span
+            <li>
+                <a href="tel:1-888-511-9155"><span
                     className="fa fa-phone fa-fw" aria-hidden="true"/> 1-888-511-9155</a>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
-                <a itemProp="email" href="mailto:hello@decodemtl.com"><span
+            <li>
+                <a href="mailto:hello@decodemtl.com"><span
                     className="fa fa-envelope fa-fw" aria-hidden="true"/> hello@decodemtl.com</a>
             </li>
         </ul>);
