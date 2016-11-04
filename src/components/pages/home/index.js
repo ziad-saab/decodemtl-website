@@ -51,7 +51,7 @@ const HomePage = React.createClass({
                         {name: 'twitter:site', content: '@decodemtl'},
                         {name: 'twitter:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
                         {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
-                        {name: 'twitter:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.png'},
+                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}/>
                 <HomeHero/>

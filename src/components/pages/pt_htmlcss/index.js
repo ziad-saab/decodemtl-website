@@ -104,7 +104,13 @@ const Courses = React.createClass({
                         {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {property: 'og:image:width', content: '1200'},
                         {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'}
+                        {property: 'fb:app_id', content: '215509578883196'},
+                        {name: 'twitter:card', content: 'summary_large_image'},
+                        {name: 'twitter:site', content: '@decodemtl'},
+                        {name: 'twitter:title', content: 'HTML & CSS Course at DecodeMTL'},
+                        {name: 'twitter:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/htmlcss_syllabus.pdf'/>

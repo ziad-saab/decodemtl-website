@@ -103,7 +103,13 @@ const Courses = React.createClass({
                         {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {property: 'og:image:width', content: '1200'},
                         {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'}
+                        {property: 'fb:app_id', content: '215509578883196'},
+                        {name: 'twitter:card', content: 'summary_large_image'},
+                        {name: 'twitter:site', content: '@decodemtl'},
+                        {name: 'twitter:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+                        {name: 'twitter:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>

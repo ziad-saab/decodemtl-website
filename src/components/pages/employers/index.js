@@ -63,7 +63,13 @@ const Employers = (props) => {
                     {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {property: 'og:image:width', content: '1200'},
                     {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'}
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
+                    {name: 'twitter:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                 ]}/>
             <Hero moduleTitle="find your next" jumboTitle="web developer" subText={heroSubText}/>
             <EmployerCTA/>

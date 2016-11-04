@@ -53,7 +53,13 @@ const WeWork = (props) => {
                     {property: 'og:image', content: 'https://www.decodemtl.com/downloads/wework_main.png'},
                     {property: 'og:image:width', content: '1200'},
                     {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'}
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'DecodeMTL + WeWork'},
+                    {name: 'twitter:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                 ]}/>
             <Hero moduleTitle="WeWork" jumboTitle="Montreal"/>
             <OneHalfColumn mainTitle='Community' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>

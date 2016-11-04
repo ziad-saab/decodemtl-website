@@ -45,7 +45,13 @@ const Housing = (props) => {
                     {property: 'og:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
                     {property: 'og:image:width', content: '1200'},
                     {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'}
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'DecodeMTL Student Housing Available at EVO'},
+                    {name: 'twitter:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+                    {name: 'twitter:image:alt', content: 'EVO Montreal 1 Bedroom Unit'}
                 ]}/>
             <Hero styles={{marginBottom: '3rem'}} moduleTitle="Student" jumboTitle="Housing"/>
             <OneHalfColumn mainTitle='Move-in ready housing' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
