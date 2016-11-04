@@ -40,7 +40,7 @@ const HomePage = React.createClass({
                     title="Learn Web Development - Montreal Coding Bootcamp"
                     meta={[
                         {name: 'description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
-                        {property: 'og:url', content: 'http://www.decodemtl.com'},
+                        {property: 'og:url', content: 'https://hidden-gorge-79538.herokuapp.com'},
                         {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
                         {property: 'og:description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
                         {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.jpg'},
