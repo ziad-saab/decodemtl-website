@@ -213,20 +213,20 @@ const SiteNav = React.createClass({
                         {/* /.social-list */}
                         {/* contact details */}
                         <ul className="contact-details-list slideout-contact-details">
-                            <li itemScope itemType="schema.org/PostalAddress">
+                            <li>
                                 <a href="https://goo.gl/maps/RmSE1PKEiXH2">
-                                    <span itemProp="streetAddress">4-3 Place Ville Marie,</span>
+                                    <span>4-3 Place Ville Marie,</span>
                                     <br />
-                                    <span itemProp="addressLocality">Montréal, </span>
-                                    <span itemProp="addressRegion">Québec </span>
-                                    <span itemProp="postalCode">H3B 2E3</span>
+                                    <span>Montréal, </span>
+                                    <span>Québec </span>
+                                    <span>H3B 2E3</span>
                                 </a>
                             </li>
                             <li itemScope itemType="schema.org/PostalAddress">
                                 <a itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
                             </li>
-                            <li itemScope itemType="schema.org/PostalAddress">
-                                <a itemProp="email" href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>
+                            <li>
+                                <a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>
                             </li>
                         </ul>
                         {/* /.contact-details */}
