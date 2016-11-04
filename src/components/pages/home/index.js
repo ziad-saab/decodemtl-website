@@ -43,7 +43,7 @@ const HomePage = React.createClass({
                         {property: 'og:url', content: 'http://www.decodemtl.com'},
                         {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
                         {property: 'og:description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
-                        {property: 'og:image', content: 'https://www.decodemtl.com/assets/images/video-screenshot.jpg'},
+                        {property: 'og:image', content: 'https://hidden-gorge-79538.herokuapp.com/downloads/decode_main.jpg'},
                         {property: 'og:type', content: 'business.business'},
                         {property: 'business:contact_data:street_address', content: '4-3 Place Ville Marie'},
                         {property: 'business:contact_data:locality', content: 'Montreal'},
