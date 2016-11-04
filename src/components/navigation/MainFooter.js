@@ -9,7 +9,14 @@ const contactJson = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "Organization",
     "url": "http://www.decodemtl.com",
-    "address": "4-3 Place Ville Marie, Montreal QC, H3B 2E3",
+    "address": [{
+        "@type": "PostalAddress",
+        "addressCountry": "Canada",
+        "addressLocality": "Montreal",
+        "addressRegion": "Quebec",
+        "postalCode": "H3B 2E3",
+        "streetAddress": "4-3 Place Ville Marie"
+    }],
     "contactPoint": [{
         "@type": "ContactPoint",
         "telephone": "+1-888-511-9155",
