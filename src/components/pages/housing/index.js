@@ -52,7 +52,11 @@ const Housing = (props) => {
                     {name: 'twitter:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
                     {name: 'twitter:image:alt', content: 'EVO Montreal 1 Bedroom Unit'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/logement"},
+                ]}
+            />
             <Hero styles={{marginBottom: '3rem'}} moduleTitle="Student" jumboTitle="Housing"/>
             <OneHalfColumn mainTitle='Move-in ready housing' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
             <GenericTextModule title="Walking distance from WeWork" paragraphs={secondRowParagraphs}/>

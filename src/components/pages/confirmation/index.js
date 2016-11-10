@@ -22,7 +22,11 @@ const Confirmation = (props) => {
                 title="Application Confirmation"
                 meta={[
                     {name: 'description', content: ''},
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/confirmation"},
+                ]}
+            />
             <div className="wrapper">
                 <h2 className="module-title">Something went wrong!</h2>
                 <p>Please try again! If the problem persists, please contact hello@decodemtl.com.</p>

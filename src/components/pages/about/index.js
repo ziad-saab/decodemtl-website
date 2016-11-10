@@ -74,7 +74,7 @@ const About = React.createClass({
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}
                     link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
+                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/a-propos"},
                     ]}
                 />
                 <Hero moduleTitle={'made in'} jumboTitle={'montreal'} text={""} subText={''}/>

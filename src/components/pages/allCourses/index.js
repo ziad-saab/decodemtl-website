@@ -50,7 +50,11 @@ const AllCourses = (props) => {
                     {name: 'twitter:description', content: 'Web Development Courses in HTML & CSS, JavaScript, and Full-Stack Web Development. Become a Web Developer at Montreal\'s leading Web Development school.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours"},
+                ]}
+            />
             <CourseHero moduleTitle={"web development"} jumboTitle={"courses"} text={"Browse our upcoming Full-Time and Part-Time courses."}/>
             <CourseItem courses={courses}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseListJson}}/>

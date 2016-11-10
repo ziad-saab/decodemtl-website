@@ -114,7 +114,11 @@ const Courses = React.createClass({
                         {name: 'twitter:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
                         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}/>
+                    ]}
+                    link={[
+                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/developpement-web-intensif"},
+                    ]}
+                />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/immersive_syllabus.pdf'/>
                 <CourseHero CTAPText="Apply Now"

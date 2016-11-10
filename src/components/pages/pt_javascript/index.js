@@ -110,7 +110,11 @@ const Courses = React.createClass({
                         {name: 'twitter:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
                         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}/>
+                    ]}
+                    link={[
+                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/javascript"},
+                    ]}
+                />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>
                 <CourseHero

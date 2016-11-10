@@ -70,7 +70,11 @@ const Employers = (props) => {
                     {name: 'twitter:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/partenaires-embauche"},
+                ]}
+            />
             <Hero moduleTitle="find your next" jumboTitle="web developer" subText={heroSubText}/>
             <EmployerCTA/>
             <TwoThirdColumns columns={columns} title="What Makes Our Grads Special?"/>

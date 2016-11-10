@@ -32,7 +32,11 @@ const Events = (props) => {
                     {name: 'twitter:description', content: 'Check out DecodeMTL\'s web developer events, coding workshops, and free web developer hiring events.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/evenements"},
+                ]}
+            />
             <Hero moduleTitle="decodemtl" jumboTitle="events" text="Browse our upcoming events."/>
             <UpcomingEvents events={events} />
             <FormOptin submitButton="Submit" title={formTitle} text={formText} />

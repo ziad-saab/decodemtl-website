@@ -47,8 +47,9 @@ export default function createRoutes(store) {
         <Route path='nous-joindre' component={Contact}/>
         <Route path='wework' component={WeWork}/>
         <Route path='logement' component={Housing}/>
-        <Route path='confidentialite' component={Privacy}/>
-        <Route path='termes' component={Terms}/>
+        {/*No french content exists for these, just link to English versions for now.*/}
+        {/*<Route path='confidentialite' component={Privacy}/>*/}
+        {/*<Route path='termes' component={Terms}/>*/}
         <Route path='postuler' component={Apply}/>
         <Route path='confirmation' component={Confirmation}/>
         <Route path='succes' component={Success}/>

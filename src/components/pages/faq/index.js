@@ -37,7 +37,11 @@ const Faq = (props) => {
                     {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/faq"},
+                ]}
+            />
             <Hero moduleTitle="Frequently Asked" jumboTitle="Questions"/>
             <FAQ isFaqPage title='general' faq={generalFAQ} />
             <FAQ isFaqPage title='financials' faq={financialsFAQ} />

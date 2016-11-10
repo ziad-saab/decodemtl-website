@@ -60,7 +60,11 @@ const WeWork = (props) => {
                     {name: 'twitter:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/wework"},
+                ]}
+            />
             <Hero moduleTitle="WeWork" jumboTitle="Montreal"/>
             <OneHalfColumn mainTitle='Community' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
             <GenericTextModule title="Location" paragraphs={secondRowParagraphs}/>
