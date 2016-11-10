@@ -20,7 +20,11 @@ const Success = (props) => {
                 title="Contact Submission Confirmation"
                 meta={[
                     {name: 'description', content: ''},
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/succes"},
+                ]}
+            />
             <div className="wrapper">
                 <h2 className="module-title">Something went wrong!</h2>
                 <p>Please try again! If the problem persists, please contact <a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>.</p>

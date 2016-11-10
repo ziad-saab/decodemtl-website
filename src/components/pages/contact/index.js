@@ -55,7 +55,11 @@ const Contact = (props) => {
                     {name: 'twitter:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
                     {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                     {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}/>
+                ]}
+                link={[
+                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
+                ]}
+            />
             <Hero moduleTitle="Questions?" jumboTitle="Contact Us"/>
             <ContactForm/>
             <OneHalfColumn contentLeft={columnLeft} contentRight={columnRight}/>

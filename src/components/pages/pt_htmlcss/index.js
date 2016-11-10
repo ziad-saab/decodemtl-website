@@ -111,7 +111,11 @@ const Courses = React.createClass({
                         {name: 'twitter:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
                         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}/>
+                    ]}
+                    link={[
+                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/html-css"},
+                    ]}
+                />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/htmlcss_syllabus.pdf'/>
                 <CourseHero
