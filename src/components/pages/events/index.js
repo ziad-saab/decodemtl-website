@@ -18,7 +18,20 @@ const Events = (props) => {
             <Helmet
                 title="Web Development and Coding Events"
                 meta={[
-                    {property: 'description', content: 'Web developer events, coding workshops, and free web developer hiring events at DecodeMTL.'},
+                    {name: 'description', content: 'Web developer events, coding workshops, and free web developer hiring events at DecodeMTL.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/events'},
+                    {property: 'og:title', content: 'DecodeMTL Events'},
+                    {property: 'og:description', content: 'Check out DecodeMTL\'s web developer events, coding workshops, and free web developer hiring events.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'DecodeMTL Events'},
+                    {name: 'twitter:description', content: 'Check out DecodeMTL\'s web developer events, coding workshops, and free web developer hiring events.'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                 ]}/>
             <Hero moduleTitle="decodemtl" jumboTitle="events" text="Browse our upcoming events."/>
             <UpcomingEvents events={events} />

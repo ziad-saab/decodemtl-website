@@ -19,7 +19,7 @@ const Success = (props) => {
             <Helmet
                 title="Contact Submission Confirmation"
                 meta={[
-                    {property: 'description', content: ''},
+                    {name: 'description', content: ''},
                 ]}/>
             <div className="wrapper">
                 <h2 className="module-title">Something went wrong!</h2>

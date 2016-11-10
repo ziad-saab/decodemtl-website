@@ -5,6 +5,25 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ConfirmModal from '../modules/ConfirmModal';
 import {subscribe} from 'APP/api';
 
+const contactJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "http://www.decodemtl.com",
+    "address": [{
+        "@type": "PostalAddress",
+        "addressCountry": "Canada",
+        "addressLocality": "Montreal",
+        "addressRegion": "Quebec",
+        "postalCode": "H3B 2E3",
+        "streetAddress": "4-3 Place Ville Marie"
+    }],
+    "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+1-888-511-9155",
+        "email": "hello@decodemtl.com",
+        "contactType": "customer service"
+    }]
+});
 
 const MainFooter = React.createClass({
     propTypes: {},
@@ -116,21 +135,21 @@ const MainFooter = React.createClass({
                                 <li>
                                     <h4>Contact Us</h4>
                                 </li>
-                                <li itemScope itemType="schema.org/PostalAddress">
+                                <li>
                                     <a href="https://goo.gl/maps/RmSE1PKEiXH2">
                                         <span className="fa fa-map-marker fa-fw" aria-hidden="true"/>
-                                        <span itemProp="streetAddress">4-3 Place Ville Marie, </span>
-                                        <span itemProp="addressLocality">Montréal, </span>
-                                        <span itemProp="addressRegion">Québec </span>
-                                        <span itemProp="postalCode">H3B 2E3</span>
+                                        <span>4-3 Place Ville Marie, </span>
+                                        <span>Montréal, </span>
+                                        <span>Québec </span>
+                                        <span>H3B 2E3</span>
                                     </a>
                                 </li>
-                                <li itemScope itemType="schema.org/PostalAddress">
-                                    <a itemProp="telephone" href="tel:1-888-511-9155"><span
+                                <li>
+                                    <a href="tel:1-888-511-9155"><span
                                         className="fa fa-phone fa-fw" aria-hidden="true"/> 1-888-511-9155</a>
                                 </li>
-                                <li itemScope itemType="schema.org/PostalAddress">
-                                    <a itemProp="email" href="mailto:hello@decodemtl.com"><span
+                                <li>
+                                    <a href="mailto:hello@decodemtl.com"><span
                                         className="fa fa-envelope fa-fw" aria-hidden="true"/> hello@decodemtl.com</a>
                                 </li>
                             </ul>
@@ -196,6 +215,7 @@ const MainFooter = React.createClass({
                     </div>
                     {/* /.footer-content */}
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: contactJson}}/>
                 {/* /.wrapper */}
             </footer>
         );

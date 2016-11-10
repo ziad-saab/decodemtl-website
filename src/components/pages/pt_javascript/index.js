@@ -30,6 +30,18 @@ import overview from './courseOverview';
 // const req = require.context("../../../assets/images/", true, /^\.\/project-wd-bootcamp(.*)\.jpg$/i);
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const courseJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "Part-Time JavaScript",
+    "description": "Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks.",
+    "provider": {
+        "@type": "Organization",
+        "name": "DecodeMTL",
+        "sameAs": "http://www.decodemtl.com/"
+    }
+});
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -38,7 +50,7 @@ const Courses = React.createClass({
     },
     componentWillMount() {
         //Necessary for smooth fade transitions when routing from parent component.
-        window.scrollTo(0, 0);
+        typeof window !== 'undefined' && window.scrollTo(0, 0);
     },
     componentDidMount() {
         scrollSpy.update();
@@ -84,7 +96,20 @@ const Courses = React.createClass({
                 <Helmet
                     title="Learn JavaScript - JavaScript Course"
                     meta={[
-                        {property: 'description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming with our industry leading JavaScript training.'},
+                        {name: 'description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming with our industry leading JavaScript training.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/javascript'},
+                        {property: 'og:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+                        {property: 'og:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'},
+                        {name: 'twitter:card', content: 'summary_large_image'},
+                        {name: 'twitter:site', content: '@decodemtl'},
+                        {name: 'twitter:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+                        {name: 'twitter:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>
@@ -120,6 +145,7 @@ const Courses = React.createClass({
                 <Element name="faq">
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
         );
     }

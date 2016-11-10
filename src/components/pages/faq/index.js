@@ -23,7 +23,20 @@ const Faq = (props) => {
             <Helmet
                 title="Everything you need to know about DecodeMTL"
                 meta={[
-                    {property: 'description', content: 'Everything you need to know about DecodeMTL! View DecodeMTL\'s frequently asked questions here.'},
+                    {name: 'description', content: 'Everything you need to know about DecodeMTL! View DecodeMTL\'s frequently asked questions here.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/faq'},
+                    {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
+                    {property: 'og:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
+                    {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                 ]}/>
             <Hero moduleTitle="Frequently Asked" jumboTitle="Questions"/>
             <FAQ isFaqPage title='general' faq={generalFAQ} />

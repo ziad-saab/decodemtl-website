@@ -31,6 +31,18 @@ import overview from './courseOverview';
 // const req = require.context("../../../assets/images/", true, /^\.\/project-htmlcss(.*)\.jpg$/i); //project-course-num //testimonial-firstlast
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const courseJson = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "Part-Time HTML & CSS",
+    "description": "Learn to write clean, standards-complient code, and become aquainted with the fundamentals of web design.",
+    "provider": {
+        "@type": "Organization",
+        "name": "DecodeMTL",
+        "sameAs": "http://www.decodemtl.com/"
+    }
+});
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -85,7 +97,20 @@ const Courses = React.createClass({
                 <Helmet
                     title="Learn CSS - HTML Courses"
                     meta={[
-                        {property: 'description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML and CSS, learn web design, and build websites with our HTML course.'},
+                        {name: 'description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML and CSS, learn web design, and build websites with our HTML course.'},
+                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/html-css'},
+                        {property: 'og:title', content: 'HTML & CSS Course at DecodeMTL'},
+                        {property: 'og:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {property: 'og:image:width', content: '1200'},
+                        {property: 'og:image:height', content: '630'},
+                        {property: 'fb:app_id', content: '215509578883196'},
+                        {name: 'twitter:card', content: 'summary_large_image'},
+                        {name: 'twitter:site', content: '@decodemtl'},
+                        {name: 'twitter:title', content: 'HTML & CSS Course at DecodeMTL'},
+                        {name: 'twitter:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                     ]}/>
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/htmlcss_syllabus.pdf'/>
@@ -121,6 +146,7 @@ const Courses = React.createClass({
                 <Element name="faq">
                     <CourseFAQ title='Course FAQ' faq={faq}/>
                 </Element>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
         );
     }

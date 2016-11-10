@@ -15,11 +15,11 @@ const UpcomingEvents = (props) => {
                 <p>{props.text}</p>
                 <ul className="events-list">
                     {props.events.filter(filterDates).slice(0, props.limit ? props.limit : props.events.length).map((event, i) => (
-                        <li key={i} className="text-body-small" itemScope itemType="http://schema.org/Event">
-                            <a className="event-url" href={event.url} itemProp="url" target="_blank">
-                                <div className="event-date" itemProp="startDate">{event.startDate}</div>
-                                <div className="event-name" itemProp="name">{event.eventName}</div>
-                                <div className="event-description" itemProp="description">{event.description}
+                        <li key={i} className="text-body-small">
+                            <a className="event-url" href={event.url} target="_blank">
+                                <div className="event-date">{event.startDate}</div>
+                                <div className="event-name">{event.eventName}</div>
+                                <div className="event-description">{event.description}
                                     <span className="event-arrow fa fa-chevron-circle-right text-body-large"
                                           aria-hidden="true"/>
                                     <span className="visually-hidden">Event URL</span>

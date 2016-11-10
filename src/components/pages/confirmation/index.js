@@ -21,7 +21,7 @@ const Confirmation = (props) => {
             <Helmet
                 title="Application Confirmation"
                 meta={[
-                    {property: 'description', content: ''},
+                    {name: 'description', content: ''},
                 ]}/>
             <div className="wrapper">
                 <h2 className="module-title">Something went wrong!</h2>

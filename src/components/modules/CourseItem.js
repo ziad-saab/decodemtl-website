@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 //NOTE: It's assumed that each course item will only have TWO sessions. As such code limited to two sessions.
 const CourseItem = (props) => {
     return (
-        <div itemScope itemType ='http://schema.org/Event'>
+        <div>
             {props.courses.map((course, i) => {
                 // Convert to <sup>
                 const formatedDates = course.nextSessions.map((session, i) => {
@@ -14,7 +14,7 @@ const CourseItem = (props) => {
                 return (
                     <article key={i} className="module course-item">
                         <div className="wrapper">
-                            <div className="module-boxed course-item-container itemScope itemType ='http://schema.org/Event'">
+                            <div className="module-boxed course-item-container">
                                 <Link to={`/courses/${encodeURI(course.link)}`}>
                                     <div className="course-description">
                                         <h2 itemProp="name" className="module-title-medium">{course.title}<span

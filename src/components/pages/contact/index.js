@@ -14,21 +14,21 @@ const Contact = (props) => {
             <li>
                 <h3 className="module-title-medium">OPERATING OUT OF WEWORK<br/>MONTREAL'S ICONIC PLACE VILLE MARIE</h3>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
+            <li>
                 <a href="https://goo.gl/maps/RmSE1PKEiXH2">
                     <span className="fa fa-map-marker fa-fw" aria-hidden="true"/>
-                    <span itemProp="streetAddress">4-3 Place Ville Marie, </span>
-                    <span itemProp="addressLocality">Montréal, </span>
-                    <span itemProp="addressRegion">Québec </span>
-                    <span itemProp="postalCode">H3B 2E3</span>
+                    <span>4-3 Place Ville Marie, </span>
+                    <span>Montréal, </span>
+                    <span>Québec </span>
+                    <span>H3B 2E3</span>
                 </a>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
-                <a itemProp="telephone" href="tel:1-888-511-9155"><span
+            <li>
+                <a href="tel:1-888-511-9155"><span
                     className="fa fa-phone fa-fw" aria-hidden="true"/> 1-888-511-9155</a>
             </li>
-            <li itemScope itemType="schema.org/PostalAddress">
-                <a itemProp="email" href="mailto:hello@decodemtl.com"><span
+            <li>
+                <a href="mailto:hello@decodemtl.com"><span
                     className="fa fa-envelope fa-fw" aria-hidden="true"/> hello@decodemtl.com</a>
             </li>
         </ul>);
@@ -41,7 +41,20 @@ const Contact = (props) => {
             <Helmet
                 title="Contact DecodeMTL"
                 meta={[
-                    {property: 'description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. Contact us here if you have any questions.'},
+                    {name: 'description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. Contact us here if you have any questions.'},
+                    {property: 'og:url', content: 'https://www.decodemtl.com/contact'},
+                    {property: 'og:title', content: 'Contact DecodeMTL'},
+                    {property: 'og:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
+                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {property: 'og:image:width', content: '1200'},
+                    {property: 'og:image:height', content: '630'},
+                    {property: 'fb:app_id', content: '215509578883196'},
+                    {name: 'twitter:card', content: 'summary_large_image'},
+                    {name: 'twitter:site', content: '@decodemtl'},
+                    {name: 'twitter:title', content: 'Contact DecodeMTL'},
+                    {name: 'twitter:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
+                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
                 ]}/>
             <Hero moduleTitle="Questions?" jumboTitle="Contact Us"/>
             <ContactForm/>
