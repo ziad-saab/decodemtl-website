@@ -72,7 +72,11 @@ const About = React.createClass({
                         {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
                         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
                         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}/>
+                    ]}
+                    link={[
+                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
+                    ]}
+                />
                 <Hero moduleTitle={'made in'} jumboTitle={'montreal'} text={""} subText={''}/>
                 <OneHalfColumn mainTitle={'How we started'} text={''} contentLeft={contentLeft} contentRight={contentRight}/>
                 <GenericTextModule title={'Why we do it'} subTitle={''} paragraphs={p1}/>
