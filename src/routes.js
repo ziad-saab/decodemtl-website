@@ -36,15 +36,15 @@ export default function createRoutes(store) {
         <IndexRoute component={Home}/>
         <Route path='cours'>
           <IndexRoute component={AllCourses}/>
-          <Route path='developpement-web-immersif' component={BootcampCourse}/>
+          <Route path='developpement-web-intensif' component={BootcampCourse}/>
           <Route path='javascript' component={JavascriptCourse}/>
           <Route path='html-css' component={HtmlCssCourse}/>
         </Route>
         <Route path='a-propos' component={About}/>
-        <Route path='employeurs' component={Employers}/>
+        <Route path='partenaires-embauche' component={Employers}/>
         <Route path='evenements' component={Events}/>
         <Route path='faq' component={Faq}/>
-        <Route path='contact' component={Contact}/>
+        <Route path='nous-joindre' component={Contact}/>
         <Route path='wework' component={WeWork}/>
         <Route path='logement' component={Housing}/>
         <Route path='confidentialite' component={Privacy}/>
