@@ -3,5 +3,7 @@ module.exports = {
 
   "loadingBox.text": "Chargement...",
 
-  "notFoundPage.title": "404 Non Trouvé"
+  "notFoundPage.title": "404 Non Trouvé",
+
+    "modules.HomeHero.dynamicCourses": "quelque chose!"
 }

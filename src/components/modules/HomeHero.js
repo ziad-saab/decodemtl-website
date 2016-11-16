@@ -54,7 +54,12 @@ const HomeHero = React.createClass({
                     </h1>
                     <div className="hero-content">
                         <div className="hero-text">
-                            <p className="text-body-large text-subtle">We offer Montreal’s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.</p>
+                            <p className="text-body-large text-subtle">
+                                <FormattedMessage
+                                    id="modules.HomeHero.dynamicCourses"
+                                    defaultMessage="We offer Montreal’s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment."
+                                />
+                            </p>
                             <div className="cta-single">
                                 <Link to="/courses" className="btn-primary btn-large">Browse Courses</Link>
                             </div>
