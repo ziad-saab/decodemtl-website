@@ -118,11 +118,25 @@ const SiteNav = React.createClass({
                         {/* .site-header-nav */}
                         <nav className="site-header-nav" role="navigation">
                             <ul className="site-header-menu" role="menu">
-                                <li><Link activeClassName={this.props.activeClass} to="/courses">Courses</Link></li>
-                                <li><Link activeClassName={this.props.activeClass} to="/about">About</Link></li>
+                                <li><Link activeClassName={this.props.activeClass} to="/courses">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.courses"
+                                        defaultMessage="Courses"
+                                    /></Link>
+                                </li>
+                                <li><Link activeClassName={this.props.activeClass} to="/about">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.about"
+                                        defaultMessage="About"
+                                    /></Link>
+                                </li>
                                 <li><Link onClick={this.props.handleScheduleVisit}
-                                          activeClassName={this.props.activeClass} to="/schedule">Schedule a
-                                    visit</Link></li>
+                                          activeClassName={this.props.activeClass} to="/schedule">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.visit"
+                                        defaultMessage="Schedule a visit"
+                                    /></Link>
+                                </li>
                                 <li className="lang-switcher">
                                   <LanguageSwitcher/>
                                 </li>

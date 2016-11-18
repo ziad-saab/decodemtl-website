@@ -47,10 +47,9 @@ const HomeEvolving = (props) => {
                                 </div>
                                 <div className="text-body-small"><a className="phone-link" itemProp="telephone" href="tel:1-888-511-9155">
                                     <FormattedMessage
-                                        id="modules.HomeEvolving.visit"
-                                        defaultMessage="Schedule a visit"
-                                    />
-                                    Or Give us a call: 1-888-551-9155</a></div>
+                                        id="modules.HomeEvolving.phone"
+                                        defaultMessage="Or Give us a call: "
+                                    /></a></div>
                             </div>
                         </div>
                     </div>

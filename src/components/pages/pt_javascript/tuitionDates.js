@@ -5,7 +5,7 @@ module.exports = [
         days: 'Mon. & Wed.',
         hours: '6:30PM-9:30PM',
         price: 1995,
-        courseName: 'Bootcamp',
+        courseName: 'javascript',
         earlyBird: true
     },
     {
@@ -14,7 +14,7 @@ module.exports = [
         days: 'Mon. & Wed.',
         hours: '6:30PM-9:30PM',
         price: 1995,
-        courseName: 'Bootcamp',
+        courseName: 'javascript',
         earlyBird: true
     }
 ];
