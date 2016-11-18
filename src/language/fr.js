@@ -28,6 +28,14 @@ module.exports = {
 
     "modules.UpcomingEvents.viewAll": "Afficher tous les événements",
 
+    "pages.home.upcomingEvents": "Évènements à venir",
+
+    "pages.home.joinOur": "Joignez-vous à notre grande communauté",
+
+    "pages.home.enterYour": "Entrez votre courriel pour recevoir des informations sur nos nouveautés tel que nos cours, ateliers et événements.",
+
+    "pages.home.submit": "Soumettre",
+
 
     // ABOUT
 
@@ -116,6 +124,40 @@ module.exports = {
     "tables.TuitionDates.earlyBird": "Tarifs privilège",
 
     "tables.Upcoming.viewCourse": "Afficher le cours",
+
+    "pages.wdbootcamp.WebDevelopment": "Développement Web",
+
+    "pages.wdbootcamp.immersive": "Intensif",
+
+    "pages.wdbootcamp.8Weeks": "8 semaines d'apprentissage intensif. Obtenez suffisamment d'expérience pratique pour lancer votre nouvelle carrière ou entreprise.",
+
+    "pages.wdbootcamp.applyNow": "Postulez maintenant",
+
+    "pages.wdbootcamp.overview": "Aperçu",
+
+    "modules.CourseCareerSupport.careerSupport": "Développement de carrière",
+
+    "modules.CourseCareerSupport.yourPath": "Votre chemin d’un développeur web débutant vers une nouvelle carrière commence ici. Si vous cherchez à vous lancer dans une carrière en technologie, notre équipe travaillera avec vous dès votre premier jour.",
+
+    "modules.CourseCareerSupport.personalizedApproach": "Une approche personnalisée",
+
+    "modules.CourseCareerSupport.tellUs": "Expliquer-nous votre objectif ultime et nous travaillerons ensemble pour créer un plan d'action.",
+
+    "modules.CourseCareerSupport.learAnd": "Apprendre et produire",
+
+    "modules.CourseCareerSupport.learnJob": "Apprenez les compétences nécessaires sur le marché du travail, développer un portfolio de projets, obtenez de l'aide sur votre CV et pratiquez des entrevues simulées.",
+
+    "modules.CourseCareerSupport.networkPlacement": "Réseau de placement",
+
+    "modules.CourseCareerSupport.getPersonalized": "Obtenez des introductions personnelles aux entreprises d'embauche et participez à des événements de réseautage.",
+
+    "modules.CourseCareerSupport.wantTo": "Vous voulez en savoir plus sur vos options de carrière? Appelez-nous!",
+
+    "pages.wdbootcamp.courseFAQ": "FAQ sur le cours",
+
+    "modules.CourseInstructor.meetYour": "Rencontrez votre prof",
+
+    "modules.CourseCurriculum.whatYou": "Qu'est-ce qu'apprendrez vous?",
 
 
     //EMPLOYERS
@@ -310,5 +352,32 @@ module.exports = {
     "pages.wework.asAstudent": "En tant qu'étudiant, vous aurez accès 24/7 à l'espace. Si vous souhaitez venir le week-end ou même rester en fin de soirée, nous vous encourageons grandement!",
 
     "pages.wework.toLearn": "Pour en savoir plus sur WeWork, vous pouvez consulter leur site web à ",
+
+
+    // COURSES
+
+    "pages.allCourses.WebDevelopment": "Cours de",
+
+    "pages.allCourses.courses": "Développement Web",
+
+    "pages.allCourses.browseOur": "Parcourez nos prochains cours à temps plein et à temps partiel.",
+
+
+    // PART TIME HTML CSS
+
+    "pages.pthtmlcss.parttime": "HTML & CSS",
+
+    "pages.pthtmlcss.htmlcss": "À temps partiel",
+
+    "pages.pthtmlcss.learnTo": "Apprenez à programmer efficacement et conformément aux normes en vous familiarisant avec les principes fondamentaux de la conception web.",
+
+
+    // PART TIME JAVASCRIPT
+
+    "pages.ptjavascript.parttime": "JavaScript",
+
+    "pages.ptjavascript.javascript": "À temps partiel",
+
+    "pages.ptjavascript.developA": "Développer une base solide dans la programmation et les fondamentaux fondamentaux de JavaScript comme les prototypes d'objets, les fonctions d'ordre supérieur et la programmation avec des rappels asynchrones.",
 
 }

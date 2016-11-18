@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import courses from '../../../config/courses';
@@ -55,7 +56,7 @@ const AllCourses = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours"},
                 ]}
             />
-            <CourseHero moduleTitle={"web development"} jumboTitle={"courses"} text={"Browse our upcoming Full-Time and Part-Time courses."}/>
+            <CourseHero moduleTitle={props.intl.formatMessage({id: "pages.allCourses.WebDevelopment", defaultMessage: "Web Development"})} jumboTitle={props.intl.formatMessage({id: "pages.allCourses.courses", defaultMessage: "Courses"})} text={props.intl.formatMessage({id: "pages.allCourses.browseOur", defaultMessage: "Browse our upcoming Full-Time and Part-Time courses."})}/>
             <CourseItem courses={courses}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseListJson}}/>
         </div>
@@ -67,4 +68,4 @@ AllCourses.propTypes = {
     children: React.PropTypes.element
 };
 
-export default AllCourses;
+export default injectIntl(AllCourses);

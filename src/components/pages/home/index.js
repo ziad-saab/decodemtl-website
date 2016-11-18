@@ -16,7 +16,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import upcomingCourses from 'APP/config/upcomingCourses';
 import testimonials from 'APP/components/pages/wd_bootcamp/testimonials';
 import events from 'APP/config/events';
-import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 // /^\.\/wework(.*)\.jpg$/i will match all files starting with wework and ending with .jpg
 var req = require.context('APP/assets/images', true, /^\.\/wework(.*)\.jpg$/i);
@@ -74,15 +74,15 @@ const HomePage = React.createClass({
                 </ReactCSSTransitionGroup>
                 <HomeUpcomingCourses upcomingCourses={upcomingCourses}/>
                 <CourseTestimonial testimonial={testimonials[Math.floor(Math.random() * testimonials.length)]}/>
-                <FormOptin title="Join our growing community"
-                           text="Enter your email to receive info about new courses, workshops and events."
-                           submitButton="Submit"/>
+                <FormOptin title={this.props.intl.formatMessage({id: "pages.home.joinOur", defaultMessage: "Join our growing community"})}
+                           text={this.props.intl.formatMessage({id: "pages.home.enterYour", defaultMessage: "Enter your email to receive info about new courses, workshops and events."})}
+                           submitButton={this.props.intl.formatMessage({id: "pages.home.submit", defaultMessage: "Submit"})}/>
                 <LocationSlider req={req}/>
-                <UpcomingEvents showAllEventsLink events={events} title='Upcoming Events' limit={5} text='' filterOld={true}/>
+                <UpcomingEvents showAllEventsLink events={events} title={this.props.intl.formatMessage({id: "pages.home.upcomingEvents", defaultMessage: "Upcoming Events"})} limit={5} text='' filterOld={true}/>
                 <PartnersLogos isEmployersPage={false} />
             </div>
         );
     }
 });
 
-export default HomePage;
+export default injectIntl(HomePage);

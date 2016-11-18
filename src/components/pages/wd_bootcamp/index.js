@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {Element, scrollSpy} from 'react-scroll';
+import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import CourseOverview from '../../modules/Overview';
@@ -26,7 +27,6 @@ import projects from './projects';
 import faq from './FAQ';
 import overview from './courseOverview';
 
-//TODO REPLACE PLACEHOLDER IMAGES
 // /^\.\/img(.*)\.jpg$/i will match all files starting with img and ending with .jpg
 const req = require.context("../../../assets/images/", true, /^\.\/project-wd-bootcamp(.*)\.jpg$/i);
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
@@ -121,7 +121,7 @@ const Courses = React.createClass({
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/immersive_syllabus.pdf'/>
-                <CourseHero CTAPText="Apply Now"
+                <CourseHero CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
                             CTASText="Syllabus"
                             CTAPLink="/apply"
                             CTASLink="/downloads/immersive_syllabus.pdf"
@@ -130,9 +130,9 @@ const Courses = React.createClass({
                             ref={hero => {
                                 this._hero = hero
                             }}
-                            moduleTitle={"web development"}
-                            jumboTitle={"immersive"}
-                            text={"8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."}
+                            moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
+                            jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
+                            text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
                             subText={""}/>
                 <Element name="overview" className="element">
                     <CourseOverview overview={overview}/>
@@ -156,7 +156,7 @@ const Courses = React.createClass({
                     <CourseCareerSupport/>
                 </Element>
                 <Element name="faq">
-                    <CourseFAQ title='Course FAQ' faq={faq}/>
+                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq}/>
                 </Element>
                 <PartnersLogos/>
                 <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
@@ -166,4 +166,4 @@ const Courses = React.createClass({
 });
 
 
-export default Courses;
+export default injectIntl(Courses);

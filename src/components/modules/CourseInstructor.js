@@ -1,10 +1,16 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const CourseInstructor = (props) => {
     return (
         <section className="module module-course instructor-course">
             <div className="wrapper">
-                <h2 className="module-title">Meet Your Instructor{props.instructors.length > 1 ? 's' : null}</h2>
+                <h2 className="module-title">
+                    <FormattedMessage
+                        id="modules.CourseInstructor.meetYour"
+                        defaultMessage="Meet Your Instructor"
+                    />{props.instructors.length > 1 ? 's' : null}
+                </h2>
                 {props.instructors.map((instructor, i) => (
                     <div key={i} className="img-text-container profile-block">
                         <div className="img-text-pic">

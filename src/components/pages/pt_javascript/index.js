@@ -2,6 +2,7 @@
 import React from 'react';
 import {Element, scrollSpy} from 'react-scroll';
 import Helmet from 'react-helmet';
+import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import CourseOverview from '../../modules/Overview';
@@ -118,7 +119,7 @@ const Courses = React.createClass({
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>
                 <CourseHero
-                    CTAPText="Apply Now"
+                    CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
                     CTASText="Syllabus"
                     CTAPLink="/apply"
                     CTASLink="/downloads/javascript_syllabus.pdf"
@@ -127,9 +128,9 @@ const Courses = React.createClass({
                     ref={hero => {
                         this._hero = hero
                     }}
-                    moduleTitle={"Part-Time"}
-                    jumboTitle={"JavaScript"}
-                    text={"Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks."}
+                    moduleTitle={this.props.intl.formatMessage({id: "pages.ptjavascript.parttime", defaultMessage: "Part-Time"})}
+                    jumboTitle={this.props.intl.formatMessage({id: "pages.ptjavascript.javascript", defaultMessage: "JavaScript"})}
+                    text={this.props.intl.formatMessage({id: "pages.ptjavascript.developA", defaultMessage: "Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks."})}
                     subText={""}/>
                 <Element name="overview">
                     <CourseOverview overview={overview}/>
@@ -147,7 +148,7 @@ const Courses = React.createClass({
                     <CourseInstructor instructors={instructors}/>
                 </Element>
                 <Element name="faq">
-                    <CourseFAQ title='Course FAQ' faq={faq}/>
+                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq}/>
                 </Element>
                 <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
             </div>
@@ -156,4 +157,4 @@ const Courses = React.createClass({
 });
 
 
-export default Courses;
+export default injectIntl(Courses);
