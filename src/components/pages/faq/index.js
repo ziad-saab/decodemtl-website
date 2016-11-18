@@ -1,6 +1,6 @@
-//TODO CHECK IF NEEDS A GLOBAL CONFIG FOR FAQ
 import React from 'react';
 import Helmet from 'react-helmet';
+import {FormattedMessage} from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import FAQ from '../../../components/modules/FAQ';
@@ -12,9 +12,23 @@ import {generalFAQ, financialsFAQ, immersiveFAQ, partTimeFAQ} from '../../../con
 const Faq = (props) => {
     const paragraphs = [
         (
-            <p className="text-measure">No problem! If you have additional questions <span className="read-more"><a itemProp="email" href="mailto:hello@decodemtl.com">shoot us an email</a></span>
+            <p className="text-measure">
+                <FormattedMessage
+                    id="pages.faq.noProblem"
+                    defaultMessage="No problem! If you have additional questions "
+                />
+                <span className="read-more"><a itemProp="email" href="mailto:hello@decodemtl.com">
+                    <FormattedMessage
+                        id="pages.faq.shootUs"
+                        defaultMessage="shoot us an email"
+                    /></a>
+                </span>
                 <br/>
-                or give us a toll-free call at  <span className="read-more"><a itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a></span>.
+                <FormattedMessage
+                    id="pages.faq.orGive"
+                    defaultMessage="or give us a toll-free call at  "
+                />
+                <span className="read-more"><a itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a></span>.
             </p>
         )
     ];

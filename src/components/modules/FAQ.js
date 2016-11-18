@@ -2,6 +2,7 @@
 import React from 'react';
 
 import {Link} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 const FAQ = React.createClass({
     propTypes: {
@@ -66,7 +67,11 @@ const FAQ = React.createClass({
 
                     </ul>
                     <div className="link-more text-body-small">
-                        {!this.props.isFaqPage ? <Link to="/faq">View all FAQs<span className="fa fa-caret-right" aria-hidden="true"/></Link> : null}
+                        {!this.props.isFaqPage ? <Link to="/faq">
+                            <FormattedMessage
+                                id="modules.FAQ.viewAll"
+                                defaultMessage="View all FAQs"
+                            /><span className="fa fa-caret-right" aria-hidden="true"/></Link> : null}
                     </div>
                 </div>
             </section>

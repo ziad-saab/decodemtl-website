@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const TuitionDates = React.createClass({
     propTypes: {
@@ -30,7 +31,12 @@ const TuitionDates = React.createClass({
                     {this.props.earlyBird
                         ? <span>
                             <span className="fa fa-bolt" aria-hidden="true"/>
-                            <span className="sr-only">Early bird price</span>
+                            <span className="sr-only">
+                                <FormattedMessage
+                                    id="tables.TuitionDates.earlyBird"
+                                    defaultMessage="Early bird price"
+                                />
+                            </span>
                         </span>
                         : null}
                 </div>

@@ -16,6 +16,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import upcomingCourses from 'APP/config/upcomingCourses';
 import testimonials from 'APP/components/pages/wd_bootcamp/testimonials';
 import events from 'APP/config/events';
+import {FormattedMessage} from 'react-intl';
 
 // /^\.\/wework(.*)\.jpg$/i will match all files starting with wework and ending with .jpg
 var req = require.context('APP/assets/images', true, /^\.\/wework(.*)\.jpg$/i);

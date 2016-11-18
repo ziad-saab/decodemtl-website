@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {FormattedMessage} from 'react-intl';
 
 import ConfirmModal from '../modules/ConfirmModal';
 import {subscribe} from 'APP/api';
@@ -117,15 +118,43 @@ const MainFooter = React.createClass({
                         <section className="footer-contact">
 
                             {/* footer-optin */}
-                            <h4>Join our growing community</h4>
-                            <p>Enter your email to receive info about new courses, workshops and events.</p>
+                            <h4>
+                                <FormattedMessage
+                                    id="navigation.MainFooter.joinOur"
+                                    defaultMessage="Join our growing community"
+                                />
+                            </h4>
+                            <p>
+                                <FormattedMessage
+                                    id="navigation.MainFooter.enterYour"
+                                    defaultMessage="Enter your email to receive info about new courses, workshops and events."
+                                />
+                            </p>
                             <form className="optin-form optin-footer" onSubmit={this._handleSubmit}>
                                 <label htmlFor="email" className="visually-hidden">Email</label>
                                 <input ref={email => {this._footerEmail = email}} type="email" name="email" placeholder="Your email"/>
                                 <input type="submit" name="submit" value="Join"/>
                                 <div className="foot-note text-body-small text-subtle">
-                                    By providing us with your email, you agree to the terms of our <Link to='/privacy'>Privacy
-                                    Policy</Link> and <Link to="/terms">Terms of Service</Link>.
+                                    <FormattedMessage
+                                        id="modules.ContactForm.policy"
+                                        defaultMessage="By providing us with your email, you agree to the terms of our "
+                                    />
+                                    <a href="/privacy">
+                                        <FormattedMessage
+                                            id="modules.ContactForm.privacy"
+                                            defaultMessage="Privacy Policy"
+                                        />
+                                    </a>
+                                    <FormattedMessage
+                                        id="modules.ContactForm.and"
+                                        defaultMessage=" and "
+                                    />
+                                    <a href="/terms">
+                                        <FormattedMessage
+                                            id="modules.ContactForm.terms"
+                                            defaultMessage="Terms of Service."
+                                        />
+                                    </a>
                                 </div>
                             </form>
                             {/* /.footer-optin */}
@@ -133,7 +162,12 @@ const MainFooter = React.createClass({
                             {/* footer-contact-details */}
                             <ul className="footer-contact-details contact-details-list">
                                 <li>
-                                    <h4>Contact Us</h4>
+                                    <h4>
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.contactUs"
+                                            defaultMessage="Contact Us"
+                                        />
+                                    </h4>
                                 </li>
                                 <li>
                                     <a href="https://goo.gl/maps/RmSE1PKEiXH2">
@@ -172,7 +206,7 @@ const MainFooter = React.createClass({
                                 <li className="social-list-item">
                                     <a href="https://www.instagram.com/decodemtl">
                                         <span className="social-icon fa fa-instagram" aria-hidden="true"/>
-                                        <span className="visually-hidden">Instragram</span>
+                                        <span className="visually-hidden">Instagram</span>
                                     </a>
                                 </li>
                                 <li className="social-list-item">
@@ -189,25 +223,65 @@ const MainFooter = React.createClass({
                         {/* footer-nav */}
                         <nav className="footer-nav" role="navigation">
                             <div className="footer-nav-container">
-                                <h4>Courses</h4>
+                                <h4>
+                                    <FormattedMessage
+                                        id="navigation.MainFooter.courses"
+                                        defaultMessage="Courses"
+                                    />
+                                </h4>
                                 <ul className="course-list" role="menu">
-                                    <li className="course-list-item"><Link to="/courses/web-development-immersive">Web Development</Link></li>
+                                    <li className="course-list-item"><Link to="/courses/web-development-immersive">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.webDevelopment"
+                                            defaultMessage="Web Development"
+                                        /></Link>
+                                    </li>
                                     <li className="course-list-item"><Link to="/courses/html-css">HTML & CSS</Link></li>
                                     <li className="course-list-item"><Link to="/courses/javascript">JavaScript</Link></li>
                                     <li className="course-list-item"><Link to="/faq">FAQ</Link></li>
-                                    <li className="course-list-item"><Link to="/apply">Apply</Link></li>
+                                    <li className="course-list-item"><Link to="/apply">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.apply"
+                                            defaultMessage="Apply"
+                                        /></Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="footer-nav-container">
                                 <h4>DecodeMTL</h4>
                                 <ul className="about-list" role="menu">
-                                    <li className="about-list-item"><Link to="/about">About</Link></li>
-                                    <li className="about-list-item"><Link to="/contact">Contact</Link></li>
-                                    <li className="about-list-item"><Link to="/employers">Employers</Link></li>
+                                    <li className="about-list-item"><Link to="/about">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.about"
+                                            defaultMessage="About"
+                                        /></Link>
+                                    </li>
+                                    <li className="about-list-item"><Link to="/contact">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.contact"
+                                            defaultMessage="Contact"
+                                        /></Link>
+                                    </li>
+                                    <li className="about-list-item"><Link to="/employers">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.employers"
+                                            defaultMessage="Employers"
+                                        /></Link>
+                                    </li>
                                     {/*<li className="about-list-item"><Link to="#">Alumni</Link></li>*/}
-                                    <li className="about-list-item"><Link to="/events">Events</Link></li>
+                                    <li className="about-list-item"><Link to="/events">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.events"
+                                            defaultMessage="Events"
+                                        /></Link>
+                                    </li>
                                     <li className="about-list-item"><Link to="/wework">WeWork</Link></li>
-                                    <li className="about-list-item"><Link to="/housing">Student Housing</Link></li>
+                                    <li className="about-list-item"><Link to="/housing">
+                                        <FormattedMessage
+                                            id="navigation.MainFooter.studentHousing"
+                                            defaultMessage="Student Housing"
+                                        /></Link>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>

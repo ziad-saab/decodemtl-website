@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import {FormattedMessage} from 'react-intl';
 
 const Success = (props) => {
     const status = props.location.query.status;
@@ -8,8 +9,18 @@ const Success = (props) => {
         return (
             <section className="module">
                 <div className="wrapper">
-                    <h2 className="module-title">Success!</h2>
-                    <p>Your request has been received. Our team is currently reviewing it and will get back to you within 48 hours (not including weekends or holidays).</p>
+                    <h2 className="module-title">
+                        <FormattedMessage
+                            id="page.success.success"
+                            defaultMessage="Success!"
+                        />
+                    </h2>
+                    <p>
+                        <FormattedMessage
+                            id="page.success.yourRequest"
+                            defaultMessage="Your request has been received. Our team is currently reviewing it and will get back to you within 48 hours (not including weekends or holidays)."
+                        />
+                    </p>
                 </div>
             </section>
         );
@@ -26,8 +37,17 @@ const Success = (props) => {
                 ]}
             />
             <div className="wrapper">
-                <h2 className="module-title">Something went wrong!</h2>
-                <p>Please try again! If the problem persists, please contact <a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>.</p>
+                <h2 className="module-title">
+                    <FormattedMessage
+                        id="page.success.somethingWent"
+                        defaultMessage="Something went wrong!"
+                    />
+                </h2>
+                <p>
+                    <FormattedMessage
+                        id="page.success.pleaseTry"
+                        defaultMessage="Please try again! If the problem persists, please contact "
+                    /><a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>.</p>
             </div>
         </section>
     );

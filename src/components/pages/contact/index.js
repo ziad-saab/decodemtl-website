@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import {FormattedMessage} from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import ContactForm from '../../../components/modules/ContactForm';
@@ -12,7 +13,17 @@ const Contact = (props) => {
     const columnLeft = (
         <ul className="contact-details-list">
             <li>
-                <h3 className="module-title-medium">OPERATING OUT OF WEWORK<br/>MONTREAL'S ICONIC PLACE VILLE MARIE</h3>
+                <h3 className="module-title-medium">
+                    <FormattedMessage
+                        id="pages.contact.operatingOut"
+                        defaultMessage="OPERATING OUT OF WEWORK IN"
+                    />
+                    <br/>
+                    <FormattedMessage
+                        id="pages.contact.montrealIconic"
+                        defaultMessage="MONTREAL'S ICONIC PLACE VILLE MARIE"
+                    />
+                </h3>
             </li>
             <li>
                 <a href="https://goo.gl/maps/RmSE1PKEiXH2">

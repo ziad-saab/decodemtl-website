@@ -6,6 +6,7 @@ import OneHalfColumn from '../../../components/modules/OneHalfColumn';
 import QuoteModule from '../../../components/modules/QuoteModule';
 import Overview from '../../../components/modules/Overview';
 import Helmet from 'react-helmet';
+import {FormattedMessage} from 'react-intl';
 
 import quoteBackground from '../../../assets/images/module-bg-about-quote.jpg';
 import founders from '../../../assets/images/founders.jpg';
@@ -19,8 +20,18 @@ const About = React.createClass({
 
         const p1 = [
             <div>
-                <p className="text-measure">Traditional schools teach in old ways, and we knew there was a better way. We want to inspire and motivate people to reach their potential, to step outside their comfort zone, and ultimately pursue work they love.</p>
-                <p className="text-measure">We feel that large institutions only see their students as numbers in a database, for us, our students are our friends. Nothing makes us happier than seeing our friends succeed.</p>
+                <p className="text-measure">
+                    <FormattedMessage
+                        id="page.about.traditionalSchools"
+                        defaultMessage="Traditional schools teach in old ways, and we knew there was a better way. We want to inspire and motivate people to reach their potential, to step outside their comfort zone, and ultimately pursue work they love."
+                    />
+                </p>
+                <p className="text-measure">
+                    <FormattedMessage
+                        id="page.about.weFeel"
+                        defaultMessage="We feel that large institutions only see their students as numbers in a database, for us, our students are our friends. Nothing makes us happier than seeing our friends succeed."
+                    />
+                </p>
             </div>
         ];
 
@@ -35,18 +46,53 @@ const About = React.createClass({
 
         const p3 = [
             <ul className="petal-icon-list">
-                <li><span className="petal-icon" aria-hidden="true" />Project based teaching</li>
-                <li><span className="petal-icon" aria-hidden="true" />No grades, tests, or exams</li>
-                <li><span className="petal-icon" aria-hidden="true" />Learn from your mistakes</li>
-                <li><span className="petal-icon" aria-hidden="true" />Your hardwork will pay off</li>
+                <li><span className="petal-icon" aria-hidden="true" />
+                    <FormattedMessage
+                        id="page.about.projectBased"
+                        defaultMessage="Project based teaching"
+                    />
+                </li>
+                <li><span className="petal-icon" aria-hidden="true" />
+                    <FormattedMessage
+                        id="page.about.noGrades"
+                        defaultMessage="No grades, tests, or exams"
+                    />
+                </li>
+                <li><span className="petal-icon" aria-hidden="true" />
+                    <FormattedMessage
+                        id="page.about.learnFrom"
+                        defaultMessage="Learn from your mistakes"
+                    />
+                </li>
+                <li><span className="petal-icon" aria-hidden="true" />
+                    <FormattedMessage
+                        id="page.about.hardwork"
+                        defaultMessage="Your hardwork will pay off"
+                    />
+                </li>
             </ul>
         ];
 
         const contentLeft = (
             <div>
-                <p className="text-measure">Back in 2014, DecodeMTL co-founder Kevin was looking to solidify his programming skills. As an internet marketer, he needed to brush up on his web development for his professional development.</p>
-                <p className="text-measure">Frustrated with the out-dated offerings from current local institutions, Kevin emailed his old colleague Ziad about running a Part-Time Front-End Course.</p>
-                <p className="text-measure">Ziad had a passion for teaching, having mentored many people in the past, and jumped at the opportunity to put a course together. A few months later, DecodeMTL was born.</p>
+                <p className="text-measure">
+                    <FormattedMessage
+                        id="page.about.backIn"
+                        defaultMessage="Back in 2014, DecodeMTL co-founder Kevin was looking to solidify his programming skills. As an internet marketer, he needed to brush up on his web development for his professional development."
+                    />
+                </p>
+                <p className="text-measure">
+                    <FormattedMessage
+                        id="page.about.frustrated"
+                        defaultMessage="Frustrated with the out-dated offerings from current local institutions, Kevin emailed his old colleague Ziad about running a Part-Time Front-End Course."
+                    />
+                </p>
+                <p className="text-measure">
+                    <FormattedMessage
+                        id="page.about.ziadHad"
+                        defaultMessage="Ziad had a passion for teaching, having mentored many people in the past, and jumped at the opportunity to put a course together. A few months later, DecodeMTL was born."
+                    />
+                </p>
             </div>
         );
 

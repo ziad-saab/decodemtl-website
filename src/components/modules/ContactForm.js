@@ -1,6 +1,7 @@
 import React from 'react';
 import formSerialize from 'form-serialize';
 import {withRouter} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 import {contact} from 'APP/api';
 
@@ -31,7 +32,12 @@ const ContactForm = React.createClass({
                 <div className="wrapper">
                     <div className="module-boxed">
                         <form className="contact-form" onSubmit={this._handleSubmit}>
-                            <h3 className="module-title-medium">What can we do for you?</h3>
+                            <h3 className="module-title-medium">
+                                <FormattedMessage
+                                    id="modules.ContactForm.formTitle"
+                                    defaultMessage="What can we do for you?"
+                                />
+                            </h3>
                             <section className="contact-details-section">
                                 <div className="required">
                                     <label htmlFor="first-name" className="visually-hidden">First Name</label>
@@ -64,13 +70,35 @@ const ContactForm = React.createClass({
                             <section className="submit-section">
                                 <div className="optin-checkbox">
                                     <input type="checkbox" name="list-optin" id="list-optin" value="yes"/>
-                                    <label htmlFor="list-optin">I want to receive info about new courses, workshops
-                                        and events.</label>
+                                    <label htmlFor="list-optin">
+                                        <FormattedMessage
+                                            id="modules.ContactForm.newsletter"
+                                            defaultMessage="I want to receive info about new courses, workshops and events."
+                                        />
+                                    </label>
                                 </div>
                                 <input className="btn-large" type="submit" name="submit" value="Submit"/>
                                 <div className="foot-note text-body-small text-subtle">
-                                    By providing us with your email, you agree to the terms of our <a href='#'>Privacy
-                                    Policy</a> and <a href="#">Terms of Service</a>.
+                                    <FormattedMessage
+                                        id="modules.ContactForm.policy"
+                                        defaultMessage="By providing us with your email, you agree to the terms of our "
+                                    />
+                                    <a href="/privacy">
+                                        <FormattedMessage
+                                            id="modules.ContactForm.privacy"
+                                            defaultMessage="Privacy Policy"
+                                        />
+                                    </a>
+                                    <FormattedMessage
+                                        id="modules.ContactForm.and"
+                                        defaultMessage=" and "
+                                    />
+                                    <a href="/terms">
+                                        <FormattedMessage
+                                            id="modules.ContactForm.terms"
+                                            defaultMessage="Terms of Service."
+                                        />
+                                    </a>
                                 </div>
                             </section>
                         </form>
