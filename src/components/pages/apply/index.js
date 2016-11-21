@@ -4,6 +4,7 @@ import axios from 'axios';
 import {withRouter} from 'react-router';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../modules/Hero';
 import courses from '../../../config/courses';
@@ -54,7 +55,7 @@ const Apply = React.createClass({
                         {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/postuler"},
                     ]}
                 />
-                <Hero moduleTitle="Submit your" jumboTitle="Application"/>
+                <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.apply.submitYour", defaultMessage: "Submit Your"})} jumboTitle="Application"/>
                 <section className="module">
                     <div className="wrapper">
                         <div className="module-boxed">
@@ -69,21 +70,21 @@ const Apply = React.createClass({
                                     </h3>
                                     <div className="required">
                                         <label htmlFor="first-name" className="visually-hidden">First Name</label>
-                                        <input type="text" name="first-name" id="first-name" placeholder="First Name"
+                                        <input type="text" name="first-name" id="first-name" placeholder={this.props.intl.formatMessage({id: "pages.apply.firstName", defaultMessage: "First Name"})}
                                                aria-required={true} required/>
                                     </div>
                                     {/* /first-name */}
 
                                     <div className="required">
                                         <label htmlFor="last-name" className="visually-hidden">Last Name</label>
-                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name"
+                                        <input type="text" name="last-name" id="last-name" placeholder={this.props.intl.formatMessage({id: "pages.apply.lastName", defaultMessage: "Last Name"})}
                                                aria-required={true} required/>
                                     </div>
                                     {/* /last-name */}
 
                                     <div className="required">
                                         <label htmlFor="tel" className="visually-hidden">Your Phone</label>
-                                        <input type="tel" name="tel" id="tel" placeholder="Your Phone"
+                                        <input type="tel" name="tel" id="tel" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourPhone", defaultMessage: "Your Phone"})}
                                                aria-required={true}
                                                required/>
                                     </div>
@@ -91,13 +92,13 @@ const Apply = React.createClass({
 
                                     <div className="required">
                                         <label htmlFor="email" className="visually-hidden">Email</label>
-                                        <input type="email" name="email" placeholder="Your email" aria-required={true}
+                                        <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} aria-required={true}
                                                required/>
                                     </div>
                                     {/* /email */}
                                     <div>
                                       <label htmlFor="linkedin" className="visually-hidden">LinkedIn URL</label>
-                                      <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/>
+                                      <input type="text" name="linkedin" id="linkedin" placeholder={this.props.intl.formatMessage({id: "pages.apply.linkedin", defaultMessage: "Linkedin URL"})}/>
                                     </div>
                                     {/* /linkedin */}
                                 </section>
@@ -277,7 +278,7 @@ const Apply = React.createClass({
                                             defaultMessage="Is there anything else you would like to share with us?"
                                         />
                                     </label>
-                                    <textarea name="message" id="message" placeholder="Anything goes…"/>
+                                    <textarea name="message" id="message" placeholder={this.props.intl.formatMessage({id: "pages.apply.anything", defaultMessage: "Anything Goes..."})}/>
                                 </section>
                                 {/* /.about-section */}
 
@@ -292,7 +293,7 @@ const Apply = React.createClass({
                                             />
                                         </label>
                                     </div>
-                                    <input className="btn-large" type="submit" name="submit" value="Submit"/>
+                                    <input className="btn-large" type="submit" name="submit" value={this.props.intl.formatMessage({id: "pages.apply.submit", defaultMessage: "Submit"})}/>
                                     <div className="foot-note text-body-small text-subtle">
                                         <FormattedMessage
                                             id="modules.ContactForm.policy"
@@ -329,5 +330,4 @@ const Apply = React.createClass({
     }
 });
 
-
-export default withRouter(Apply);
+export default withRouter(injectIntl(Apply));

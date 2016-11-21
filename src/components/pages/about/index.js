@@ -7,6 +7,7 @@ import QuoteModule from '../../../components/modules/QuoteModule';
 import Overview from '../../../components/modules/Overview';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import quoteBackground from '../../../assets/images/module-bg-about-quote.jpg';
 import founders from '../../../assets/images/founders.jpg';
@@ -37,11 +38,11 @@ const About = React.createClass({
 
         const p2 = [
 
-            {text: 'Quality over quantity'},
-            {text: 'Passion (Both in our staff and our students)'},
-            {text: 'Don’t take things to seriously (You can learn and have fun at the same time)'},
-            {text: 'Outcomes (Your success is our priority)'},
-            {text: 'Creativity, innovation, and hardwork'},
+            {text: 'Quality over quantity', id: 'pages.about.qualityOver'},
+            {text: 'Passion (Both in our staff and our students)', id: 'pages.about.bothIn'},
+            {text: 'Don’t take things to seriously (You can learn and have fun at the same time)', id: 'pages.about.dontTake'},
+            {text: 'Outcomes (Your success is our priority)', id: 'pages.about.yourSuccess'},
+            {text: 'Creativity, innovation, and hardwork', id: 'pages.about.creativity'},
         ];
 
         const p3 = [
@@ -123,15 +124,15 @@ const About = React.createClass({
                         {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/a-propos"},
                     ]}
                 />
-                <Hero moduleTitle={'made in'} jumboTitle={'montreal'} text={""} subText={''}/>
-                <OneHalfColumn mainTitle={'How we started'} text={''} contentLeft={contentLeft} contentRight={contentRight}/>
-                <GenericTextModule title={'Why we do it'} subTitle={''} paragraphs={p1}/>
-                <Overview overview={p2} title='Our values'/>
+                <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.about.madeIn", defaultMessage: "Made in"})} jumboTitle={this.props.intl.formatMessage({id: "pages.about.montreal", defaultMessage: "Montreal"})} text={""} subText={''}/>
+                <OneHalfColumn mainTitle={this.props.intl.formatMessage({id: "pages.about.howWe", defaultMessage: "How we started"})} text={''} contentLeft={contentLeft} contentRight={contentRight}/>
+                <GenericTextModule title={this.props.intl.formatMessage({id: "pages.about.whyWe", defaultMessage: "Why we do it"})} subTitle={''} paragraphs={p1}/>
+                <Overview overview={p2} title={this.props.intl.formatMessage({id: "pages.about.ourValues", defaultMessage: "Our Values"})}/>
                 <QuoteModule background={quoteBackground}/>
-                <GenericTextModule title={'Our teaching methodology'} paragraphs={p3}/>
+                <GenericTextModule title={this.props.intl.formatMessage({id: "pages.about.ourTeaching", defaultMessage: "Our Teaching Methodology"})} paragraphs={p3}/>
             </div>
         );
     }
 });
 
-export default About;
+export default injectIntl(About);

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 //NOTE: It's assumed that each course item will only have TWO sessions. As such code limited to two sessions.
 const CourseItem = (props) => {
@@ -32,15 +33,24 @@ const CourseItem = (props) => {
                                         </ul>
                                     </div>
                                     <div className="course-details-block">
-                                        <h4>Upcoming Courses</h4>
+                                        <h4>
+                                            <FormattedMessage
+                                            id="modules.CourseItem.UpcomingCourses"
+                                            defaultMessage="Upcoming Courses"
+                                            />
+                                        </h4>
                                         <ul className="course-sessions">
                                             {formatedDates[0]}
                                             {formatedDates[1]}
                                         </ul>
                                     </div>
                                     <Link to={`/courses/${encodeURI(course.link)}`}
-                                          className="cta btn-primary btn-small" itemProp='url'>View
-                                        Course</Link>
+                                          className="cta btn-primary btn-small" itemProp='url'>
+                                        <FormattedMessage
+                                            id="modules.CourseItem.ViewCourse"
+                                            defaultMessage="View Course"
+                                        />
+                                    </Link>
                                 </aside>
                                 {/*<!-- /.course-details -->*/}
                             </div>

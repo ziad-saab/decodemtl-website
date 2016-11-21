@@ -93,8 +93,8 @@ const Courses = React.createClass({
             }
         ];
 
-        const formTitle = 'New to JavaScript? Get instant access to free JavaScript resources!',
-            formText = 'Enter your email below and get instant access to our curated list of free JavaScript resources.';
+        const formTitle = this.props.intl.formatMessage({defaultMessage: 'New to JavaScript? Get instant access to free JavaScript resources!', id: 'pages.wdbootcamp.newTo'});
+        const formText = this.props.intl.formatMessage({defaultMessage: 'Enter your email below and get instant access to our curated list of free JavaScript resources.', id: 'pages.wdbootcamp.enterYour'});
         return (
             <div>
                 <Helmet

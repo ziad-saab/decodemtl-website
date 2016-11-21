@@ -20,6 +20,7 @@ const CourseTuitionDates = (props) => {
                         <div className="row">
                             <div className="table-footnote text-subtle">
                                 <span className="fa fa-bolt" aria-hidden="true" title="Early bird pricing"/>
+                                <span className="sr-only">Early bird pricing</span>
                                 &nbsp;=
                                     <FormattedMessage
                                         id="modules.CourseTuitionDates.earlyBird"

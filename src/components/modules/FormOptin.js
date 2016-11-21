@@ -1,8 +1,8 @@
-//TODO HANDLE FORM SUBMIT
 import React from 'react';
 import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import ConfirmModal from '../modules/ConfirmModal';
 import {subscribe} from 'APP/api';
@@ -68,7 +68,7 @@ const FormOptin = React.createClass({
                         <p>{this.props.text}</p>
                         <form className="optin-form" onSubmit={this._handleSubmit}>
                             <label htmlFor="email" className="visually-hidden">Email</label>
-                            <input type="email" name="email" placeholder="Your email" ref={email => {
+                            <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "modules.FormOptin.yourEmail", defaultMessage: "Your Email"})} ref={email => {
                                 this._email = email
                             }}/>
                             <input className="btn-large" type="submit" name="submit" value={this.props.submitButton}/>
@@ -105,4 +105,4 @@ const FormOptin = React.createClass({
     }
 });
 
-export default FormOptin;
+export default injectIntl(FormOptin);

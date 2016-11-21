@@ -2,6 +2,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import {visit} from 'APP/api';
 
@@ -46,7 +47,7 @@ const ScheduleVisit = React.createClass({
                             <input type="email" name="email" placeholder="Your email" ref={email => {
                                 this._email = email
                             }}/>
-                            <input className="btn-large" type="submit" name="submit" value="Submit"/>
+                            <input className="btn-large" type="submit" name="submit" value={this.props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})}/>
                             <div className="optin-checkbox">
                                 <input type="checkbox" name="list-optin" id="list-optin" value="yes" ref={optin => {
                                     this._optin = optin
@@ -91,4 +92,4 @@ const ScheduleVisit = React.createClass({
     }
 });
 
-export default withRouter(ScheduleVisit);
+export default withRouter(injectIntl(ScheduleVisit));

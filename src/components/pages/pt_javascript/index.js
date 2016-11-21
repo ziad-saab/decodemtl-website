@@ -1,4 +1,3 @@
-//TODO UNCOMMENT PROJECT SLIDER WHEN PROJECTS ARE AVAILABLE
 import React from 'react';
 import {Element, scrollSpy} from 'react-scroll';
 import Helmet from 'react-helmet';
@@ -89,8 +88,8 @@ const Courses = React.createClass({
             }
         ];
 
-        const formTitle = 'Convince your employer to sponsor your tuition!',
-            formText = 'Enter your email to download our free PDF guide and share it with your employer.';
+        const formTitle = this.props.intl.formatMessage({id: "pages.pthtmlcss.convinceYour", defaultMessage: "Convince your employer to sponsor your tuition!"})
+        const formText = this.props.intl.formatMessage({id: "pages.pthtmlcss.enterYour", defaultMessage: "Enter your email to download our free PDF guide and share it with your employer."})
 
         return (
             <div>

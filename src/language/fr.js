@@ -36,6 +36,8 @@ module.exports = {
 
     "pages.home.submit": "Soumettre",
 
+    "modules.FormOptin.yourEmail": "Votre courriel",
+
 
     // ABOUT
 
@@ -58,6 +60,28 @@ module.exports = {
     "page.about.ziadHad": "Ziad, ayant encadré de nombreux professionnels dans le passé et un intérêt croissant pour l'enseignement, a rapidement sauté sur l'occasion de pouvoir développer un cours ensemble. Quelques mois plus tard, DecodeMTL est réalisé.",
 
     "modules.QuoteModule.theMore" : "Plus vous réussissez, plus vous avez besoin d'apprendre et de grandir. Votre engagement envers votre apprentissage doit être continu et acharné.",
+
+    "pages.about.madeIn": "Fabriqué à",
+
+    "pages.about.montreal": "Montréal",
+
+    "pages.about.howWe": "Comment nous avons commencé",
+
+    "pages.about.whyWe": "Pourquoi nous le faisons",
+
+    "pages.about.ourValues": "Nos Valeurs",
+
+    "pages.about.ourTeaching": "Notre Méthode d'enseignement",
+
+    "pages.about.qualityOver": "La qualité au-dessus de la quantité",
+
+    'pages.about.bothIn': "Passion (à la fois dans notre personnel et nos étudiants)",
+
+    'pages.about.dontTake': "Ne prenez pas les choses trop au sérieux (vous pouvez apprendre et vous amuser en même temps)",
+
+    'pages.about.yourSuccess': "Résultats (Votre succès est notre priorité)",
+
+    'pages.about.creativity': "Créativité, l’innovation et l’assiduité",
 
 
     // CONTACT
@@ -159,6 +183,12 @@ module.exports = {
 
     "modules.CourseCurriculum.whatYou": "Qu'est-ce qu'apprendrez vous?",
 
+    "pages.wdbootcamp.newTo": "Nouveau chez JavaScript? Obtenez un accès instantané à des ressources JavaScript gratuitement!",
+
+    "pages.wdbootcamp.enterYour": "Entrez votre courriel ci-dessous et obtenez un accès instantané à notre liste de ressources JavaScript gratuitement.",
+
+    "modules.FormOptin.submit": "Soumettre",
+
 
     //EMPLOYERS
 
@@ -210,6 +240,8 @@ module.exports = {
     "modules.ScheduleVisit.wantTo": "Vous voulez savoir si DecodeMTL est une bonne solution pour vous?",
 
     "modules.ScheduleVisit.enterYour": "Entrez votre courriel et nous vous répondrons dès que possible pour organiser une visite.",
+
+    "modules.ScheduleVisit.submit": "Soumettre",
 
 
     // MAIN FOOTER
@@ -303,6 +335,22 @@ module.exports = {
 
     "pages.apply.isThere": "Est-ce qu’il y a d’autre chose que vous aimeriez partager avec nous?",
 
+    "pages.apply.submitYour": "Soumettre Votre",
+
+    "pages.apply.firstName": "Prénom",
+
+    "pages.apply.lastName": "Nom de famille",
+
+    "pages.apply.yourPhone": "Téléphone",
+
+    "pages.apply.yourEmail": "Courriel",
+
+    "pages.apply.linkedin": "Lien Linkedin",
+
+    "pages.apply.anything": "Tout peut aller…",
+
+    "pages.apply.submit": "Soumettre",
+
 
     // CONFIRMATION
 
@@ -362,6 +410,10 @@ module.exports = {
 
     "pages.allCourses.browseOur": "Parcourez nos prochains cours à temps plein et à temps partiel.",
 
+    "modules.CourseItem.UpcomingCourses": "Cours à venir",
+
+    "modules.CourseItem.ViewCourse": "Afficher le cours",
+
 
     // PART TIME HTML CSS
 
@@ -371,6 +423,16 @@ module.exports = {
 
     "pages.pthtmlcss.learnTo": "Apprenez à programmer efficacement et conformément aux normes en vous familiarisant avec les principes fondamentaux de la conception web.",
 
+    "pages.pthtmlcss.60Hours": "60 heures sur 10 semaines",
+
+    "pages.pthtmlcss.learnThe": "Apprenez les langues indispensables qui alimentent le web",
+
+    "pages.pthtmlcss.buildFully": "Construisez des sites web entièrement adaptatif dès la fondation",
+
+    "pages.pthtmlcss.convinceYour": "Essayer de convaincre votre employeur de parrainer vos frais de cours!",
+
+    "pages.pthtmlcss.enterYour": "Entrez votre courriel pour télécharger notre guide PDF gratuit et partager-le avec votre employeur.",
+
 
     // PART TIME JAVASCRIPT
 
@@ -379,5 +441,11 @@ module.exports = {
     "pages.ptjavascript.javascript": "À temps partiel",
 
     "pages.ptjavascript.developA": "Développer une base solide dans la programmation et les fondamentaux fondamentaux de JavaScript comme les prototypes d'objets, les fonctions d'ordre supérieur et la programmation avec des rappels asynchrones.",
+
+    "pages.javascript.60Hours": "60 heures sur 10 semaines",
+
+    "pages.javascript.learnProper": "Apprendre la structure de la programmation et l'importance d’une programmation efficace",
+
+    "pages.javascript.buildInteractive": "Créer des programmes et des applications interactifs",
 
 }

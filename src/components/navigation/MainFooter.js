@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import ConfirmModal from '../modules/ConfirmModal';
 import {subscribe} from 'APP/api';
@@ -132,7 +133,7 @@ const MainFooter = React.createClass({
                             </p>
                             <form className="optin-form optin-footer" onSubmit={this._handleSubmit}>
                                 <label htmlFor="email" className="visually-hidden">Email</label>
-                                <input ref={email => {this._footerEmail = email}} type="email" name="email" placeholder="Your email"/>
+                                <input ref={email => {this._footerEmail = email}} type="email" name="email" placeholder={this.props.intl.formatMessage({id: "modules.FormOptin.yourEmail", defaultMessage: "Your Email"})}/>
                                 <input type="submit" name="submit" value="Join"/>
                                 <div className="foot-note text-body-small text-subtle">
                                     <FormattedMessage
@@ -296,4 +297,4 @@ const MainFooter = React.createClass({
     }
 });
 
-export default MainFooter;
+export default injectIntl(MainFooter);
