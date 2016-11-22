@@ -1,4 +1,3 @@
-//TODO UNCOMMENT PROJECT SLIDER ONCE PROJECTS ARE AVAILABLE
 import React from 'react';
 import Helmet from 'react-helmet';
 import {Element, scrollSpy} from 'react-scroll';
