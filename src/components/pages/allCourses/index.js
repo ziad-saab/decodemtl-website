@@ -57,7 +57,7 @@ const AllCourses = (props) => {
                 ]}
             />
             <CourseHero moduleTitle={props.intl.formatMessage({id: "pages.allCourses.WebDevelopment", defaultMessage: "Web Development"})} jumboTitle={props.intl.formatMessage({id: "pages.allCourses.courses", defaultMessage: "Courses"})} text={props.intl.formatMessage({id: "pages.allCourses.browseOur", defaultMessage: "Browse our upcoming Full-Time and Part-Time courses."})}/>
-            <CourseItem courses={courses}/>
+            <CourseItem courses={courses[props.intl.locale]}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseListJson}}/>
         </div>
     );
