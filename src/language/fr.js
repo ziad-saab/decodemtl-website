@@ -195,6 +195,12 @@ module.exports = {
 
     "modules.FormOptin.submit": "Soumettre",
 
+    "pages.wdbootcamp.60Hours": "400 heures d'expérience pratique et interactif",
+
+    "pages.wdbootcamp.intensive": "Approche pédagogique intensive axée sur les projets",
+
+    "pages.wdbootcamp.beJob": "Soyez prêt dans 8 semaines",
+
 
     //EMPLOYERS
 
@@ -222,7 +228,7 @@ module.exports = {
 
     "pages.employers.codingSkills": "Apprendre de nouvelles compétences en programmation ne suffit pas. Tous nos étudiants sont choisis par leur personnalité et leurs compétences de communication et ainsi que leur capacité d'apprendre et d'exécuter. Nous savons que ce processus est la clé de la réussite dans un travail en équipe.",
 
-    "pages.employers.DecodeMTLis": "",
+    "pages.employers.DecodeMTLis": "DecodeMTL développe la prochaine vague de développeurs qui sont non seulement diversifiés, mais doués dans leur passion. Trouvez le candidat idéal pour votre équipe!",
 
     "pages.employers.doYou": "Voulez-vous rencontrer nos diplômés?",
 
@@ -300,12 +306,28 @@ module.exports = {
 
     "navigation.MainFooter.studentHousing": "Logement",
 
+    "navigation.MainFooter.join": "Je m'abonne",
+
 
     // SECONDARY NAV
 
     "navigation.SecondaryNav.applyNow": "Postulez maintenant",
 
     "navigation.SecondaryNav.syllabus": "Syllabus",
+
+    "modules.secondarynav.overview": "Aperçu",
+
+    "modules.secondarynav.tuitionDates": "Frais & Dates",
+
+    "modules.secondarynav.curriculum": "Curriculum",
+
+    "modules.secondarynav.instructor": "Prof",
+
+    "modules.secondarynav.faq": "FAQ",
+
+    "modules.secondarynav.typicalDay": "Journeé DecodeMTL",
+
+    "modules.secondarynav.careers": "Carrière",
 
 
     // SITE NAV

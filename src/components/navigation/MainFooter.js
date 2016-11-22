@@ -134,7 +134,7 @@ const MainFooter = React.createClass({
                             <form className="optin-form optin-footer" onSubmit={this._handleSubmit}>
                                 <label htmlFor="email" className="visually-hidden">Email</label>
                                 <input ref={email => {this._footerEmail = email}} type="email" name="email" placeholder={this.props.intl.formatMessage({id: "modules.FormOptin.yourEmail", defaultMessage: "Your Email"})}/>
-                                <input type="submit" name="submit" value="Join"/>
+                                <input type="submit" name="submit" value={this.props.intl.formatMessage({id: "navigation.MainFooter.join", defaultMessage: "Join"})}/>
                                 <div className="foot-note text-body-small text-subtle">
                                     <FormattedMessage
                                         id="modules.ContactForm.policy"

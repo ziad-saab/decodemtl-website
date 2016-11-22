@@ -1,4 +1,3 @@
-//TODO HANDLE FORM SUBMIT
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 import {FormattedMessage} from 'react-intl';
@@ -44,7 +43,7 @@ const ScheduleVisit = React.createClass({
                         </p>
                         <form className="optin-form" onSubmit={this._handleSubmit}>
                             <label htmlFor="email" className="visually-hidden">Email</label>
-                            <input type="email" name="email" placeholder="Your email" ref={email => {
+                            <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} ref={email => {
                                 this._email = email
                             }}/>
                             <input className="btn-large" type="submit" name="submit" value={this.props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})}/>

@@ -72,13 +72,13 @@ const HomePage = React.createClass({
                         toggleModal={this._toggleModal}/>
                         : null}
                 </ReactCSSTransitionGroup>
-                <HomeUpcomingCourses upcomingCourses={upcomingCourses}/>
-                <CourseTestimonial testimonial={testimonials[Math.floor(Math.random() * testimonials.length)]}/>
+                <HomeUpcomingCourses upcomingCourses={upcomingCourses[this.props.intl.locale]}/>
+                <CourseTestimonial testimonial={testimonials[this.props.intl.locale][Math.floor(Math.random() * testimonials[this.props.intl.locale].length)]}/>
                 <FormOptin title={this.props.intl.formatMessage({id: "pages.home.joinOur", defaultMessage: "Join our growing community"})}
                            text={this.props.intl.formatMessage({id: "pages.home.enterYour", defaultMessage: "Enter your email to receive info about new courses, workshops and events."})}
                            submitButton={this.props.intl.formatMessage({id: "pages.home.submit", defaultMessage: "Submit"})}/>
                 <LocationSlider req={req}/>
-                <UpcomingEvents showAllEventsLink events={events} title={this.props.intl.formatMessage({id: "pages.home.upcomingEvents", defaultMessage: "Upcoming Events"})} limit={5} text='' filterOld={true}/>
+                <UpcomingEvents showAllEventsLink events={events[this.props.intl.locale]} title={this.props.intl.formatMessage({id: "pages.home.upcomingEvents", defaultMessage: "Upcoming Events"})} limit={5} text='' filterOld={true}/>
                 <PartnersLogos isEmployersPage={false} />
             </div>
         );

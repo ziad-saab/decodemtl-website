@@ -16,7 +16,7 @@ import p3 from '../../../assets/images/employers-3.jpg'
 const Employers = (props) => {
 
     //FormOptin data
-    const heroSubText = props.intl.formatMessage({id: "pages.employers.DecodeMTLis", defaultMessage: "DecodeMTL développe la prochaine vague de développeurs qui sont non seulement diversifiés, mais doués dans leur passion. Trouvez le candidat idéal pour votre équipe!"})
+    const heroSubText = props.intl.formatMessage({id: "pages.employers.DecodeMTLis", defaultMessage: "DecodeMTL is growing the next group of diverse and gifted developers. Let us find the perfect candidate for your team!"})
     const formTitle = props.intl.formatMessage({id: "pages.employers.doYou", defaultMessage: "Do you want to meet our graduates?"})
     const formText = props.intl.formatMessage({id: "pages.employers.enterYour", defaultMessage: "Enter your email below and get notified about our next hiring event."})
 
@@ -110,7 +110,7 @@ const Employers = (props) => {
             <Hero moduleTitle={props.intl.formatMessage({id: "pages.employers.findYour", defaultMessage: "Find Your Next"})} jumboTitle={props.intl.formatMessage({id: "pages.employers.webDeveloper", defaultMessage: "Web Developer"})} subText={heroSubText}/>
             <EmployerCTA/>
             <TwoThirdColumns columns={columns} title={props.intl.formatMessage({id: "pages.employers.whatMakes", defaultMessage: "What makes our grads special"})}/>
-            <FormOptin submitButton="Submit" title={formTitle} text={formText} interests={{'367df3e84b': true}}/>
+            <FormOptin submitButton={props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})} title={formTitle} text={formText} interests={{'367df3e84b': true}}/>
             <PartnersLogos/>
         </div>
     );

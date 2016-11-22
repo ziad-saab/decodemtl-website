@@ -39,8 +39,8 @@ const Events = (props) => {
                 ]}
             />
             <Hero moduleTitle="decodemtl" jumboTitle={props.intl.formatMessage({id: "pages.employers.events", defaultMessage: "Events"})} text={props.intl.formatMessage({id: "pages.employers.browseOur", defaultMessage: "Browse our upcoming events"})}/>
-            <UpcomingEvents events={events} />
-            <FormOptin submitButton="Submit" title={formTitle} text={formText} />
+            <UpcomingEvents events={events[props.intl.locale]} />
+            <FormOptin submitButton={props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})} title={formTitle} text={formText} />
             {/*<GreenImageBanner background={bannerBackground} title='looking to host an event?' text='Collaboration is within the nation!' />*/}
         </div>
     );

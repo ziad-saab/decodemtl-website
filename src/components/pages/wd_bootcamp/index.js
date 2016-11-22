@@ -77,19 +77,19 @@ const Courses = React.createClass({
     render() {
         const secondaryLinks = [
             {
-                to: 'overview', name: 'Overview'
+                to: 'overview', name: this.props.intl.formatMessage({id: "modules.secondarynav.overview", defaultMessage: "Overview"})
             }, {
-                to: 'tuition-dates', name: 'Tuition & Dates'
+                to: 'tuition-dates', name: this.props.intl.formatMessage({id: "modules.secondarynav.tuitionDates", defaultMessage: "Tuition & Dates"})
             }, {
-                to: 'curriculum', name: "Curriculum"
+                to: 'curriculum', name: this.props.intl.formatMessage({id: "modules.secondarynav.curriculum", defaultMessage: "Curriculum"})
             }, {
-                to: 'schedule', name: 'Typical Day'
+                to: 'schedule', name: this.props.intl.formatMessage({id: "modules.secondarynav.typicalDay", defaultMessage: "Typical Day"})
             }, {
-                to: 'instructor', name: `Instructor${instructors.length > 1 ? 's' : ''}`
+                to: 'instructor', name: this.props.intl.formatMessage({id: "modules.secondarynav.instructor", defaultMessage: "Instructor"})
             }, {
-                to: 'careers', name: 'Careers'
+                to: 'careers', name: this.props.intl.formatMessage({id: "modules.secondarynav.careers", defaultMessage: "Careers"})
             }, {
-                to: 'faq', name: 'FAQ'
+                to: 'faq', name: this.props.intl.formatMessage({id: "modules.secondarynav.faq", defaultMessage: "FAQ"})
             }
         ];
 
@@ -138,25 +138,25 @@ const Courses = React.createClass({
                     <CourseOverview overview={overview}/>
                 </Element>
                 <Element name="tuition-dates">
-                    <CourseTuitionDates tuitionDates={tuitionDates}/>
+                    <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]}/>
                 </Element>
                 <Element name="curriculum">
-                    <CourseCurriculum subjects={subjects}/>
+                    <CourseCurriculum subjects={subjects[this.props.intl.locale]}/>
                 </Element>
                 <Element name="schedule">
                     <CourseSchedule background={scheduleBackground}/>
                 </Element>
-                <CourseTestimonial testimonial={testimonials[Math.floor(Math.random() * testimonials.length)]}/>
-                <FormOptin submitButton='Submit' title={formTitle} text={formText} interests={{"7561ee16e5": true}}/>
+                <CourseTestimonial testimonial={testimonials[this.props.intl.locale][Math.floor(Math.random() * testimonials[this.props.intl.locale].length)]}/>
+                <FormOptin submitButton={this.props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})} title={formTitle} text={formText} interests={{"7561ee16e5": true}}/>
                 <Element name="instructor">
-                    <CourseInstructor instructors={instructors}/>
+                    <CourseInstructor instructors={instructors[this.props.intl.locale]}/>
                 </Element>
-                <CourseProjectsSlider projects={projects} req={req}/>
+                <CourseProjectsSlider projects={projects[this.props.intl.locale]} req={req}/>
                 <Element name="careers">
                     <CourseCareerSupport/>
                 </Element>
                 <Element name="faq">
-                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq}/>
+                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq[this.props.intl.locale]}/>
                 </Element>
                 <PartnersLogos/>
                 <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
