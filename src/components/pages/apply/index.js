@@ -27,20 +27,29 @@ const meta = {
         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
     ],
     fr: [
-        {name: 'description', content: 'Interested in applying to DecodeMTL? Fill out this quick application form to register for any of our courses.'},
-        {property: 'og:url', content: 'https://www.decodemtl.com/apply'},
-        {property: 'og:title', content: 'Apply to DecodeMTL'},
-        {property: 'og:description', content: 'Looking to launch a new career in tech? DecodeMTL offer\'s Montreal\'s leading courses in Web Development. Apply today to start learning something new!'},
+        {name: 'description', content: 'Intéressé à postuler à DecodeMTL? Remplissez ce formulaire d\'inscription pour vous inscrire à l\'un de nos cours.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/postuler'},
+        {property: 'og:title', content: 'Postuler à DecodeMTL'},
+        {property: 'og:description', content: 'Vous cherchez à lancer une nouvelle carrière en technologie? DecodeMTL offre les meilleurs cours en développement Web à Montréal. Appliquez dès aujourd\'hui pour commencer à apprendre quelque chose de nouveau!'},
         {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
         {property: 'og:image:width', content: '1200'},
         {property: 'og:image:height', content: '630'},
         {property: 'fb:app_id', content: '215509578883196'},
         {name: 'twitter:card', content: 'summary_large_image'},
         {name: 'twitter:site', content: '@decodemtl'},
-        {name: 'twitter:title', content: 'Apply to DecodeMTL'},
-        {name: 'twitter:description', content: 'Looking to launch a new career in tech? DecodeMTL offer\'s Montreal\'s leading courses in Web Development. Apply today to start learning something new!'},
+        {name: 'twitter:title', content: 'Postuler à DecodeMTL'},
+        {name: 'twitter:description', content: 'Vous cherchez à lancer une nouvelle carrière en technologie? DecodeMTL offre les meilleurs cours en développement Web à Montréal. Appliquez dès aujourd\'hui pour commencer à apprendre quelque chose de nouveau!'},
         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/postuler"},
+],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/apply"},
     ]
 }
 
@@ -69,11 +78,9 @@ const Apply = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Apply to DecodeMTL"
+                    title={this.props.intl.formatMessage({id: "pages.apply.applyTo", defaultMessage: "Apply to DecodeMTL"})}
                     meta={meta[this.props.intl.locale]}
-                    link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/postuler"},
-                    ]}
+                    link={meta[this.props.intl.locale]}
                 />
                 <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.apply.submitYour", defaultMessage: "Submit Your"})} jumboTitle="Application"/>
                 <section className="module">

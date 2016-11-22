@@ -83,6 +83,8 @@ module.exports = {
 
     'pages.about.creativity': "Créativité, l’innovation et l’assiduité",
 
+    "pages.about.aboutDecode": "À propos de DecodeMTL - Bootcamp de programmation a Montréal",
+
 
     // CONTACT
 
@@ -404,6 +406,8 @@ module.exports = {
     "pages.apply.anything": "Tout peut aller…",
 
     "pages.apply.submit": "Soumettre",
+
+    "pages.apply.applyTo": "Postuler à DecodeMTL",
 
 
     // CONFIRMATION

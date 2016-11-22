@@ -12,6 +12,50 @@ import { injectIntl } from 'react-intl';
 import quoteBackground from '../../../assets/images/module-bg-about-quote.jpg';
 import founders from '../../../assets/images/founders.jpg';
 
+const meta = {
+    en: [
+        {name: 'description', content: 'DecodeMTL is a computer programming bootcamp in Montreal. Learn to code with our web development programs and learn how to become a web developer.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/about'},
+        {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
+        {property: 'og:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
+        {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'DecodeMTL est un bootcamp de programmation web à Montréal. Apprenez à coder avec nos programmes de développement Web et apprenez comment devenir un développeur Web.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/a-propos'},
+        {property: 'og:title', content: 'Apprennez le développement Web - Bootcamp de programmation à Montréal'},
+        {property: 'og:description', content: 'DecodeMTL offre les cours de technologies les plus dynamiques à Montréal. Apprenez à programmer dans un environnement stimulant à travers une formation à base de projets mené par leurs experts de l’industrie.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Apprennez le développement Web - Bootcamp de programmation à Montréal'},
+        {name: 'twitter:description', content: 'DecodeMTL offre les cours de technologies les plus dynamiques à Montréal. Apprenez à programmer dans un environnement stimulant à travers une formation à base de projets mené par leurs experts de l’industrie.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/a-propos"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/about"},
+    ]
+}
+
 const About = React.createClass({
     propTypes: {},
     getDefaultProps () {
@@ -103,26 +147,9 @@ const About = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="About DecodeMTL - Montreal Coding Bootcamp"
-                    meta={[
-                        {name: 'description', content: 'DecodeMTL is a computer programming bootcamp in Montreal. Learn to code with our web development programs and learn how to become a web developer.'},
-                        {property: 'og:url', content: 'https://www.decodemtl.com/about'},
-                        {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
-                        {property: 'og:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
-                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {property: 'og:image:width', content: '1200'},
-                        {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'},
-                        {name: 'twitter:card', content: 'summary_large_image'},
-                        {name: 'twitter:site', content: '@decodemtl'},
-                        {name: 'twitter:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
-                        {name: 'twitter:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
-                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}
-                    link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/a-propos"},
-                    ]}
+                    title={this.props.intl.formatMessage({id: "pages.about.aboutDecode", defaultMessage: "About DecodeMTL - Montreal Coding Bootcamp"})}
+                    meta={meta[this.props.intl.locale]}
+                    link={meta[this.props.intl.locale]}
                 />
                 <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.about.madeIn", defaultMessage: "Made in"})} jumboTitle={this.props.intl.formatMessage({id: "pages.about.montreal", defaultMessage: "Montreal"})} text={""} subText={''}/>
                 <OneHalfColumn mainTitle={this.props.intl.formatMessage({id: "pages.about.howWe", defaultMessage: "How we started"})} text={''} contentLeft={contentLeft} contentRight={contentRight}/>
