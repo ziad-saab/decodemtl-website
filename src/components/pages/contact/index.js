@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import ContactForm from '../../../components/modules/ContactForm';
@@ -71,7 +72,7 @@ const Contact = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
                 ]}
             />
-            <Hero moduleTitle="Questions?" jumboTitle="Contact Us"/>
+            <Hero moduleTitle={props.intl.formatMessage({id: "pages.contact.questions", defaultMessage: "Questions?"})} jumboTitle={props.intl.formatMessage({id: "pages.contact.contactUs", defaultMessage: "Contact Us"})}/>
             <ContactForm/>
             <OneHalfColumn contentLeft={columnLeft} contentRight={columnRight}/>
         </div>
@@ -81,4 +82,4 @@ const Contact = (props) => {
 
 Contact.propTypes = {};
 
-export default Contact;
+export default injectIntl(Contact);

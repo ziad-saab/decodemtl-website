@@ -4,6 +4,7 @@ import Hero from '../../../components/modules/Hero';
 import OneHalfColumn from '../../../components/modules/OneHalfColumn';
 import GenericTextModule from '../../../components/modules/GenericTextModule';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import img1 from '../../../assets/images/student-housing-1.jpg';
 import img2 from '../../../assets/images/student-housing-2.jpg';
@@ -77,14 +78,14 @@ const Housing = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/logement"},
                 ]}
             />
-            <Hero styles={{marginBottom: '3rem'}} moduleTitle="Student" jumboTitle="Housing"/>
-            <OneHalfColumn mainTitle='Move-in ready housing' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
-            <GenericTextModule title="Walking distance from WeWork" paragraphs={secondRowParagraphs}/>
-            <OneHalfColumn mainTitle="Tons of amenities" contentLeft={thirdRowContentLeft} contentRight={thirdRowContentRight}/>
+            <Hero styles={{marginBottom: '3rem'}} moduleTitle={props.intl.formatMessage({id: "pages.housing.student", defaultMessage: "Student"})} jumboTitle={props.intl.formatMessage({id: "pages.housing.housing", defaultMessage: "Housing"})}/>
+            <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.housing.moveIn", defaultMessage: "Move In Ready Housing"})} contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
+            <GenericTextModule title={props.intl.formatMessage({id: "pages.housing.walkingDistance", defaultMessage: "Walking Distance from WeWork"})} paragraphs={secondRowParagraphs}/>
+            <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.housing.tonsOf", defaultMessage: "Tons of Amenities"})} contentLeft={thirdRowContentLeft} contentRight={thirdRowContentRight}/>
         </div>
     );
 };
 
 Housing.propTypes = {};
 
-export default Housing;
+export default injectIntl(Housing);

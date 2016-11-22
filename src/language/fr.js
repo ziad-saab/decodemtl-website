@@ -104,6 +104,12 @@ module.exports = {
 
     "pages.contact.montrealIconic": "À la Place Ville Marie.",
 
+    "modules.ContactForm.yourMessage": "Votre Message",
+
+    "pages.contact.questions": "Questions?",
+
+    "pages.contact.contactUs": "Communiquez avec nous",
+
 
     //WEB DEVELOPMENT IMMERSIVE
 
@@ -216,6 +222,18 @@ module.exports = {
 
     "pages.employers.codingSkills": "Apprendre de nouvelles compétences en programmation ne suffit pas. Tous nos étudiants sont choisis par leur personnalité et leurs compétences de communication et ainsi que leur capacité d'apprendre et d'exécuter. Nous savons que ce processus est la clé de la réussite dans un travail en équipe.",
 
+    "pages.employers.DecodeMTLis": "",
+
+    "pages.employers.doYou": "Voulez-vous rencontrer nos diplômés?",
+
+    "pages.employers.enterYour": "Entrez votre courriel ci-dessous et recevez un rappel sur notre prochain événement d'embauche.",
+
+    "pages.employers.findYour": "Trouver votre prochain",
+
+    "pages.employers.webDeveloper": "Développeur Web",
+
+    "pages.employers.whatMakes": "Ce qui distingue nos diplomés",
+
 
     // FAQ
 
@@ -226,6 +244,20 @@ module.exports = {
     "pages.faq.shootUs": "envoyez-nous un courriel",
 
     "pages.faq.orGive": "ou appelez-nous sans frais au ",
+
+    "pages.faq.frequentlyAsked": "Foire aux",
+
+    "pages.faq.questions": "questions",
+
+    "pages.faq.general": "General",
+
+    "pages.faq.financials": "Finances",
+
+    "pages.faq.immersive": "Intensif",
+
+    "pages.faq.parttime": "Temps partiel",
+
+    "pages.faq.waitI": "Attendez, j'ai toujours des questions!",
 
 
     //OTHER
@@ -373,6 +405,16 @@ module.exports = {
 
     "pages.housing.stayingWith": "En habitant dans l’établissement d’Evo, ceci vous donne accès à une poignée d'infrastructures additionnelles. Ils ont une salle de d’entraînements, une piscine, une salle de théâtre, une bibliothèque et des cuisines collectives à chaque étage. Le bâtiment inclus également une sécurité, une buanderie et le wifi.",
 
+    "pages.housing.student": "Logement",
+
+    "pages.housing.housing": "Étudiant",
+
+    "pages.housing.moveIn": "Logements prêts a demenager",
+
+    "pages.housing.walkingDistance": "A petite distance de WeWork",
+
+    "pages.housing.tonsOf": "Infrastructures additionelles",
+
 
     // SUCCESS
 
@@ -400,6 +442,14 @@ module.exports = {
     "pages.wework.asAstudent": "En tant qu'étudiant, vous aurez accès 24/7 à l'espace. Si vous souhaitez venir le week-end ou même rester en fin de soirée, nous vous encourageons grandement!",
 
     "pages.wework.toLearn": "Pour en savoir plus sur WeWork, vous pouvez consulter leur site web à ",
+
+    "pages.wework.montreal": "Montréal",
+
+    "pages.wework.community": "La Communauté",
+
+    "pages.wework.location": "Emplacement",
+
+    "pages.wework.amenities": "Infrastructures",
 
 
     // COURSES
@@ -448,4 +498,14 @@ module.exports = {
 
     "pages.javascript.buildInteractive": "Créer des programmes et des applications interactifs",
 
+
+    // EVENTS
+
+    "pages.events.dontMiss": "Ne manquez pas un seul événement.",
+
+    "pages.events.enterYour": "Entrez votre courriel ci-dessous pour vous inscrire à notre infolettre.",
+
+    "pages.employers.events": "Événements",
+
+    "pages.employers.browseOur": "Parcourez nos événements à venir.",
 }

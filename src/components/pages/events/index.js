@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import FormOptin from '../../../components/modules/FormOptin';
@@ -10,8 +11,8 @@ import UpcomingEvents from '../../../components/modules/UpcomingEvents';
 import events from '../../../config/events';
 
 const Events = (props) => {
-    const formTitle = 'Don\'t miss a single event.',
-        formText = 'Enter your email below to sign up for our newsletter.';
+    const formTitle = props.intl.formatMessage({id: "pages.events.dontMiss", defaultMessage: "Don't miss a single event."})
+    const formText = props.intl.formatMessage({id: "pages.events.enterYour", defaultMessage: "Enter your email below to sign up for our newsletter."})
 
     return (
         <div>
@@ -37,7 +38,7 @@ const Events = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/evenements"},
                 ]}
             />
-            <Hero moduleTitle="decodemtl" jumboTitle="events" text="Browse our upcoming events."/>
+            <Hero moduleTitle="decodemtl" jumboTitle={props.intl.formatMessage({id: "pages.employers.events", defaultMessage: "Events"})} text={props.intl.formatMessage({id: "pages.employers.browseOur", defaultMessage: "Browse our upcoming events"})}/>
             <UpcomingEvents events={events} />
             <FormOptin submitButton="Submit" title={formTitle} text={formText} />
             {/*<GreenImageBanner background={bannerBackground} title='looking to host an event?' text='Collaboration is within the nation!' />*/}
@@ -47,4 +48,4 @@ const Events = (props) => {
 
 Events.propTypes = {};
 
-export default Events;
+export default injectIntl(Events);

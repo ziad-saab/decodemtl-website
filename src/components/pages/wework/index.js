@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import OneHalfColumn from '../../../components/modules/OneHalfColumn';
@@ -96,14 +97,14 @@ const WeWork = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/wework"},
                 ]}
             />
-            <Hero moduleTitle="WeWork" jumboTitle="Montreal"/>
-            <OneHalfColumn mainTitle='Community' contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
-            <GenericTextModule title="Location" paragraphs={secondRowParagraphs}/>
-            <OneHalfColumn mainTitle="Amenities" contentLeft={thirdRowContentLeft} contentRight={thirdRowContentRight}/>
+            <Hero moduleTitle="WeWork" jumboTitle={props.intl.formatMessage({id: "pages.wework.montreal", defaultMessage: "Montreal"})}/>
+            <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.wework.community", defaultMessage: "Community"})} contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
+            <GenericTextModule title={props.intl.formatMessage({id: "pages.wework.location", defaultMessage: "Location"})} paragraphs={secondRowParagraphs}/>
+            <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.wework.amenities", defaultMessage: "Amenities"})} contentLeft={thirdRowContentLeft} contentRight={thirdRowContentRight}/>
         </div>
     );
 };
 
 WeWork.propTypes = {};
 
-export default WeWork;
+export default injectIntl(WeWork);

@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import EmployerCTA from '../../../components/modules/EmployerCTA';
@@ -15,9 +16,9 @@ import p3 from '../../../assets/images/employers-3.jpg'
 const Employers = (props) => {
 
     //FormOptin data
-    const heroSubText = 'DecodeMTL is growing the next group of diverse and gifted developers. Let us find the perfect candidate for your team!',
-        formTitle = 'Do you want to meet our graduates?',
-        formText = 'Enter your email below and get notified about our next hiring event.';
+    const heroSubText = props.intl.formatMessage({id: "pages.employers.DecodeMTLis", defaultMessage: "DecodeMTL développe la prochaine vague de développeurs qui sont non seulement diversifiés, mais doués dans leur passion. Trouvez le candidat idéal pour votre équipe!"})
+    const formTitle = props.intl.formatMessage({id: "pages.employers.doYou", defaultMessage: "Do you want to meet our graduates?"})
+    const formText = props.intl.formatMessage({id: "pages.employers.enterYour", defaultMessage: "Enter your email below and get notified about our next hiring event."})
 
     //TwoThirdColumn data
     //USE className="row-container row-two-third-container alternating" FOR TOP LEVEL DIV
@@ -106,9 +107,9 @@ const Employers = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/partenaires-embauche"},
                 ]}
             />
-            <Hero moduleTitle="find your next" jumboTitle="web developer" subText={heroSubText}/>
+            <Hero moduleTitle={props.intl.formatMessage({id: "pages.employers.findYour", defaultMessage: "Find Your Next"})} jumboTitle={props.intl.formatMessage({id: "pages.employers.webDeveloper", defaultMessage: "Web Developer"})} subText={heroSubText}/>
             <EmployerCTA/>
-            <TwoThirdColumns columns={columns} title="What Makes Our Grads Special?"/>
+            <TwoThirdColumns columns={columns} title={props.intl.formatMessage({id: "pages.employers.whatMakes", defaultMessage: "What makes our grads special"})}/>
             <FormOptin submitButton="Submit" title={formTitle} text={formText} interests={{'367df3e84b': true}}/>
             <PartnersLogos/>
         </div>
@@ -118,4 +119,4 @@ const Employers = (props) => {
 
 Employers.propTypes = {};
 
-export default Employers;
+export default injectIntl(Employers);

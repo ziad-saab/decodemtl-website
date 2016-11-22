@@ -2,6 +2,7 @@ import React from 'react';
 import formSerialize from 'form-serialize';
 import {withRouter} from 'react-router';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import {contact} from 'APP/api';
 
@@ -42,30 +43,30 @@ const ContactForm = React.createClass({
                                 <div className="required">
                                     <label htmlFor="first-name" className="visually-hidden">First Name</label>
                                     <input type="text" name="first-name" id="first-name"
-                                           placeholder="First Name"
+                                           placeholder={this.props.intl.formatMessage({id: "pages.apply.firstName", defaultMessage: "First Name"})}
                                            aria-required required/>
                                 </div>
                                 <div className="required">
                                     <label htmlFor="last-name" className="visually-hidden">Last Name</label>
-                                    <input type="text" name="last-name" id="last-name" placeholder="Last Name"
+                                    <input type="text" name="last-name" id="last-name" placeholder={this.props.intl.formatMessage({id: "pages.apply.lastName", defaultMessage: "Last Name"})}
                                            aria-required required/>
                                 </div>
 
                                 <div className="required">
                                     <label htmlFor="tel" className="visually-hidden">Your Phone</label>
-                                    <input type="tel" name="tel" id="tel" placeholder="Your Phone"
+                                    <input type="tel" name="tel" id="tel" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourPhone", defaultMessage: "Your Phone"})}
                                            aria-required required/>
                                 </div>
 
                                 <div className="required">
                                     <label htmlFor="email" className="visually-hidden">Email</label>
-                                    <input type="email" name="email" placeholder="Your email" aria-required
+                                    <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} aria-required
                                            required/>
                                 </div>
                             </section>
                             <section className="message-section">
                                 <label htmlFor="message" className="visually-hidden">Your message</label>
-                                <textarea name="message" id="message" placeholder="Your message"/>
+                                <textarea name="message" id="message" placeholder={this.props.intl.formatMessage({id: "modules.ContactForm.yourMessage", defaultMessage: "Your Message"})}/>
                             </section>
                             <section className="submit-section">
                                 <div className="optin-checkbox">
@@ -77,7 +78,7 @@ const ContactForm = React.createClass({
                                         />
                                     </label>
                                 </div>
-                                <input className="btn-large" type="submit" name="submit" value="Submit"/>
+                                <input className="btn-large" type="submit" name="submit" value={this.props.intl.formatMessage({id: "pages.apply.submit", defaultMessage: "Submit"})}/>
                                 <div className="foot-note text-body-small text-subtle">
                                     <FormattedMessage
                                         id="modules.ContactForm.policy"
@@ -109,4 +110,4 @@ const ContactForm = React.createClass({
     }
 });
 
-export default withRouter(ContactForm);
+export default withRouter(injectIntl(ContactForm));

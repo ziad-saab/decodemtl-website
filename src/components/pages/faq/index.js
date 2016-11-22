@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import Hero from '../../../components/modules/Hero';
 import FAQ from '../../../components/modules/FAQ';
@@ -56,16 +57,16 @@ const Faq = (props) => {
                     {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/faq"},
                 ]}
             />
-            <Hero moduleTitle="Frequently Asked" jumboTitle="Questions"/>
-            <FAQ isFaqPage title='general' faq={generalFAQ} />
-            <FAQ isFaqPage title='financials' faq={financialsFAQ} />
-            <FAQ isFaqPage title='immersive' faq={immersiveFAQ} />
-            <FAQ isFaqPage title='part time' faq={partTimeFAQ} />
-            <GenericTextModule title="wait i still have questions!" paragraphs={paragraphs}/>
+            <Hero moduleTitle={props.intl.formatMessage({id: "pages.faq.frequentlyAsked", defaultMessage: "Frequently Asked"})} jumboTitle={props.intl.formatMessage({id: "pages.faq.questions", defaultMessage: "Questions"})}/>
+            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.general", defaultMessage: "General"})} faq={generalFAQ} />
+            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.financials", defaultMessage: "Financials"})} faq={financialsFAQ} />
+            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.immersive", defaultMessage: "Immersive"})} faq={immersiveFAQ} />
+            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.parttime", defaultMessage: "Part-Time"})} faq={partTimeFAQ} />
+            <GenericTextModule title={props.intl.formatMessage({id: "pages.faq.waitI", defaultMessage: "Wait I still have questions!"})} paragraphs={paragraphs}/>
         </div>
     );
 };
 
 Faq.propTypes = {};
 
-export default Faq;
+export default injectIntl(Faq);
