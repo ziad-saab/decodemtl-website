@@ -38,6 +38,8 @@ module.exports = {
 
     "modules.FormOptin.yourEmail": "Votre courriel",
 
+    "pages.home.learnWeb": "Apprendre le développement Web - Bootcamp de programmation à Montréal",
+
 
     // ABOUT
 
@@ -111,6 +113,8 @@ module.exports = {
     "pages.contact.questions": "Questions?",
 
     "pages.contact.contactUs": "Communiquez avec nous",
+
+    "pages.contact.contact": "Contacter DecodeMTL",
 
 
     //WEB DEVELOPMENT IMMERSIVE
@@ -203,6 +207,8 @@ module.exports = {
 
     "pages.wdbootcamp.beJob": "Soyez prêt dans 8 semaines",
 
+    "pages.immersive.softwareEng": "Cours de génie logiciel à Montréal",
+
 
     //EMPLOYERS
 
@@ -242,6 +248,8 @@ module.exports = {
 
     "pages.employers.whatMakes": "Ce qui distingue nos diplomés",
 
+    "pages.employers.hireA": "Embaucher des développeurs web",
+
 
     // FAQ
 
@@ -266,6 +274,8 @@ module.exports = {
     "pages.faq.parttime": "Temps partiel",
 
     "pages.faq.waitI": "Attendez, j'ai toujours des questions!",
+
+    "pages.faq.everythingYou": "Tout ce que vous devez savoir sur DecodeMTL",
 
 
     //OTHER
@@ -420,6 +430,8 @@ module.exports = {
 
     "pages.confirmation.emailUs": "",
 
+    "pages.confirmation.appConfirm": "Confirmation de l'application",
+
 
     // HOUSING
 
@@ -441,6 +453,8 @@ module.exports = {
 
     "pages.housing.tonsOf": "Infrastructures additionelles",
 
+    "pages.housing.studentHousing": "Logement étudiant disponible chez EVO",
+
 
     // SUCCESS
 
@@ -451,6 +465,8 @@ module.exports = {
     "page.success.somethingWent": "",
 
     "page.success.pleaseTry": "",
+
+    "pages.success.confirmation": "Confirmation de soumission de contact",
 
 
     // WEWORK
@@ -477,6 +493,8 @@ module.exports = {
 
     "pages.wework.amenities": "Infrastructures",
 
+    "pages.wework.decodeMTL": "DecodeMTL à WeWork Place Ville Marie",
+
 
     // COURSES
 
@@ -489,6 +507,8 @@ module.exports = {
     "modules.CourseItem.UpcomingCourses": "Cours à venir",
 
     "modules.CourseItem.ViewCourse": "Afficher le cours",
+
+    "pages.courses.webDevelopment": "Cours de Développement Web",
 
 
     // PART TIME HTML CSS
@@ -509,6 +529,8 @@ module.exports = {
 
     "pages.pthtmlcss.enterYour": "Entrez votre courriel pour télécharger notre guide PDF gratuit et partager-le avec votre employeur.",
 
+    "pages.pthtmlcss.learnCss": "Apprendre le CSS - Cours HTML",
+
 
     // PART TIME JAVASCRIPT
 
@@ -524,6 +546,8 @@ module.exports = {
 
     "pages.javascript.buildInteractive": "Créer des programmes et des applications interactifs",
 
+    "pages.javascript.javascriptCourse": "Apprendre JavaScript - Cours JavaScript",
+
 
     // EVENTS
 
@@ -534,4 +558,6 @@ module.exports = {
     "pages.employers.events": "Événements",
 
     "pages.employers.browseOur": "Parcourez nos événements à venir.",
+
+    "pages.events.webDev": "",
 }

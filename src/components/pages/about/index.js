@@ -149,7 +149,7 @@ const About = React.createClass({
                 <Helmet
                     title={this.props.intl.formatMessage({id: "pages.about.aboutDecode", defaultMessage: "About DecodeMTL - Montreal Coding Bootcamp"})}
                     meta={meta[this.props.intl.locale]}
-                    link={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
                 />
                 <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.about.madeIn", defaultMessage: "Made in"})} jumboTitle={this.props.intl.formatMessage({id: "pages.about.montreal", defaultMessage: "Montreal"})} text={""} subText={''}/>
                 <OneHalfColumn mainTitle={this.props.intl.formatMessage({id: "pages.about.howWe", defaultMessage: "How we started"})} text={''} contentLeft={contentLeft} contentRight={contentRight}/>

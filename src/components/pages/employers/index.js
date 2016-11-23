@@ -13,6 +13,50 @@ import p1 from '../../../assets/images/employers-1.jpg'
 import p2 from '../../../assets/images/employers-2.jpg'
 import p3 from '../../../assets/images/employers-3.jpg'
 
+const meta = {
+    en: [
+        {name: 'description', content: 'Are you looking to hire a web developer? DecodeMTL graduates can be hired as contract or full-time employees. Best of all, their are no hiring fees!'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/employers'},
+        {property: 'og:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
+        {property: 'og:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
+        {name: 'twitter:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'Vous cherchez à embaucher un développeur web? Les diplômés de DecodeMTL peuvent être embauchés comme employés contractuels ou à plein temps. Le meilleur de tous, il n\'y a aucun frais d\'embauche!'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/partenaires-embauche'},
+        {property: 'og:title', content: 'Trouvez votre prochain développeur Web chez DecodeMTL'},
+        {property: 'og:description', content: 'Vous cherchez à embaucher un développeur web? Les diplômés de DecodeMTL peuvent être embauchés comme employés contractuels ou à plein temps. Le meilleur de tous, il n\'y a aucun frais d\'embauche!'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Trouvez votre prochain développeur Web chez DecodeMTL'},
+        {name: 'twitter:description', content: 'Vous cherchez à embaucher un développeur web? Les diplômés de DecodeMTL peuvent être embauchés comme employés contractuels ou à plein temps. Le meilleur de tous, il n\'y a aucun frais d\'embauche!'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/partenaires-embauche"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/employers"},
+    ]
+}
+
 const Employers = (props) => {
 
     //FormOptin data
@@ -86,26 +130,9 @@ const Employers = (props) => {
     return (
         <div>
             <Helmet
-                title="Hire a Web Developer"
-                meta={[
-                    {name: 'description', content: 'Are you looking to hire a web developer? DecodeMTL graduates can be hired as contract or full-time employees. Best of all, their are no hiring fees!'},
-                    {property: 'og:url', content: 'https://www.decodemtl.com/employers'},
-                    {property: 'og:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
-                    {property: 'og:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
-                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                    {property: 'og:image:width', content: '1200'},
-                    {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'},
-                    {name: 'twitter:card', content: 'summary_large_image'},
-                    {name: 'twitter:site', content: '@decodemtl'},
-                    {name: 'twitter:title', content: 'Web Developers for Hire - Find Your Next Web Developer at DecodeMTL'},
-                    {name: 'twitter:description', content: 'Are you looking to add Web Developers to your team? DecodeMTL graduates have skills in Full-Stack Web Development and make amazing team members. Contact us to find out how you can hire a DecodeMTL grad!'},
-                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}
-                link={[
-                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/partenaires-embauche"},
-                ]}
+                title={props.intl.formatMessage({id: "pages.employers.hireA", defaultMessage: "Hire a Web Developer"})}
+                meta={meta[props.intl.locale]}
+                link={link[props.intl.locale]}
             />
             <Hero moduleTitle={props.intl.formatMessage({id: "pages.employers.findYour", defaultMessage: "Find Your Next"})} jumboTitle={props.intl.formatMessage({id: "pages.employers.webDeveloper", defaultMessage: "Web Developer"})} subText={heroSubText}/>
             <EmployerCTA/>

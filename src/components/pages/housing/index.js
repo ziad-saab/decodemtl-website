@@ -9,6 +9,49 @@ import { injectIntl } from 'react-intl';
 import img1 from '../../../assets/images/student-housing-1.jpg';
 import img2 from '../../../assets/images/student-housing-2.jpg';
 
+const meta = {
+    en: [
+        {name: 'description', content: 'Need a place to live during your time at DecodeMTL? We\'ve partnered with EVO to provide full-service, furnished, beautiful housing nearby.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/housing'},
+        {property: 'og:title', content: 'DecodeMTL Student Housing Available at EVO'},
+        {property: 'og:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'DecodeMTL Student Housing Available at EVO'},
+        {name: 'twitter:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+        {name: 'twitter:image:alt', content: 'EVO Montreal 1 Bedroom Unit'}
+    ],
+    fr: [
+        {name: 'description', content: 'Besoin d\'un endroit pour vivre pendant votre temps chez DecodeMTL? Nous avons établi un partenariat avec EVO pour fournir un service complet, meublé, beau logement à proximité.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/logement'},
+        {property: 'og:title', content: 'Logement étudiant disponible chez EVO'},
+        {property: 'og:description', content: 'DecodeMTL s\'est associée à EVO pour offrir aux étudiants internationaux un lieu confortable et commode pour vivre au cours de leur séjour chez DecodeMTL.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Logement étudiant disponible chez EVO'},
+        {name: 'twitter:description', content: 'DecodeMTL s\'est associée à EVO pour offrir aux étudiants internationaux un lieu confortable et commode pour vivre au cours de leur séjour chez DecodeMTL.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
+        {name: 'twitter:image:alt', content: 'EVO Montréal - Chambre à coucher'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/logement"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/housing"},
+    ]
+}
 
 const Housing = (props) => {
 
@@ -57,26 +100,9 @@ const Housing = (props) => {
     return (
         <div>
             <Helmet
-                title="Student Housing at EVO"
-                meta={[
-                    {name: 'description', content: 'Need a place to live during your time at DecodeMTL? We\'ve partnered with EVO to provide full-service, furnished, beautiful housing nearby.'},
-                    {property: 'og:url', content: 'https://www.decodemtl.com/housing'},
-                    {property: 'og:title', content: 'DecodeMTL Student Housing Available at EVO'},
-                    {property: 'og:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
-                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
-                    {property: 'og:image:width', content: '1200'},
-                    {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'},
-                    {name: 'twitter:card', content: 'summary_large_image'},
-                    {name: 'twitter:site', content: '@decodemtl'},
-                    {name: 'twitter:title', content: 'DecodeMTL Student Housing Available at EVO'},
-                    {name: 'twitter:description', content: 'DecodeMTL has partnered with EVO to give international students a comfortable, convenient, place to live during their time at DecodeMTL.'},
-                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/evo_main.png'},
-                    {name: 'twitter:image:alt', content: 'EVO Montreal 1 Bedroom Unit'}
-                ]}
-                link={[
-                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/logement"},
-                ]}
+                title={props.intl.formatMessage({id: "pages.housing.studentHousing", defaultMessage: "Student Housing at EVO"})}
+                meta={meta[props.intl.locale]}
+                link={link[props.intl.locale]}
             />
             <Hero styles={{marginBottom: '3rem'}} moduleTitle={props.intl.formatMessage({id: "pages.housing.student", defaultMessage: "Student"})} jumboTitle={props.intl.formatMessage({id: "pages.housing.housing", defaultMessage: "Housing"})}/>
             <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.housing.moveIn", defaultMessage: "Move In Ready Housing"})} contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>

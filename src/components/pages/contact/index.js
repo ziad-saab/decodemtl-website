@@ -9,6 +9,50 @@ import OneHalfColumn from '../../../components/modules/OneHalfColumn';
 
 import googleMap from '../../../assets/images/map.png'
 
+const meta = {
+    en: [
+        {name: 'description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. Contact us here if you have any questions.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/contact'},
+        {property: 'og:title', content: 'Contact DecodeMTL'},
+        {property: 'og:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Contact DecodeMTL'},
+        {name: 'twitter:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'DecodeMTL est situé au centre-ville de Montréal. Notre emplacement principal est à WeWork Place Ville Marie. Contactez-nous ici si vous avez des questions.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/nous-joindre'},
+        {property: 'og:title', content: 'Contacter DecodeMTL'},
+        {property: 'og:description', content: 'DecodeMTL est situé au centre-ville de Montréal. Notre emplacement principal est à WeWork Place Ville Marie. Contactez-nous ici si vous avez des questions.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Contacter DecodeMTL'},
+        {name: 'twitter:description', content: 'DecodeMTL est situé au centre-ville de Montréal. Notre emplacement principal est à WeWork Place Ville Marie. Contactez-nous ici si vous avez des questions.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/contact"},
+    ]
+}
+
 const Contact = (props) => {
 
     const columnLeft = (
@@ -51,26 +95,9 @@ const Contact = (props) => {
     return (
         <div>
             <Helmet
-                title="Contact DecodeMTL"
-                meta={[
-                    {name: 'description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. Contact us here if you have any questions.'},
-                    {property: 'og:url', content: 'https://www.decodemtl.com/contact'},
-                    {property: 'og:title', content: 'Contact DecodeMTL'},
-                    {property: 'og:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
-                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                    {property: 'og:image:width', content: '1200'},
-                    {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'},
-                    {name: 'twitter:card', content: 'summary_large_image'},
-                    {name: 'twitter:site', content: '@decodemtl'},
-                    {name: 'twitter:title', content: 'Contact DecodeMTL'},
-                    {name: 'twitter:description', content: 'DecodeMTL is located in downtown Montreal. Our primary location is in WeWork Place Ville Marie. If you\'re interested to learn more about our programs, follow this link to contact us.'},
-                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}
-                link={[
-                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/nous-joindre"},
-                ]}
+                title={props.intl.formatMessage({id: "pages.contact.contact", defaultMessage: "Contact DecodeMTL"})}
+                meta={meta[props.intl.locale]}
+                link={link[props.intl.locale]}
             />
             <Hero moduleTitle={props.intl.formatMessage({id: "pages.contact.questions", defaultMessage: "Questions?"})} jumboTitle={props.intl.formatMessage({id: "pages.contact.contactUs", defaultMessage: "Contact Us"})}/>
             <ContactForm/>

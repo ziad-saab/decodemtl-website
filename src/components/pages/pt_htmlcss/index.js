@@ -29,6 +29,50 @@ import overview from './courseOverview';
 // const req = require.context("../../../assets/images/", true, /^\.\/project-htmlcss(.*)\.jpg$/i); //project-course-num //testimonial-firstlast
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const meta = {
+    en: [
+        {name: 'description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML and CSS, learn web design, and build websites with our HTML course.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/courses/html-css'},
+        {property: 'og:title', content: 'HTML & CSS Course at DecodeMTL'},
+        {property: 'og:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'HTML & CSS Course at DecodeMTL'},
+        {name: 'twitter:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'Apprenez à créer un site Web à partir de zéro avec nos cours HTML et CSS. Apprenez le HTML et le CSS, apprenez la conception de sites Web et construisez des sites Web avec notre cours HTML.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/cours/html-css'},
+        {property: 'og:title', content: 'Cours de HTML & CSS chez DecodeMTL'},
+        {property: 'og:description', content: 'Apprenez à créer un site Web à partir de zéro avec nos cours HTML et CSS. Apprenez le HTML, le CSS, la conception basique de Web, et construisez vos propres sites Web'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Cours de HTML & CSS chez DecodeMTL'},
+        {name: 'twitter:description', content: 'Apprenez à créer un site Web à partir de zéro avec nos cours HTML et CSS. Apprenez le HTML, le CSS, la conception basique de Web, et construisez vos propres sites Web'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/html-css"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/courses/html-css"},
+    ]
+}
+
 const courseJson = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "Course",
@@ -93,26 +137,9 @@ const Courses = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Learn CSS - HTML Courses"
-                    meta={[
-                        {name: 'description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML and CSS, learn web design, and build websites with our HTML course.'},
-                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/html-css'},
-                        {property: 'og:title', content: 'HTML & CSS Course at DecodeMTL'},
-                        {property: 'og:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
-                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {property: 'og:image:width', content: '1200'},
-                        {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'},
-                        {name: 'twitter:card', content: 'summary_large_image'},
-                        {name: 'twitter:site', content: '@decodemtl'},
-                        {name: 'twitter:title', content: 'HTML & CSS Course at DecodeMTL'},
-                        {name: 'twitter:description', content: 'Learn how to build a website from scratch with our HTML and CSS course. Learn HTML, CSS, basic web design, and build your own websites.'},
-                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}
-                    link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/html-css"},
-                    ]}
+                    title={this.props.intl.formatMessage({id: "pages.pthtmlcss.learnCss", defaultMessage: "Learn CSS - HTML Courses"})}
+                    meta={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/htmlcss_syllabus.pdf'/>

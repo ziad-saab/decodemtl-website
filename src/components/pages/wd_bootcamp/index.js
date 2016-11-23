@@ -31,6 +31,50 @@ import overview from './courseOverview';
 const req = require.context("../../../assets/images/", true, /^\.\/project-wd-bootcamp(.*)\.jpg$/i);
 import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
+const meta = {
+    en: [
+        {name: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/courses/web-development-immersive'},
+        {property: 'og:title', content: 'Web Development Bootcamp - Become a Web Developer'},
+        {property: 'og:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Web Development Bootcamp - Become a Web Developer'},
+        {name: 'twitter:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'Avec le cours de développement logiciel et de génie logiciel de DecodeMTL, vous apprendrez à devenir un développeur Web. Apprendre le développement Web.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/cours/developpement-web-intensif'},
+        {property: 'og:title', content: 'Bootcamp développement web - Devenez un développeur Web'},
+        {property: 'og:description', content: 'Vous cherchez à lancer une nouvelle carrière de développeur Web? Avec le programme immersif de 8 semaines de DecodeMTL, vous apprendrez les compétences nécessaires pour obtenir un emploi en technologie!'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Bootcamp développement web - Devenez un développeur Web'},
+        {name: 'twitter:description', content: 'Vous cherchez à lancer une nouvelle carrière de développeur Web? Avec le programme immersif de 8 semaines de DecodeMTL, vous apprendrez les compétences nécessaires pour obtenir un emploi en technologie!'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/developpement-web-intensif"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/courses/web-development-immersive"},
+    ]
+}
+
 const courseJson = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "Course",
@@ -98,26 +142,9 @@ const Courses = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Software Engineering Course - Coding Bootcamp"
-                    meta={[
-                        {name: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
-                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/web-development-immersive'},
-                        {property: 'og:title', content: 'Web Development Bootcamp - Become a Web Developer'},
-                        {property: 'og:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
-                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {property: 'og:image:width', content: '1200'},
-                        {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'},
-                        {name: 'twitter:card', content: 'summary_large_image'},
-                        {name: 'twitter:site', content: '@decodemtl'},
-                        {name: 'twitter:title', content: 'Web Development Bootcamp - Become a Web Developer'},
-                        {name: 'twitter:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
-                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}
-                    link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/developpement-web-intensif"},
-                    ]}
+                    title={this.props.intl.formatMessage({id: "pages.immersive.softwareEng", defaultMessage: "Software Engineering Course - Coding Bootcamp"})}
+                    meta={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/immersive_syllabus.pdf'/>

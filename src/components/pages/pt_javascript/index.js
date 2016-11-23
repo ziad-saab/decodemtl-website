@@ -42,6 +42,50 @@ const courseJson = JSON.stringify({
     }
 });
 
+const meta = {
+    en: [
+        {name: 'description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming with our industry leading JavaScript training.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/courses/javascript'},
+        {property: 'og:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+        {property: 'og:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Learn to code with JavaScript at DecodeMTL'},
+        {name: 'twitter:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'Apprenez le JavaScript avec notre cours JavaScript basé à Montréal. Maîtriser des prototypes, des fonctions et des programmes asynchrones grâce à notre formation JavaScript leader sur le marché.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/cours/javascript'},
+        {property: 'og:title', content: 'Apprendre à coder avec JavaScript à DecodeMTL'},
+        {property: 'og:description', content: 'Apprenez le JavaScript avec notre cours JavaScript basé à Montréal. Maîtriser les prototypes, les fonctions et la programmation asynchrone.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'Apprendre à coder avec JavaScript à DecodeMTL'},
+        {name: 'twitter:description', content: 'Apprenez le JavaScript avec notre cours JavaScript basé à Montréal. Maîtriser des prototypes, des fonctions et des programmes asynchrones.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/javascript"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/courses/javascript"},
+    ]
+}
+
 const Courses = React.createClass({
     getInitialState() {
         return {
@@ -94,26 +138,9 @@ const Courses = React.createClass({
         return (
             <div>
                 <Helmet
-                    title="Learn JavaScript - JavaScript Course"
-                    meta={[
-                        {name: 'description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming with our industry leading JavaScript training.'},
-                        {property: 'og:url', content: 'https://www.decodemtl.com/courses/javascript'},
-                        {property: 'og:title', content: 'Learn to code with JavaScript at DecodeMTL'},
-                        {property: 'og:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
-                        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {property: 'og:image:width', content: '1200'},
-                        {property: 'og:image:height', content: '630'},
-                        {property: 'fb:app_id', content: '215509578883196'},
-                        {name: 'twitter:card', content: 'summary_large_image'},
-                        {name: 'twitter:site', content: '@decodemtl'},
-                        {name: 'twitter:title', content: 'Learn to code with JavaScript at DecodeMTL'},
-                        {name: 'twitter:description', content: 'Learn JavaScript with our Montreal based JavaScript course. Master prototypes, functions, and async programming.'},
-                        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                    ]}
-                    link={[
-                        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/cours/javascript"},
-                    ]}
+                    title={this.props.intl.formatMessage({id: "pages.javascript.javascriptCourse", defaultMessage: "Learn JavaScript - JavaScript Course"})}
+                    meta={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
                               syllabus='/downloads/javascript_syllabus.pdf'/>

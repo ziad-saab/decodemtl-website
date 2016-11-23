@@ -1,6 +1,16 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/confirmation"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/confirmation"},
+    ]
+}
 
 const Confirmation = (props) => {
     const status = props.location.query.status;
@@ -40,13 +50,8 @@ const Confirmation = (props) => {
     return (
         <section className="module">
             <Helmet
-                title="Application Confirmation"
-                meta={[
-                    {name: 'description', content: ''},
-                ]}
-                link={[
-                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/confirmation"},
-                ]}
+                title={props.intl.formatMessage({id: "pages.confirmation.appConfirm", defaultMessage: "Application Confirmation"})}
+                link={link[props.intl.locale]}
             />
             <div className="wrapper">
                 <h2 className="module-title">Something went wrong!</h2>
@@ -59,4 +64,4 @@ const Confirmation = (props) => {
 
 Confirmation.propTypes = {};
 
-export default Confirmation;
+export default injectIntl(Confirmation);

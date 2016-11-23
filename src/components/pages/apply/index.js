@@ -80,7 +80,7 @@ const Apply = React.createClass({
                 <Helmet
                     title={this.props.intl.formatMessage({id: "pages.apply.applyTo", defaultMessage: "Apply to DecodeMTL"})}
                     meta={meta[this.props.intl.locale]}
-                    link={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
                 />
                 <Hero moduleTitle={this.props.intl.formatMessage({id: "pages.apply.submitYour", defaultMessage: "Submit Your"})} jumboTitle="Application"/>
                 <section className="module">

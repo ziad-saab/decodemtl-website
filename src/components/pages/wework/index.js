@@ -10,6 +10,49 @@ import GenericTextModule from '../../../components/modules/GenericTextModule';
 import img1 from '../../../assets/images/about_wework1.jpg';
 import img2 from '../../../assets/images/about_wework2.jpg';
 
+const meta = {
+    en: [
+        {name: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/wework'},
+        {property: 'og:title', content: 'DecodeMTL + WeWork'},
+        {property: 'og:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/wework_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'DecodeMTL + WeWork'},
+        {name: 'twitter:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
+    ],
+    fr: [
+        {name: 'description', content: 'DecodeMTL est situé dans l\'espace de travail WeWork Place Ville Marie. Apprenez à coder dans le lieu de travail le plus cool de Montréal.'},
+        {property: 'og:url', content: 'https://www.decodemtl.com/fr/wework'},
+        {property: 'og:title', content: 'DecodeMTL + WeWork'},
+        {property: 'og:description', content: 'DecodeMTL est situé dans l\'espace de travail WeWork Place Ville Marie. Apprenez à coder dans le lieu de travail le plus cool de Montréal.'},
+        {property: 'og:image', content: 'https://www.decodemtl.com/downloads/wework_main.png'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '215509578883196'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:site', content: '@decodemtl'},
+        {name: 'twitter:title', content: 'DecodeMTL + WeWork'},
+        {name: 'twitter:description', content: 'DecodeMTL est situé dans l\'espace de travail WeWork Place Ville Marie. Apprenez à coder dans le lieu de travail le plus cool de Montréal.'},
+        {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
+        {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
+    ]
+}
+
+const link = {
+    en: [
+        {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/wework"},
+    ],
+    fr: [
+        {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/wework"},
+    ]
+}
 
 const WeWork = (props) => {
 
@@ -76,26 +119,9 @@ const WeWork = (props) => {
     return (
         <div>
             <Helmet
-                title="DecodeMTL at WeWork Place Ville Marie"
-                meta={[
-                    {name: 'description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
-                    {property: 'og:url', content: 'https://www.decodemtl.com/wework'},
-                    {property: 'og:title', content: 'DecodeMTL + WeWork'},
-                    {property: 'og:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
-                    {property: 'og:image', content: 'https://www.decodemtl.com/downloads/wework_main.png'},
-                    {property: 'og:image:width', content: '1200'},
-                    {property: 'og:image:height', content: '630'},
-                    {property: 'fb:app_id', content: '215509578883196'},
-                    {name: 'twitter:card', content: 'summary_large_image'},
-                    {name: 'twitter:site', content: '@decodemtl'},
-                    {name: 'twitter:title', content: 'DecodeMTL + WeWork'},
-                    {name: 'twitter:description', content: 'DecodeMTL is located in the awesome WeWork Place Ville Marie co-working space. Learn to code in Montreal\'s coolest workplace.'},
-                    {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
-                    {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
-                ]}
-                link={[
-                    {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/wework"},
-                ]}
+                title={props.intl.formatMessage({id: "pages.wework.decodeMTL", defaultMessage: "DecodeMTL at WeWork Place Ville Marie"})}
+                meta={meta[props.intl.locale]}
+                link={link[props.intl.locale]}
             />
             <Hero moduleTitle="WeWork" jumboTitle={props.intl.formatMessage({id: "pages.wework.montreal", defaultMessage: "Montreal"})}/>
             <OneHalfColumn mainTitle={props.intl.formatMessage({id: "pages.wework.community", defaultMessage: "Community"})} contentLeft={firstRowContentLeft} contentRight={firstRowContentRight}/>
