@@ -1,6 +1,7 @@
 //TODO add proper id's to child elements once database is connected, usage of i is NOT recommended for keys
 
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const CourseProjectsSlider = React.createClass({
     propTypes: {
@@ -128,7 +129,12 @@ const CourseProjectsSlider = React.createClass({
         return (
             <section className="module module-course student-project module-boxed-dark">
                 <div className="wrapper">
-                    <h4>Learn the skills needed to build projects like these!</h4>
+                    <h4>
+                        <FormattedMessage
+                            id="module.CourseProjectsSlider.learn"
+                            defaultMessage="Learn the skills needed to build projects like these!"
+                        />
+                    </h4>
                     {/* /student-project-content */}
                     <figure className="student-project-content">
                         <div className="carousel-box">

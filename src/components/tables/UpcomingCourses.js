@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 const UpcomingCourses = (props) => {
     return (
@@ -7,7 +8,12 @@ const UpcomingCourses = (props) => {
             <div className="cell">{props.courseName}</div>
             <div className="cell">{props.startDate.replace(/[a-z]+$/i, '')}<sup>{props.startDate.match(/\d+(.*)/)[1]}</sup></div>
             <div className="cell">{props.type}</div>
-            <div style={{flexBasis: '15%'}} className="cell"><span className="read-more text-body-small"><Link to={`/courses/${props.link}`}>View course</Link></span></div>
+            <div style={{flexBasis: '15%'}} className="cell"><span className="read-more text-body-small"><Link to={`/courses/${props.link}`}>
+                <FormattedMessage
+                    id="tables.Upcoming.viewCourse"
+                    defaultMessage="View course"
+                /></Link></span>
+            </div>
         </div>
     );
 };

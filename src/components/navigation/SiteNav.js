@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 import LanguageSwitcher from 'APP/components/LanguageSwitcher';
 
@@ -117,11 +118,25 @@ const SiteNav = React.createClass({
                         {/* .site-header-nav */}
                         <nav className="site-header-nav" role="navigation">
                             <ul className="site-header-menu" role="menu">
-                                <li><Link activeClassName={this.props.activeClass} to="/courses">Courses</Link></li>
-                                <li><Link activeClassName={this.props.activeClass} to="/about">About</Link></li>
+                                <li><Link activeClassName={this.props.activeClass} to="/courses">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.courses"
+                                        defaultMessage="Courses"
+                                    /></Link>
+                                </li>
+                                <li><Link activeClassName={this.props.activeClass} to="/about">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.about"
+                                        defaultMessage="About"
+                                    /></Link>
+                                </li>
                                 <li><Link onClick={this.props.handleScheduleVisit}
-                                          activeClassName={this.props.activeClass} to="/schedule">Schedule a
-                                    visit</Link></li>
+                                          activeClassName={this.props.activeClass} to="/schedule">
+                                    <FormattedMessage
+                                        id="navigation.SiteNav.visit"
+                                        defaultMessage="Schedule a visit"
+                                    /></Link>
+                                </li>
                                 <li className="lang-switcher">
                                   <LanguageSwitcher/>
                                 </li>
@@ -163,24 +178,56 @@ const SiteNav = React.createClass({
                     <nav className="nav-content" role="navigation">
                         {/* primary menu */}
                         <ul className="nav-primary-menu" role="menu">
-                            <li><Link onClick={this._toggleNav} to="/courses">Courses</Link></li>
-                            <li><Link onClick={this._toggleNav} to="/about">About</Link></li>
-                            <li><Link onClick={this._toggleNav.bind(this, true)} to="/schedule">Schedule a visit</Link>
+                            <li><Link onClick={this._toggleNav} to="/courses">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.courses"
+                                    defaultMessage="Courses"
+                                /></Link>
+                            </li>
+                            <li><Link onClick={this._toggleNav} to="/about">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.about"
+                                    defaultMessage="About"
+                                /></Link>
+                            </li>
+                            <li><Link onClick={this._toggleNav.bind(this, true)} to="/schedule">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.visit"
+                                    defaultMessage="Schedule a visit"
+                                /></Link>
                             </li>
                         </ul>
                         {/* cta */}
                         <div className="nav-cta">
-                            <Link onClick={this._toggleNav} to="/apply" className="btn-primary btn-small">Apply
-                                now</Link>
+                            <Link onClick={this._toggleNav} to="/apply" className="btn-primary btn-small">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.apply"
+                                    defaultMessage="Apply now"
+                                /></Link>
                         </div>
                         {/* secondary menu */}
                         <ul className="nav-secondary-menu" role="menu">
                             {/*<li><Link to="/alumni">Alumni</Link></li>*/}
-                            <li><Link onClick={this._toggleNav} to="/employers">Employers</Link></li>
-                            <li><Link onClick={this._toggleNav} to="/events">Events</Link></li>
+                            <li><Link onClick={this._toggleNav} to="/employers">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.employers"
+                                    defaultMessage="Employers"
+                                /></Link>
+                            </li>
+                            <li><Link onClick={this._toggleNav} to="/events">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.events"
+                                    defaultMessage="Events"
+                                /></Link>
+                            </li>
                             <li><Link onClick={this._toggleNav} to="/faq">FAQ</Link></li>
                             {/*<li><Link onClick={this._toggleNav} to="/blog">Blog</Link></li>*/}
-                            <li><Link onClick={this._toggleNav} to="/contact">Contact</Link></li>
+                            <li><Link onClick={this._toggleNav} to="/contact">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.contact"
+                                    defaultMessage="Contact"
+                                /></Link>
+                            </li>
                         </ul>
                         {/* /.secondary-menu */}
                         {/* social list */}
@@ -200,7 +247,7 @@ const SiteNav = React.createClass({
                             <li className="social-list-item">
                                 <a href="https://www.instagram.com/decodemtl" target="_blank">
                                     <span className="social-icon fa fa-instagram" aria-hidden="true"/>
-                                    <span className="visually-hidden">Instragram</span>
+                                    <span className="visually-hidden">Instagram</span>
                                 </a>
                             </li>
                             <li className="social-list-item">

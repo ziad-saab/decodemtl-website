@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {FormattedMessage} from 'react-intl';
 
 const LocationSlider = React.createClass({
     propTypes: {
@@ -61,7 +62,12 @@ const LocationSlider = React.createClass({
         return (
             <section className="module module-full-width module-boxed-light working-space-module">
                 <div className="wrapper">
-                    <h4 className="module-title-medium">Learn at the Best Location in Montreal</h4>
+                    <h4 className="module-title-medium">
+                        <FormattedMessage
+                            id="modules.LocationSlider.header"
+                            defaultMessage="Learn at the Best Location in Montreal"
+                        />
+                    </h4>
                     <figure className="carousel">
                         <div className="carousel-control carousel-previous"
                              onClick={this._handleSlide.bind(this, 'prev')}>
@@ -92,8 +98,11 @@ const LocationSlider = React.createClass({
                     </figure>
                     {/* /.carousel */}
                     <div className="link-more text-body-small">
-                        <Link to="/wework">Learn more about the WeWork experience
-                            <span className="fa fa-caret-right" aria-hidden="true"/>
+                        <Link to="/wework">
+                            <FormattedMessage
+                                id="modules.LocationSlider.link"
+                                defaultMessage="Learn more about the WeWork experience"
+                            /><span className="fa fa-caret-right" aria-hidden="true"/>
                         </Link>
                     </div>
                 </div>

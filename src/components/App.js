@@ -66,14 +66,8 @@ class App extends React.Component {
           </ReactCSSTransitionGroup>
           <SiteNav handleScheduleVisit={this._toggleModal} ref={siteNav => {this._siteNav = siteNav}}/>
           <main className="main-content">
-            <RouteTransition
-              path={this.props.location.pathname}
-              initialStyle={{opacity: 0}}
-              transition="opacity 150ms ease-in"
-              finalStyle={{opacity: 1}}
-            >
+
               {this.props.children}
-            </RouteTransition>
           </main>
           <Footer/>
         </div>

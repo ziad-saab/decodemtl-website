@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 //NOTE "Link" was used for scroll links "ReactLink" from navigation links
 import {Link as ScrollLink} from 'react-scroll';
@@ -28,8 +29,18 @@ const SecondaryNav = (props) => {
                 </ul>
                 {/*<!-- CTA -->*/}
                 <ul className="secondary-nav-cta">
-                    <li><Link to="/apply" className="btn-primary btn-small">Apply Now</Link></li>
-                    <li><a href={props.syllabus} className="btn-secondary btn-small" download={true}>Syllabus</a></li>
+                    <li><Link to="/apply" className="btn-primary btn-small">
+                        <FormattedMessage
+                            id="navigation.SecondaryNav.applyNow"
+                            defaultMessage="Apply Now"
+                        /></Link>
+                    </li>
+                    <li><a href={props.syllabus} className="btn-secondary btn-small" download={true}>
+                        <FormattedMessage
+                            id="navigation.SecondaryNav.syllabus"
+                            defaultMessage="Syllabus"
+                        /></a>
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {FormattedMessage} from 'react-intl';
 
 const UpcomingEvents = (props) => {
     const filterDates = ({startDate}) => {
@@ -31,7 +32,11 @@ const UpcomingEvents = (props) => {
                 {/*<!-- /.events-list -->*/}
                 <div className="link-more text-body-small">
                     {showAllLink
-                        ? <Link to="/events">View all events
+                        ? <Link to="/events">
+                        <FormattedMessage
+                            id="modules.UpcomingEvents.viewAll"
+                            defaultMessage="View all events"
+                        />
                         <span className="fa fa-caret-right" aria-hidden="true"/>
                     </Link>
                         : null}

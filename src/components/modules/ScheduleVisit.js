@@ -1,6 +1,7 @@
-//TODO HANDLE FORM SUBMIT
 import React from 'react';
 import {Link, withRouter} from 'react-router';
+import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import {visit} from 'APP/api';
 
@@ -28,26 +29,56 @@ const ScheduleVisit = React.createClass({
             <section className="module">
                 <div className="wrapper">
                     <div className="module-boxed">
-                        <p className="text-body-large">Want to see if DecodeMTL is right for you?</p>
-                        <p>Enter your email and we will get back to you asap to schedule a visit.</p>
+                        <p className="text-body-large">
+                            <FormattedMessage
+                                id="modules.ScheduleVisit.wantTo"
+                                defaultMessage="Want to see if DecodeMTL is right for you?"
+                            />
+                        </p>
+                        <p>
+                            <FormattedMessage
+                                id="modules.ScheduleVisit.enterYour"
+                                defaultMessage="Enter your email and we will get back to you asap to schedule a visit."
+                            />
+                        </p>
                         <form className="optin-form" onSubmit={this._handleSubmit}>
                             <label htmlFor="email" className="visually-hidden">Email</label>
-                            <input type="email" name="email" placeholder="Your email" ref={email => {
+                            <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} ref={email => {
                                 this._email = email
                             }}/>
-                            <input className="btn-large" type="submit" name="submit" value="Submit"/>
+                            <input className="btn-large" type="submit" name="submit" value={this.props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})}/>
                             <div className="optin-checkbox">
                                 <input type="checkbox" name="list-optin" id="list-optin" value="yes" ref={optin => {
                                     this._optin = optin
                                 }}/>
-                                <label htmlFor="list-optin">I want to receive info about new courses, workshops and
-                                    events.</label>
+                                <label htmlFor="list-optin">
+                                    <FormattedMessage
+                                        id="modules.ContactForm.newsletter"
+                                        defaultMessage="I want to receive info about new courses, workshops and events."
+                                    />
+                                </label>
                             </div>
                             <div className="foot-note text-body-small text-subtle">
-                                By providing us with your email, you agree to the terms of our <Link
-                                onClick={this.props.toggleModal.bind(null, true)} to='/privacy'>Privacy
-                                Policy</Link> and <Link onClick={this.props.toggleModal.bind(null, true)} to='/terms'>Terms
-                                of Service</Link>.
+                                <FormattedMessage
+                                    id="modules.ContactForm.policy"
+                                    defaultMessage="By providing us with your email, you agree to the terms of our "
+                                />
+                                <a href="/privacy">
+                                    <FormattedMessage
+                                        id="modules.ContactForm.privacy"
+                                        defaultMessage="Privacy Policy"
+                                    />
+                                </a>
+                                <FormattedMessage
+                                    id="modules.ContactForm.and"
+                                    defaultMessage=" and "
+                                />
+                                <a href="/terms">
+                                    <FormattedMessage
+                                        id="modules.ContactForm.terms"
+                                        defaultMessage="Terms of Service."
+                                    />
+                                </a>
                             </div>
                         </form>
                         {/* /.optin-form */}
@@ -60,4 +91,4 @@ const ScheduleVisit = React.createClass({
     }
 });
 
-export default withRouter(ScheduleVisit);
+export default withRouter(injectIntl(ScheduleVisit));

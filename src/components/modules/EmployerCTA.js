@@ -2,12 +2,18 @@ import React from 'react';
 import backEndIcon from '../../assets/icons/icon-api.svg';
 import frontEndIcon from '../../assets/icons/icon-design.svg';
 import toolsIcon from '../../assets/icons/icon-tools.svg';
+import {FormattedMessage} from 'react-intl';
 const EmployerCTA = (props) => {
     return (
         <section className="module employer-cta-module">
             <div className="wrapper">
                 <div className="module-boxed">
-                    <p>Graduates from our full-stack curriculum are ready for careers as web developers.</p>
+                    <p>
+                        <FormattedMessage
+                            id="modules.EmployerCTA.graduatesFrom"
+                            defaultMessage="Graduates from our full-stack curriculum are ready for careers as web developers."
+                        />
+                    </p>
 
                     <div className="skills-container module-boxed-medium">
                         <div className="skill">
@@ -29,7 +35,12 @@ const EmployerCTA = (props) => {
                         <div className="skill">
                             <div className="skill-title">
                                 <span className="icon" aria-hidden="true"><img src={toolsIcon} alt="tooling icon" /></span>
-                                <h4>Tooling</h4>
+                                <h4>
+                                    <FormattedMessage
+                                        id="modules.HomeEvolving.tooling"
+                                        defaultMessage="Tooling"
+                                    />
+                                </h4>
                             </div>
                             <p>Git & Github, Terminal, Webpack</p>
                         </div>
@@ -37,13 +48,33 @@ const EmployerCTA = (props) => {
                     </div>
                     {/* /.skills-container */}
 
-                    <p className="text-body-large">Join our growing network of hiring partners!</p>
-                    <p>Reach out and let us introduce you to top technical talent from our pool of graduates…</p>
+                    <p className="text-body-large">
+                        <FormattedMessage
+                            id="modules.HomeEvolving.joinOur"
+                            defaultMessage="Join our growing network of hiring partners!"
+                        />
+                    </p>
+                    <p>
+                        <FormattedMessage
+                            id="modules.HomeEvolving.reachOut"
+                            defaultMessage="Reach out and let us introduce you to top technical talent from our pool of graduates…"
+                        />
+                    </p>
                     <a
                         className="btn-primary btn-large"
                         href="mailto:hello@decodemtl.com?subject=Tell me more about your students!&body=Hello DecodeMTL! Please let me know more about your awesome students!"
-                    >Get introduced to talent</a>
-                    <p className="text-body-large">or call us toll free : <a className="phone-link" itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a></p>
+                    >
+                        <FormattedMessage
+                            id="modules.HomeEvolving.getIntroduced"
+                            defaultMessage="Get introduced to talent"
+                        />
+                    </a>
+                    <p className="text-body-large">
+                        <FormattedMessage
+                            id="modules.HomeEvolving.callUs"
+                            defaultMessage="or call us toll free : "
+                        /><a className="phone-link" itemProp="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
+                    </p>
                 </div>
                 {/* /.module-boxed */}
             </div>

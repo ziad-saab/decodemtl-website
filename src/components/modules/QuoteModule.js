@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const QuoteModule = (props) => {
     return (
@@ -6,7 +7,12 @@ const QuoteModule = (props) => {
             <div className="wrapper">
                 <div style={{backgroundImage: 'url(' + props.background + ')'}} className="module-bg-img">
                     <blockquote>
-                        <p className="text-body-large">The more successful you are, the more you need to learn and grow. Your commitment to learning has to be continuous and unrelenting.</p>
+                        <p className="text-body-large">
+                            <FormattedMessage
+                                id="modules.QuoteModule.theMore"
+                                defaultMessage="The more successful you are, the more you need to learn and grow. Your commitment to learning has to be continuous and unrelenting."
+                            />
+                        </p>
                     </blockquote>
                     <p className="credit">John Donahoe</p>
                 </div>
