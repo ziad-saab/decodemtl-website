@@ -9,8 +9,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import config from 'APP/app-config';
 import Loading from 'APP/components/Loading';
 
-import RouteTransition from 'APP/components/RouteTransition';
-
 import SiteNav from 'APP/components/navigation/SiteNav';
 import Footer from 'APP/components/navigation/MainFooter';
 import ScheduleVisit from 'APP/components/modules/ScheduleVisit';
