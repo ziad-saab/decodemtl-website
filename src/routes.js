@@ -32,6 +32,17 @@ import {switchLanguage} from 'APP/redux/modules/i18n';
 export default function createRoutes(store) {
   return (
     <Route path="/" component={App}>
+      <Redirect from="/web-development-full-time" to="/courses/web-development-immersive"/>
+      <Redirect from="/web-development-part-time" to="/courses/html-css"/>
+      <Redirect from="/javascript-part-time" to="/courses/javascript"/>
+      <Redirect from="/privacy-policy" to="/privacy"/>
+      <Redirect from="/fr/web-development-full-time" to="/fr/cours/developpement-web-intensif"/>
+      <Redirect from="/fr/web-development-part-time" to="/fr/cours/html-css"/>
+      <Redirect from="/fr/about" to="/fr/a-propos"/>
+      <Redirect from="/fr/events" to="/fr/evenements"/>
+      <Redirect from="/fr/privacy-policy" to="/fr/confidentialite"/>
+      <Redirect from="/fr/terms" to="/fr/termes"/>
+
       <Route path="fr" onEnter={() => store.dispatch(switchLanguage('fr'))}>
         <IndexRoute component={Home}/>
         <Route path='cours'>
