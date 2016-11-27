@@ -64,3 +64,10 @@ const app = (
 )
 
 render(app, document.getElementById('app'));
+
+history.listen(location => {
+  if (typeof window.ga === 'function') {
+    window.ga('set', 'page', location.pathname);
+    window.ga('send', 'pageview');
+  }
+})
