@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, withRouter} from 'react-router';
+import {withRouter} from 'react-router';
 import {FormattedMessage} from 'react-intl';
 import { injectIntl } from 'react-intl';
 

@@ -1,6 +1,6 @@
 //TODO FIX LINK STYLE
 import React from 'react';
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 
 const GreenImageBanner = (props) => {
     return (

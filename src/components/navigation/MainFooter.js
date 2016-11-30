@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {FormattedMessage} from 'react-intl';
 import { injectIntl } from 'react-intl';
@@ -140,22 +140,22 @@ const MainFooter = React.createClass({
                                         id="modules.ContactForm.policy"
                                         defaultMessage="By providing us with your email, you agree to the terms of our "
                                     />
-                                    <a href="/privacy">
+                                    <Link to="/privacy">
                                         <FormattedMessage
                                             id="modules.ContactForm.privacy"
                                             defaultMessage="Privacy Policy"
                                         />
-                                    </a>
+                                    </Link>
                                     <FormattedMessage
                                         id="modules.ContactForm.and"
                                         defaultMessage=" and "
                                     />
-                                    <a href="/terms">
+                                    <Link to="/terms">
                                         <FormattedMessage
                                             id="modules.ContactForm.terms"
                                             defaultMessage="Terms of Service."
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                             </form>
                             {/* /.footer-optin */}

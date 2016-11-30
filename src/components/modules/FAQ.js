@@ -1,7 +1,7 @@
 //TODO add proper id's to child elements once database is connected, usage of i is NOT recommended for keys
 import React from 'react';
 
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 import {FormattedMessage} from 'react-intl';
 
 const FAQ = React.createClass({

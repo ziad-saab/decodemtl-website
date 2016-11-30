@@ -3,7 +3,7 @@ import {FormattedMessage} from 'react-intl';
 
 //NOTE "Link" was used for scroll links "ReactLink" from navigation links
 import {Link as ScrollLink} from 'react-scroll';
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 
 
 const SecondaryNav = (props) => {

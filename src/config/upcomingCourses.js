@@ -23,7 +23,7 @@ export default {
         {
             startDate: '9 jan',
             courseName: 'Développement Web Intensif',
-            link: 'developpement-web-intensif',
+            link: 'web-development-immersive',
             type: 'Temps plein'
         },
         {

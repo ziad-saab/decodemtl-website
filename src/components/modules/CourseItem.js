@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 import {FormattedMessage} from 'react-intl';
 
 //NOTE: It's assumed that each course item will only have TWO sessions. As such code limited to two sessions.

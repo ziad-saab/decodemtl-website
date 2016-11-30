@@ -1,16 +1,16 @@
-import frenchMessages from 'APP/language/fr';
+import {LOCATION_CHANGE} from 'react-router-redux';
 
-const SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
+import frenchMessages from 'APP/language/fr';
+import {routesMap} from 'APP/routes';
 
 export const DEFAULT_LANGUAGE = 'en';
-const DEFAULT_EN_PATH = '/';
-const DEFAULT_FR_PATH = '/fr';
+export const DEFAULT_EN_PATH = '/';
+export const DEFAULT_FR_PATH = '/fr';
 
 const initialState = {
   language: DEFAULT_LANGUAGE,
   messages: {},
-  frLink: DEFAULT_FR_PATH,
-  enLink: DEFAULT_EN_PATH
+  otherLink: DEFAULT_FR_PATH
 };
 
 /*
@@ -22,21 +22,17 @@ const initialState = {
 */
 export default function reducer(state=initialState, action={}) {
   switch (action.type) {
-    case SWITCH_LANGUAGE:
-      const messages = action.language === 'en' ? {} : frenchMessages;
+    case LOCATION_CHANGE:
+      const language = action.payload.pathname.substring(0, 3) === '/fr' ? 'fr': 'en';
+      const messages = language === 'en' ? {} : frenchMessages;
       return {
         ...state,
-        language: action.language,
-        messages: messages
-      };
-  }
+        language,
+        messages,
+        otherLink: routesMap[action.payload.pathname] || (language === 'en' ? DEFAULT_FR_PATH : DEFAULT_EN_PATH)
+      }
 
-  return state;
-}
-
-export function switchLanguage(language) {
-  return {
-    type: SWITCH_LANGUAGE,
-    language
+    default:
+      return state;
   }
 }

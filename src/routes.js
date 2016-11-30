@@ -21,7 +21,30 @@ import Apply from 'APP/components/pages/apply/index';
 import Confirmation from 'APP/components/pages/confirmation/index';
 import Success from 'APP/components/pages/success/index';
 
-import {switchLanguage} from 'APP/redux/modules/i18n';
+const halfMap = {
+  '/': '/fr',
+  '/courses': '/fr/cours',
+  '/courses/web-development-immersive': '/fr/cours/developpement-web-intensif',
+  '/courses/javascript': '/fr/cours/javascript',
+  '/courses/html-css': '/fr/cours/html-css',
+  '/about': '/fr/a-propos',
+  '/employers': '/fr/partenaires-embauche',
+  '/events': '/fr/evenements',
+  '/faq': '/fr/faq',
+  '/contact': '/fr/nous-joindre',
+  '/wework': '/fr/wework',
+  '/housing': '/fr/logement',
+  '/privacy': '/fr/confidentialite',
+  '/terms': '/fr/termes',
+  '/apply': '/fr/postuler',
+  '/confirmation': '/fr/confirmation',
+  '/success': '/fr/succes'
+};
+
+export const routesMap = Object.keys(halfMap).reduce(
+  (map, key) => ({...map, [halfMap[key]]: key}),
+  halfMap
+);
 
 /*
   Instead of directly defining our app routes, we have to export a function that receives the store.
@@ -43,7 +66,7 @@ export default function createRoutes(store) {
       <Redirect from="/fr/privacy-policy" to="/fr/confidentialite"/>
       <Redirect from="/fr/terms" to="/fr/termes"/>
 
-      <Route path="fr" onEnter={() => store.dispatch(switchLanguage('fr'))}>
+      <Route path="fr">
         <IndexRoute component={Home}/>
         <Route path='cours'>
           <IndexRoute component={AllCourses}/>
@@ -64,7 +87,7 @@ export default function createRoutes(store) {
         <Route path='confirmation' component={Confirmation}/>
         <Route path='succes' component={Success}/>
       </Route>
-      <Route onEnter={() => store.dispatch(switchLanguage('en'))}>
+      <Route>
         <IndexRoute component={Home}/>
         <Route path='courses'>
           <IndexRoute component={AllCourses}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import Link from 'APP/components/navigation/Link';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {FormattedMessage} from 'react-intl';
 import { injectIntl } from 'react-intl';

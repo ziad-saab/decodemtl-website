@@ -10,19 +10,9 @@ class LanguageSwitcher extends React.Component {
 
     const {i18n} = this.props;
     const currentLanguage = i18n.language;
+    const oppLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
 
-    let link;
-    if (currentLanguage === 'en') {
-      link = <Link to={i18n.frLink}>fr</Link>;
-    }
-    else {
-      link = <Link to={i18n.enLink}>en</Link>;
-    }
-
-
-    return (
-      link
-    );
+    return <Link to={i18n.otherLink}>{oppLanguage}</Link>;
   }
 }
 
