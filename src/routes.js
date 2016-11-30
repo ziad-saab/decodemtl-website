@@ -20,6 +20,7 @@ import Terms from 'APP/components/pages/privacy_terms/Terms';
 import Apply from 'APP/components/pages/apply/index';
 import Confirmation from 'APP/components/pages/confirmation/index';
 import Success from 'APP/components/pages/success/index';
+import ApplicationExercise from 'APP/components/pages/applicationExercise/index';
 
 const halfMap = {
   '/': '/fr',
@@ -107,6 +108,7 @@ export default function createRoutes(store) {
         <Route path='apply' component={Apply}/>
         <Route path='confirmation' component={Confirmation}/>
         <Route path='success' component={Success}/>
+        <Route path='application-exercise' component={ApplicationExercise}/>
       </Route>
     </Route>
   );
