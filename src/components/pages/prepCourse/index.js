@@ -3,8 +3,6 @@ import React from 'react';
 import Hero from '../../../components/modules/Hero';
 import Helmet from 'react-helmet';
 
-import kitty from './kitty-hi5.jpg';
-
 const ApplicationExercise = React.createClass({
     propTypes: {},
     getDefaultProps () {
