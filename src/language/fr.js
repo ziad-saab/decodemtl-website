@@ -151,7 +151,7 @@ module.exports = {
 
     "modules.CourseTuitionDates.header": "Frais et Dates",
 
-    "modules.CourseTuitionDates.earlyBird": " Les tarifs privilèges seront disponibles pour 30 jours avant le début du cours. Prix régulier ",
+    "modules.CourseTuitionDates.earlyBird": " Les tarifs privilèges seront disponibles pour {days} jours avant le début du cours. Prix régulier ",
 
     "modules.PartnersLogos.ourGrads": "Nos diplômés travaillent avec ces entreprises",
 

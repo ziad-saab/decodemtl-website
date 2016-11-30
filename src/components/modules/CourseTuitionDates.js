@@ -24,7 +24,10 @@ const CourseTuitionDates = (props) => {
                                 &nbsp;=
                                     <FormattedMessage
                                         id="modules.CourseTuitionDates.earlyBird"
-                                        defaultMessage="Early bird pricing available up to 30 days before start date. Regular price: "
+                                        defaultMessage="Early bird pricing available up to {days} days before start date. Regular price: "
+                                        values={{
+                                          days: props.tuitionDates[0].price > 4000 ? 60 : 30
+                                        }}
                                     />{'$' + props.tuitionDates[0].price.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1,")}
                             </div>
                         </div>
