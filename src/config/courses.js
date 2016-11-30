@@ -44,7 +44,7 @@ export default {
             hours: "400 heures",
             days: 'Lundi - Vendredi',
             nextSessions: ["9 janvier, 2017", "3 avril, 2017"],
-            link: 'developpement-web-intensif'
+            link: 'web-development-immersive'
         },
         {
             title: "HTML & CSS",
