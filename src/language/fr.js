@@ -4,13 +4,13 @@ module.exports = {
 
     "modules.HomeHero.heading": "Apprenez à Programmer",
 
-    "modules.HomeHero.subText": "Nous offrons les cours de technologies les plus dynamiques à Montréal. Apprenez à programmer dans un environnement stimulant à travers une formation à base de projets mené par nos experts de l’industrie.",
+    "modules.HomeHero.subText": "Nous offrons les cours de technologie les plus dynamiques à Montréal. Apprenez à programmer dans un environnement stimulant à travers une formation à base de projets menée par nos experts de l’industrie.",
 
     "modules.HomeHero.button": "Naviguer nos cours",
 
     "modules.HomeEvolving.header": "Une Éducation Moderne",
 
-    "modules.HomeEvolving.subText": "Nous croyons qu’une éducation évolue avec le temps. Contrairement aux établissements d’enseignements traditionnelles, nous sommes couramment en contact avec les employeurs et nous enseignons les compétences les plus en demande aujourd’hui.",
+    "modules.HomeEvolving.subText": "Nous croyons qu’une éducation évolue avec le temps. Contrairement aux établissements d’enseignement traditionnels, nous sommes couramment en contact avec les employeurs et nous enseignons les compétences les plus en demande aujourd’hui.",
 
     "modules.HomeEvolving.link": "En savoir plus sur nous ici",
 
@@ -22,7 +22,7 @@ module.exports = {
 
     "modules.HomeUpcomingCourses.heading": "Cours à venir",
 
-    "modules.LocationSlider.header": "Apprendre à l'endroit idéale à Montréal",
+    "modules.LocationSlider.header": "Apprendre à l'endroit idéal à Montréal",
 
     "modules.LocationSlider.link": "En savoir plus sur l'expérience WeWork",
 
@@ -53,11 +53,11 @@ module.exports = {
 
     "page.about.learnFrom": "Apprendre de tes erreurs",
 
-    "page.about.hardwork": "Vos efforts seront payant",
+    "page.about.hardwork": "Vos efforts seront payants",
 
     "page.about.backIn": "En 2014, le cofondateur de DecodeMTL, Kevin, cherchait à renforcer ses compétences en programmation. En tant que spécialiste de marketing sur internet, il avait besoin d’améliorer ses capacités en développement web pour élargir son développement professionnel.",
 
-    "page.about.frustrated": "Frustré par les anciennes méthodes utilisées par nos institutions locaux, Kevin a communiqué avec son ancien collègue Ziad pour discuter d’offrir un cours de programmation d’avant-plan à temps partiel.",
+    "page.about.frustrated": "Frustré par les anciennes méthodes utilisées par nos institutions locales, Kevin a communiqué avec son ancien collègue Ziad pour discuter d’offrir un cours de programmation d’avant-plan à temps partiel.",
 
     "page.about.ziadHad": "Ziad, ayant encadré de nombreux professionnels dans le passé et un intérêt croissant pour l'enseignement, a rapidement sauté sur l'occasion de pouvoir développer un cours ensemble. Quelques mois plus tard, DecodeMTL est réalisé.",
 
@@ -193,7 +193,7 @@ module.exports = {
 
     "modules.CourseInstructor.meetYour": "Rencontrez votre prof",
 
-    "modules.CourseCurriculum.whatYou": "Qu'est-ce qu'apprendrez vous?",
+    "modules.CourseCurriculum.whatYou": "Qu'apprendrez-vous?",
 
     "pages.wdbootcamp.newTo": "Nouveau chez JavaScript? Obtenez un accès instantané à des ressources JavaScript gratuitement!",
 
