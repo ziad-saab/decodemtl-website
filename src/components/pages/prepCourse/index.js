@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../../../components/modules/Hero';
 import Helmet from 'react-helmet';
 
-const ApplicationExercise = React.createClass({
+const PrepCourse = React.createClass({
     propTypes: {},
     getDefaultProps () {
         return {};
@@ -18,7 +18,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2 class="module-title">Welcome to DecodeMTL</h2>
+                    <h2 className="module-title">Welcome to DecodeMTL</h2>
 
                     <p>Welcome to DecodeMTL’s full-stack web development bootcamp!</p>
                     <p>In this prep course, we compiled and organized a set of online resources that will help you get started with web development.</p>
@@ -41,7 +41,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>Part 1: Getting Started</h2>
+                    <h2 className="module-title">Part 1: Getting Started</h2>
                     <p>In this part, we are going to get the tools necessary to start the prep work.</p>
 
                     <h3>Do your work</h3>
@@ -89,7 +89,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>Part 2: Command Line</h2>
+                    <h2 className="module-title">Part 2: Command Line</h2>
                     <p>You are probably used to interacting with your computer through a mouse. A lot of the things you do on your computer use the mouse:</p>
 
                     <ul>
@@ -137,7 +137,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>Part 3: Programming with JavaScript</h2>
+                    <h2 className="module-title">Part 3: Programming with JavaScript</h2>
                     <p>JavaScript is the main language of this bootcamp. We will be using JavaScript for the front-end – the browser – as well as the back-end – the server and database. It is therefore crucial that you complete this section of the prep course before the first day of class.</p>
 
                     <h3>Do your work</h3>
@@ -176,7 +176,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>Part 4: HTML &amp; CSS</h2>
+                    <h2 className="module-title">Part 4: HTML &amp; CSS</h2>
                     <p>HTML and CSS are an integral part of web development. While HTML is used to give meaning to content, CSS is used to style that content.</p>
 
                     <h3>Do your work</h3>
@@ -210,7 +210,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>Part 5: Git &amp; GitHub</h2>
+                    <h2 className="module-title">Part 5: Git &amp; GitHub</h2>
                     <p>Source code management is an integral part of writing software. Throughout the history of a piece of software, be it a web site, web application or other, changes will happen. Often, features that are not ready for prime-time will have to be developed <strong>in parallel</strong>. And in most cases, software will be worked on by <strong>multiple developers</strong>.</p>
 
                     <p><strong>Git</strong> is a tool that empowers developers to accomplish these features without having to worry about the state of the project. If you’ve ever written a Word document, you may have found yourself creating a copy at some point, in order to try something else. Among other things, Git gives you the ability to branch off and create new features while keeping the working version of your software clean. It also lets you go back in time to a previous working version and examine it, without ever losing your work.</p>
@@ -247,7 +247,7 @@ const ApplicationExercise = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2>You are done :)</h2>
+                    <h2 className="module-title">You are done :)</h2>
 
                     <p>Pat yourself on the back. If you’ve successfully completed all the sections above, you should now have a pretty solid introduction to many of the tools and languages used in web development.</p>
 
@@ -262,4 +262,4 @@ const ApplicationExercise = React.createClass({
     }
 });
 
-export default ApplicationExercise;
+export default PrepCourse;
