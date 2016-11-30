@@ -67,6 +67,7 @@ export default function createRoutes(store) {
       <Redirect from="/fr/events" to="/fr/evenements"/>
       <Redirect from="/fr/privacy-policy" to="/fr/confidentialite"/>
       <Redirect from="/fr/terms" to="/fr/termes"/>
+      <Redirect from="/on-demand" to="/prep-course"/>
 
       <Route path="fr">
         <IndexRoute component={Home}/>
