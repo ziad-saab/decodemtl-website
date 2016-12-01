@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "DecodeMTL.com web development bootcamp website",
   "main": "app-server.js",
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build-server": "webpack --config ./webpack/webpack.config.server.dev.js --watch --colors --display-error-details",
