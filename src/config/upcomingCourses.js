@@ -13,7 +13,7 @@ export default {
             type: 'Part-time'
         },
         {
-            startDate: 'Feb 13th',
+            startDate: 'Jan 16th',
             courseName: 'JavaScript',
             link: 'javascript',
             type: 'Part-time'
@@ -33,7 +33,7 @@ export default {
             type: 'Temps partiel'
         },
         {
-            startDate: '13 fev',
+            startDate: '16 jan',
             courseName: 'JavaScript',
             link: 'javascript',
             type: 'Temps partiel'

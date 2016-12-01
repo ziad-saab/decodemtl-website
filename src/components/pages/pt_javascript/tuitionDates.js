@@ -1,8 +1,8 @@
 export default {
     en: [
         {
-            startDate: 'Feb 13th',
-            endDate: 'Apr 19th',
+            startDate: 'Jan 17th',
+            endDate: 'Mar 23rd',
             days: 'Mon. & Wed.',
             hours: '6:30PM-9:30PM',
             price: 1995,
@@ -10,8 +10,8 @@ export default {
             earlyBird: true
         },
         {
-            startDate: 'May 15th',
-            endDate: 'Jul 19th',
+            startDate: 'Apr 18th',
+            endDate: 'Jun 22nd',
             days: 'Mon. & Wed.',
             hours: '6:30PM-9:30PM',
             price: 1995,
@@ -21,8 +21,8 @@ export default {
     ],
     fr: [
         {
-            startDate: '13 fev',
-            endDate: '19 avr',
+            startDate: '17 jan',
+            endDate: '23 mars',
             days: 'Lun. & mer.',
             hours: '18h30-21h30',
             price: 1995,
@@ -30,8 +30,8 @@ export default {
             earlyBird: true
         },
         {
-            startDate: '15 mai',
-            endDate: '19 juil',
+            startDate: '18 avr',
+            endDate: '22 juin',
             days: 'Lun. & mer.',
             hours: '18h30-21h30',
             price: 1995,
