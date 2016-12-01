@@ -38,6 +38,8 @@ export default function server(parameters) {
     require('longjohn');
   }
 
+  app.locals.noIndex = !!process.env.NOINDEX;
+
   // Favicon!
   app.use(favicon(global.__ROOT__ + '/src/assets/images/favicons/favicon.ico'));
 
