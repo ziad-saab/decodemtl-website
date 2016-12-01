@@ -46,14 +46,7 @@ const app = (
       render={(props) => (
         <ReduxAsyncConnect
           {...props}
-          render={applyRouterMiddleware(useScroll((prevRouterProps, currRouterProps) => {
-
-              //NOTE: In order to correctly handle nested child routes fading in and out we need to make sure
-              // that useScroll is only active on top level paths.
-              const prevPathname = prevRouterProps && prevRouterProps.location.pathname,
-                  currPathname = currRouterProps.location.pathname;
-              return prevPathname && !(currPathname.includes(prevPathname) && prevPathname !== '/');
-          }))}
+          render={applyRouterMiddleware(useScroll())}
         />)
       }
       history={history}
