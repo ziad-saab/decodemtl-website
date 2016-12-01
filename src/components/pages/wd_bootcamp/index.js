@@ -33,7 +33,7 @@ import {CTAPrimaryLarge, CTASecondaryLarge} from '../../buttons/buttons';
 
 const meta = {
     en: [
-        {name: 'description', content: 'With DecodeMTL\'s Software Engineering and Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
+        {name: 'description', content: 'With DecodeMTL\'s Web Development Course, you will learn how to become a Web Developer. Learn Web Development in MTL\'s top code school.'},
         {property: 'og:url', content: 'https://www.decodemtl.com/courses/web-development-immersive'},
         {property: 'og:title', content: 'Web Development Bootcamp - Become a Web Developer'},
         {property: 'og:description', content: 'Looking to launch a new career as a Web Developer? With DecodeMTL\'s immersive 8-week program, you will learn the skills it takes to get a job in tech!'},
@@ -142,7 +142,7 @@ const Courses = React.createClass({
         return (
             <div>
                 <Helmet
-                    title={this.props.intl.formatMessage({id: "pages.immersive.softwareEng", defaultMessage: "Software Engineering Course - Coding Bootcamp"})}
+                    title={this.props.intl.formatMessage({id: "pages.immersive.softwareEng", defaultMessage: "Coding Bootcamp - Web Development School"})}
                     meta={meta[this.props.intl.locale]}
                     link={link[this.props.intl.locale]}
                 />
