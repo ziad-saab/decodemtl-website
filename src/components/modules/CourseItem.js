@@ -9,9 +9,9 @@ const CourseItem = (props) => {
             {props.courses.map((course, i) => {
                 // Convert to <sup>
                 const formatedDates = course.nextSessions.map((session, i) => {
-                    const date = course.nextSessions[i].match(/([a-z]+.\d+)([a-z]+)(.+)/i);
+                    const date = session.match(/([a-z]+.\d+)([a-z]+)(.+)/i);
                     // @TODO french dates using moment
-                    return date ? <li itemProp="startDate">{date[1]}<sup>{date[2]}</sup>{date[3]}</li> : <li itemProp="startDate">TODO</li>;
+                    return date ? <li itemProp="startDate">{date[1]}<sup>{date[2]}</sup>{date[3]}</li> : <li itemProp="startDate">{session}</li>;
                 });
                 return (
                     <article key={i} className="module course-item">
