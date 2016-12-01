@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'APP/components/navigation/Link';
 
 export const generalFAQ = {
     en: [
@@ -24,7 +25,7 @@ export const generalFAQ = {
         },
         {
             question: 'Where are you located?',
-            answer: (<div>We are located in downtown Montreal in the Place Ville Marie complex. We are part of the WeWork co-working space located on the 4th floor of 3 Place Ville Marie. You can learn more about WeWork <a href="/wework">here</a>.</div>)
+            answer: (<div>We are located in downtown Montreal in the Place Ville Marie complex. We are part of the WeWork co-working space located on the 4th floor of 3 Place Ville Marie. You can learn more about WeWork <Link to="/wework">here</Link>.</div>)
         },
         {
             question: 'How do I know which course to take?',
@@ -54,7 +55,7 @@ export const generalFAQ = {
         },
         {
             question: 'Où etes-vous situez?',
-            answer: (<div>Nous sommes situés au centre-ville de Montréal dans le complexe de la Place Ville Marie. Nous faisons partie de l'espace de travail collaboratif WeWork situé au 4e étage du 3 Place Ville Marie. Vous pouvez en savoir plus sur WeWork <a href="/wework">ici</a>.</div>)
+            answer: (<div>Nous sommes situés au centre-ville de Montréal dans le complexe de la Place Ville Marie. Nous faisons partie de l'espace de travail collaboratif WeWork situé au 4e étage du 3 Place Ville Marie. Vous pouvez en savoir plus sur WeWork <Link to="/wework">ici</Link>.</div>)
         },
         {
             question: 'Comment puis-je savoir quel cours suivre?',
@@ -106,7 +107,7 @@ export const immersiveFAQ = {
         },
         {
             question: 'I am an international student, do you offer housing?',
-            answer: (<div>We have partnered with EVO, a student residence just down the street from us. You can read more about EVO <a href="/wework">here</a>.</div>)
+            answer: (<div>We have partnered with EVO, a student residence just down the street from us. You can read more about EVO <Link to="/housing">here</Link>.</div>)
         },
         {
             question: 'What do I need to bring with me?',
@@ -136,7 +137,7 @@ export const immersiveFAQ = {
         },
         {
             question: 'Je suis un étudiant international, offrez-vous des options de logement?',
-            answer: (<div>Nous avons établi un partenariat avec EVO qui est une résidence d’étudiants qui se trouve au bas de la rue. Vous pouvez en savoir plus sur EVO <a href="/logement">ici</a>.</div>)
+            answer: (<div>Nous avons établi un partenariat avec EVO qui est une résidence d’étudiants qui se trouve au bas de la rue. Vous pouvez en savoir plus sur EVO <Link to="/housing">ici</Link>.</div>)
         },
         {
             question: 'Que dois-je apporter avec moi?',
