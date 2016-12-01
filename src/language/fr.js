@@ -449,7 +449,7 @@ module.exports = {
 
     "pages.housing.moveIn": "Logements prêts a demenager",
 
-    "pages.housing.walkingDistance": "A petite distance de WeWork",
+    "pages.housing.walkingDistance": "À deux pas de WeWork",
 
     "pages.housing.tonsOf": "Infrastructures additionelles",
 
