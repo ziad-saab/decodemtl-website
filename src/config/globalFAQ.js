@@ -54,7 +54,7 @@ export const generalFAQ = {
             answer: 'Pour le moment, nous enseignons seulement qu’en anglais. Toutefois, la plupart de nos cours sont assez bilingues.'
         },
         {
-            question: 'Où etes-vous situez?',
+            question: 'Où êtes-vous situés?',
             answer: (<div>Nous sommes situés au centre-ville de Montréal dans le complexe de la Place Ville Marie. Nous faisons partie de l'espace de travail collaboratif WeWork situé au 4e étage du 3 Place Ville Marie. Vous pouvez en savoir plus sur WeWork <Link to="/wework">ici</Link>.</div>)
         },
         {
@@ -121,7 +121,7 @@ export const immersiveFAQ = {
     fr: [
         {
             question: 'Pourquoi devrais-je suivre des cours chez DecodeMTL?',
-            answer: 'Si vous vous cherchez à croître rapidement dans le domaine du développement web, que ce soit en tant que nouvelle carrière ou du lancement d’un nouveau produit, DecodeMTL vous instruira avec tous les compétences pour réussir. Nos professeurs sont les meilleurs du domaine, notre programme enseigne les technologies les plus en demande et notre environnement de travail est l’un des plus génial.'
+            answer: 'Si vous vous cherchez à croître rapidement dans le domaine du développement web, que ce soit en tant que nouvelle carrière ou du lancement d’un nouveau produit, DecodeMTL vous instruira avec toutes les compétences pour réussir. Nos professeurs sont les meilleurs du domaine, notre programme enseigne les technologies les plus en demande et notre environnement de travail est l’un des plus géniaux.'
         },
         {
             question: 'Quelles sont les compétences techniques?',
