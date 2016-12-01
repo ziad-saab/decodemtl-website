@@ -1,5 +1,6 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
+import Link from 'APP/components/navigation/Link';
 
 //req.keys() is an array with all the relative paths of the images
 // req.keys().map(key => req(key)) --> require("../../assets/images/partner-logos/" + key);
@@ -28,12 +29,12 @@ const PartnersLogos = (props) => {
                 </div>
                 {/*<!-- /.partner-logo-container -->*/}
                 <div className="link-more text-body-small">
-                    <a href={employerLink}>
+                    <Link to={employerLink}>
                         <FormattedMessage
                             id="modules.PartnersLogos.joinOur"
                             defaultMessage="Join our growing network of hiring partners"
                         /><span className="fa fa-caret-right" aria-hidden="true"/>
-                    </a>
+                    </Link>
                 </div>
             </div>
             {/* <!-- /.wrapper -->*/}
