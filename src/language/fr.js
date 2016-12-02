@@ -559,5 +559,5 @@ module.exports = {
 
     "pages.employers.browseOur": "Parcourez nos événements à venir.",
 
-    "pages.events.webDev": "",
+    "pages.events.webDev": "Événements de développement Web",
 }

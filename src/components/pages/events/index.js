@@ -61,7 +61,7 @@ const Events = (props) => {
     return (
         <div>
             <Helmet
-                title={props.intl.formatMessage({id: "pages.events.webDev", defaultMessage: "Événements de développement Web"})}
+                title={props.intl.formatMessage({id: "pages.events.webDev", defaultMessage: "Web Development Events in Montreal"})}
                 meta={meta[props.intl.locale]}
                 link={link[props.intl.locale]}
             />
