@@ -44,6 +44,16 @@ export default function server(parameters) {
 
   app.locals.noIndex = !!process.env.NOINDEX;
 
+  // Redirect prod requests to decodemtl.herokuapp.com to decodemtl.com
+  app.use((req, res, next) => {
+    if (req.headers && req.headers.host && req.headers.host.toLowerCase() === 'decodemtl.herokuapp.com') {
+      res.redirect(301, 'https://www.decodemtl.com' + req.url);
+    }
+    else {
+      next();
+    }
+  });
+
   // Favicon!
   app.use(favicon(global.__ROOT__ + '/src/assets/images/favicons/favicon.ico'));
 
