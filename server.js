@@ -29,6 +29,7 @@ import serverApi from './server-api';
 export default function server(parameters) {
   const app = express();
   app.set('view engine', 'ejs');
+  app.disable('x-powered-by');
 
   if (__PROD__) {
     app.use('/assets', express.static(global.__ROOT__ + '/build/assets'));
