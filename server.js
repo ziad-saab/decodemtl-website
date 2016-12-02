@@ -26,6 +26,9 @@ addLocaleData(frLocaleData);
 // API
 import serverApi from './server-api';
 
+// Cache
+const PAGE_CACHE_TIME = 5 * 60 * 60; // 5 hours
+
 export default function server(parameters) {
   const app = express();
   app.set('view engine', 'ejs');
@@ -104,6 +107,11 @@ export default function server(parameters) {
           const chunks = parameters.chunks();
           const appJs = chunks && chunks.javascript && chunks.javascript.main;
           const appCss = chunks && chunks.styles && chunks.styles.main;
+
+          // Cache page for 5 hours in prod
+          if (__PROD__) {
+            res.set('cache-control', `public, max-age=${PAGE_CACHE_TIME}`);
+          }
 
           res.render('index', {html, title, meta, link, store, appCss, appJs});
         })
