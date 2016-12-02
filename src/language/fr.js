@@ -471,7 +471,7 @@ module.exports = {
 
     // WEWORK
 
-    "pages.wework.beA": "Faites partie du plus grand espace de travail collaboratif à Montréal. L'espace est remplie d'entrepreneurs, de startups et d’entreprises de technologie. Prenez part à nos dîners-rencontre à chaque semaine et/ou impliquer vous à l'un des nombreux événements qui se déroulent en soirée. On ne s’est jamais, vous pourriez rencontrer votre prochain employeur ou partenaire d'affaires.",
+    "pages.wework.beA": "Faites partie du plus grand espace de travail collaboratif à Montréal. L'espace est remplie d'entrepreneurs, de startups et d’entreprises de technologie. Prenez part à nos dîners-rencontre à chaque semaine et/ou impliquez-vous à l'un des nombreux événements qui se déroulent en soirée. On ne sait jamais, vous pourriez rencontrer votre prochain employeur ou partenaire d'affaires.",
 
     "pages.wework.decodeIs": "DecodeMTL est stratégiquement situé à l'intérieur de WeWork pour ces raisons particulières. Nous voulons vous voir faire partie de l’environnement des entreprises technologiques de Montréal. De cette façon, vous pourrez établir autant de liens possibles dans la communauté.",
 
