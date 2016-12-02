@@ -30,7 +30,7 @@ export default {
             duration: "10 weeks",
             hours: "60 hours",
             days: 'Monday & Wednesday',
-            nextSessions: ["February 13th, 2017", "May 15th, 2017"],
+            nextSessions: ["January 16th, 2017", "April 17th, 2017"],
             link: 'javascript'
         }
     ],
@@ -65,7 +65,7 @@ export default {
             duration: "10 semaines",
             hours: "60 heures",
             days: 'Lundi et mercredi',
-            nextSessions: ["13 février, 2017", "15 mai, 2017"],
+            nextSessions: ["16 janvier, 2017", "17 avril, 2017"],
             link: 'javascript'
         }
     ]
