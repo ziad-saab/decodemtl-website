@@ -177,7 +177,7 @@ module.exports = {
 
     "modules.CourseCareerSupport.personalizedApproach": "Une approche personnalisée",
 
-    "modules.CourseCareerSupport.tellUs": "Expliquer-nous votre objectif ultime et nous travaillerons ensemble pour créer un plan d'action.",
+    "modules.CourseCareerSupport.tellUs": "Expliquez-nous votre objectif ultime et nous travaillerons ensemble pour créer un plan d'action.",
 
     "modules.CourseCareerSupport.learAnd": "Apprendre et produire",
 
@@ -527,7 +527,7 @@ module.exports = {
 
     "pages.pthtmlcss.convinceYour": "Essayer de convaincre votre employeur de parrainer vos frais de cours!",
 
-    "pages.pthtmlcss.enterYour": "Entrez votre courriel pour télécharger notre guide PDF gratuit et partager-le avec votre employeur.",
+    "pages.pthtmlcss.enterYour": "Entrez votre courriel pour télécharger notre guide PDF gratuit et partagez-le avec votre employeur.",
 
     "pages.pthtmlcss.learnCss": "Apprendre le CSS - Cours HTML",
 
