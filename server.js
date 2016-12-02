@@ -111,6 +111,7 @@ export default function server(parameters) {
           // Cache page for 5 hours in prod
           if (__PROD__) {
             res.set('cache-control', `public, max-age=${PAGE_CACHE_TIME}`);
+            res.set('last-modified', new Date().toGMTString());
             res.set('expires', new Date(Date.now() + PAGE_CACHE_TIME * 1000).toGMTString());
           }
 
