@@ -1,7 +1,7 @@
 export default {
     en: [
         {
-            startDate: 'Jan 17th',
+            startDate: 'Jan 16th',
             endDate: 'Mar 23rd',
             days: 'Mon. & Wed.',
             hours: '6:30PM-9:30PM',
@@ -10,7 +10,7 @@ export default {
             earlyBird: true
         },
         {
-            startDate: 'Apr 18th',
+            startDate: 'Apr 17th',
             endDate: 'Jun 22nd',
             days: 'Mon. & Wed.',
             hours: '6:30PM-9:30PM',
@@ -21,7 +21,7 @@ export default {
     ],
     fr: [
         {
-            startDate: '17 jan',
+            startDate: '16 jan',
             endDate: '23 mars',
             days: 'Lun. & mer.',
             hours: '18h30-21h30',
@@ -30,7 +30,7 @@ export default {
             earlyBird: true
         },
         {
-            startDate: '18 avr',
+            startDate: '17 avr',
             endDate: '22 juin',
             days: 'Lun. & mer.',
             hours: '18h30-21h30',
