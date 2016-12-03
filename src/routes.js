@@ -22,6 +22,7 @@ import Confirmation from 'APP/components/pages/confirmation/index';
 import Success from 'APP/components/pages/success/index';
 import ApplicationExercise from 'APP/components/pages/applicationExercise/index';
 import PrepCourse from 'APP/components/pages/prepCourse/index';
+import NotFound from 'APP/components/pages/notFound/index';
 
 const halfMap = {
   '/': '/fr',
@@ -113,6 +114,8 @@ export default function createRoutes(store) {
         <Route path='application-exercise' component={ApplicationExercise}/>
         <Route path='prep-course' component={PrepCourse}/>
       </Route>
+
+      <Route path="*" notFound={true} component={NotFound}/>
     </Route>
   );
 }

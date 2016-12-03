@@ -278,13 +278,6 @@ module.exports = {
     "pages.faq.everythingYou": "Tout ce que vous devez savoir sur DecodeMTL",
 
 
-    //OTHER
-
-    "loadingBox.text": "Chargement...",
-
-    "notFoundPage.title": "404 Non Trouvé",
-
-
     // SCHEDULE VISIT
 
     "modules.ScheduleVisit.wantTo": "Vous voulez savoir si DecodeMTL est une bonne solution pour vous?",
@@ -560,4 +553,6 @@ module.exports = {
     "pages.employers.browseOur": "Parcourez nos événements à venir.",
 
     "pages.events.webDev": "Événements de développement Web",
+
+    "pages.notFound.unstuck": "Utilisez le menu de navigation pour vous sortir d'ici."
 }

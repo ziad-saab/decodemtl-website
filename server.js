@@ -92,7 +92,14 @@ export default function server(parameters) {
         .then(() => {
           // Check if there's a 404 after loading data on server
           const state = store.getState();
-          if (state.ssr && state.ssr.error404) {
+          if (
+            (state.ssr && state.ssr.error404) ||
+            (
+              renderProps.routes &&
+              renderProps.routes.length &&
+              renderProps.routes[renderProps.routes.length - 1].notFound
+            )
+          ) {
             res.status(404);
           }
 
