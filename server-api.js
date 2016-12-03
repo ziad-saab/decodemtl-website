@@ -89,7 +89,7 @@ const transporter = {
   sendMail(options, cb) {
     axios({
         method: 'post',
-        url: `${process.env.MAILGUN_URL}/`,
+        url: `${process.env.MAILGUN_URL}`,
         data: {
             from: options.from,
             to: options.to,
