@@ -84,16 +84,27 @@ const checkSubscription = (email) => {
     });
 };
 
-// create reusable transporter object using the default SMTP transport
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true, // use SSL
-    auth: {
-        user: 'decodemtl@gmail.com',
-        pass: process.env.GMAIL_PASS
-    }
-});
+// hello Codrin
+const transporter = {
+  sendMail(options, cb) {
+    axios({
+        method: 'post',
+        url: `${process.env.MAILGUN_URL}/`,
+        data: {
+            from: options.from,
+            to: options.to,
+            subject: options.subject,
+            html: options.html
+        },
+        auth: {
+            username: 'api',
+            password: process.env.MAILGUN_API_KEY
+        }
+    })
+    .then(res => typeof cb === 'function' && cb(null, res))
+    .catch(err => typeof cb === 'function' && cb(err))
+  }
+};
 
 app.post('/apply', (req, res) => {
     //Sanitize user input
