@@ -2,7 +2,7 @@ import express from 'express';
 import expressValidator from 'express-validator';
 import bodyParser from 'body-parser';
 import axios from 'axios';
-import nodemailer from 'nodemailer';
+import querystring from 'querystring';
 import md5 from 'js-md5';
 
 const app = express.Router();
@@ -90,12 +90,12 @@ const transporter = {
     axios({
         method: 'post',
         url: `${process.env.MAILGUN_URL}`,
-        data: {
+        data: querystring.stringify({
             from: options.from,
             to: options.to,
             subject: options.subject,
             html: options.html
-        },
+        }),
         auth: {
             username: 'api',
             password: process.env.MAILGUN_API_KEY
