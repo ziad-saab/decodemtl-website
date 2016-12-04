@@ -7,7 +7,7 @@ export default {
             hours: '10AM—9PM',
             price: 6495,
             courseName: 'Bootcamp',
-            earlyBird: true
+            earlyBird: false
         },
         {
             startDate: 'Apr 3rd',
@@ -27,7 +27,7 @@ export default {
             hours: '10h00—21h00',
             price: 6495,
             courseName: 'Bootcamp',
-            earlyBird: true
+            earlyBird: false
         },
         {
             startDate: '3 avr',
