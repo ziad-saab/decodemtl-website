@@ -58,9 +58,20 @@ const app = (
 
 render(app, document.getElementById('app'));
 
-history.listen(location => {
+function setupGa() {
   if (typeof window.ga === 'function') {
-    window.ga('set', 'page', location.pathname);
-    window.ga('send', 'pageview');
+    console.log('Setting up GA');
+    window.ga('create', 'UA-54876410-2');
+    history.listen(location => {
+      window.ga('set', 'page', location.pathname);
+      window.ga('send', 'pageview');
+    })
   }
-})
+  else {
+    setupGa.counter = (setupGa.counter || 0) + 1;
+    if (setupGa.counter < 10) {
+      setTimeout(setupGa, 1000 * setupGa.counter)
+    }
+  }
+}
+setupGa();
