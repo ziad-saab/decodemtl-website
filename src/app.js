@@ -63,7 +63,8 @@ function setupGa() {
     console.log('Setting up GA');
     window.ga('create', 'UA-54876410-2');
     history.listen(location => {
-      window.ga('set', 'page', location.pathname);
+      const page  = location.pathname + location.search;
+      window.ga('set', 'page', page);
       window.ga('send', 'pageview');
     })
   }
