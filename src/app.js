@@ -58,6 +58,9 @@ const app = (
 
 render(app, document.getElementById('app'));
 
+if (typeof window.ga === 'function') {
+  window.ga('create', 'UA-54876410-2');
+}
 history.listen(location => {
   if (typeof window.ga === 'function') {
     window.ga('set', 'page', location.pathname);
