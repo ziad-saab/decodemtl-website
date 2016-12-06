@@ -155,8 +155,8 @@ const Apply = React.createClass({
                                                                id={course.jumboTitle + session}
                                                                required/>
                                                         <label
-                                                            htmlFor={course.jumboTitle + session}>{course.title} {course.jumboTitle}
-                                                            ({session})</label>
+                                                            htmlFor={course.jumboTitle + session}>{course.title} {course.jumboTitle} ({session})
+                                                        </label>
                                                     </div>
                                                 );
                                             });

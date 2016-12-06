@@ -554,5 +554,8 @@ module.exports = {
 
     "pages.events.webDev": "Événements de développement Web",
 
-    "pages.notFound.unstuck": "Utilisez le menu de navigation pour vous sortir d'ici."
+    "pages.notFound.unstuck": "Utilisez le menu de navigation pour vous sortir d'ici.",
+
+    "pages.notFound.referenceError": "Erreur: la page que vous voulez n'est pas définie."
+
 }
