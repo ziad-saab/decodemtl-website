@@ -6,7 +6,12 @@ export default injectIntl(() => (
     <div className="wrapper">
   		<h1 className="four-title">404</h1>
   		<p className="four-message text-body-large">
-        <code>ReferenceError: the page you want is not defined.</code>
+        <code>
+            <FormattedMessage
+                id="pages.notFound.referenceError"
+                defaultMessage="ReferenceError: the page you want is not defined."
+            />
+        </code>
       </p>
   		<p className="foot-note text-body-small text-subtle">
         <FormattedMessage
