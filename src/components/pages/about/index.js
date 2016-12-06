@@ -84,7 +84,7 @@ const About = React.createClass({
 
             {text: 'Quality over quantity', id: 'pages.about.qualityOver'},
             {text: 'Passion (Both in our staff and our students)', id: 'pages.about.bothIn'},
-            {text: 'Don’t take things to seriously (You can learn and have fun at the same time)', id: 'pages.about.dontTake'},
+            {text: 'Don’t take things too seriously (You can learn and have fun at the same time)', id: 'pages.about.dontTake'},
             {text: 'Outcomes (Your success is our priority)', id: 'pages.about.yourSuccess'},
             {text: 'Creativity, innovation, and hardwork', id: 'pages.about.creativity'},
         ];
