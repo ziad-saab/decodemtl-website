@@ -61,7 +61,7 @@ const HomeHero = React.createClass({
                                 />
                             </p>
                             <div className="cta-single">
-                                <Link to="/courses" className="btn-primary btn-large">
+                                <Link to="/courses" className="btn-primary btn-large hero-btn">
                                     <FormattedMessage
                                         id="modules.HomeHero.button"
                                         defaultMessage="Courses"
