@@ -7,6 +7,8 @@
 global.__CLIENT__ = true;
 global.__SERVER__ = false;
 
+import 'babel-polyfill';
+
 // SASS is handled by Webpack with sass-loader
 import 'APP/assets/toolkit/styles/toolkit.scss';
 
