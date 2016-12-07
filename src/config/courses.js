@@ -47,8 +47,8 @@ export default {
             link: 'web-development-immersive'
         },
         {
-            title: "HTML & CSS",
-            jumboTitle: "à temps partiel",
+            title: "Temps Partiel",
+            jumboTitle: "HTML & CSS",
             text: 'Apprenez à programmer efficacement et conformément aux normes en vous familiarisant avec les principes fondamentaux de la conception web.',
             type: "Temps partiel",
             duration: "10 semaines",
@@ -58,8 +58,8 @@ export default {
             link: 'html-css'
         },
         {
-            title: "JavaScript",
-            jumboTitle: "à temps partiel",
+            title: "Temps Partiel",
+            jumboTitle: "JavaScript",
             text: 'Développer une base solide dans la programmation et maîtriser les fondements de JavaScript tel que les prototypes d\'objets, les fonctions d\'ordre supérieur et la programmation avec des rappels asynchrones.',
             type: "Temps partiel",
             duration: "10 semaines",
