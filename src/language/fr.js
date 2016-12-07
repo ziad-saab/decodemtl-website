@@ -506,9 +506,9 @@ module.exports = {
 
     // PART TIME HTML CSS
 
-    "pages.pthtmlcss.parttime": "HTML & CSS",
+    "pages.pthtmlcss.parttime": "Temps Partiel",
 
-    "pages.pthtmlcss.htmlcss": "À temps partiel",
+    "pages.pthtmlcss.htmlcss": "HTML & CSS",
 
     "pages.pthtmlcss.learnTo": "Apprenez à programmer efficacement et conformément aux normes en vous familiarisant avec les principes fondamentaux de la conception web.",
 
@@ -527,9 +527,9 @@ module.exports = {
 
     // PART TIME JAVASCRIPT
 
-    "pages.ptjavascript.parttime": "JavaScript",
+    "pages.ptjavascript.parttime": "Temps Partiel",
 
-    "pages.ptjavascript.javascript": "À temps partiel",
+    "pages.ptjavascript.javascript": "JavaScript",
 
     "pages.ptjavascript.developA": "Développer une base solide dans la programmation et les fondamentaux fondamentaux de JavaScript comme les prototypes d'objets, les fonctions d'ordre supérieur et la programmation avec des rappels asynchrones.",
 

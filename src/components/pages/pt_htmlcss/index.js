@@ -155,7 +155,7 @@ const Courses = React.createClass({
                     }}
                     moduleTitle={this.props.intl.formatMessage({id: "pages.pthtmlcss.parttime", defaultMessage: "Part-Time"})}
                     jumboTitle={this.props.intl.formatMessage({id: "pages.pthtmlcss.htmlcss", defaultMessage: "HTML & CSS"})}
-                    text={this.props.intl.formatMessage({id: "pages.pthtmlcss.learnTo", defaultMessage: "Learn to write clean, standards-complient code, and become aquainted with the fundamentals of web design."})}
+                    text={this.props.intl.formatMessage({id: "pages.pthtmlcss.learnTo", defaultMessage: "Learn to write clean, standards-complient code, and become acquainted with the fundamentals of web design."})}
                     subText={""}/>
                 <Element name="overview">
                     <CourseOverview overview={overview}/>
