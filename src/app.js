@@ -7,6 +7,8 @@
 global.__CLIENT__ = true;
 global.__SERVER__ = false;
 
+import 'babel-polyfill';
+
 // SASS is handled by Webpack with sass-loader
 import 'APP/assets/toolkit/styles/toolkit.scss';
 
@@ -63,7 +65,8 @@ function setupGa() {
     console.log('Setting up GA');
     window.ga('create', 'UA-54876410-2');
     history.listen(location => {
-      window.ga('set', 'page', location.pathname);
+      const page  = location.pathname + location.search;
+      window.ga('set', 'page', page);
       window.ga('send', 'pageview');
     })
   }
