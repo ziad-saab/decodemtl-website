@@ -92,7 +92,7 @@ const ApplicationExercise = React.createClass({
                     <h4>Exercise 5</h4>
                     <p className="measure-text">
                       Write a function called <code>factorial</code> that takes a number as argument and returns the async
-                        <a href="http://www.mathsisfun.com/definitions/factorial.html">factorial</a> of that number.
+                        <a href="http://www.mathsisfun.com/definitions/factorial.html"> factorial</a> of that number.
                     </p>
 
                     <h3>You are done :)</h3>
