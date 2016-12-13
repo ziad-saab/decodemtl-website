@@ -68,7 +68,7 @@ export const financialsFAQ = {
     en: [
         {
             question: 'Do you offer financial aid?',
-            answer: 'We are currently working on a financial aid solution. However, for the time being, no financial aid is available. You may wish to contact your bank to see if they have any financing options for you.'
+            answer: 'Yes! In fact, you can finance your tuition for as low as $30 per month with a low-interest student loan backed by the National Bank of Canada. Contact us for details.'
         },
         {
             question: 'What are your payment options?',
@@ -78,7 +78,7 @@ export const financialsFAQ = {
     fr: [
         {
             question: 'Offrez-vous de l\'aide financière?',
-            answer: 'Nous travaillons présentement sur une solution d\'aide financière. Néanmoins, pour le moment, aucune aide financière n\'est disponible. Vous pouvez toujours communiquer avec votre banque pour voir s\'ils ont des options de financement pour vous.'
+            answer: 'Oui! Vous pouvez financer vos frais de scolarité pour seulement 30$ par mois, grâce au prêt étudiant à faible intérêt offert en collaboration avec la Banque Nationale du Canada. Contactez-nous pour obtenir les détails.'
         },
         {
             question: 'Quelles sont vos options de paiement?',
