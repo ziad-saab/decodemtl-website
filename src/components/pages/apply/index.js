@@ -291,6 +291,62 @@ const Apply = React.createClass({
                                 </section>
                                 {/* /.goals-section */}
 
+                                {/* ======== heard about us ======== */}
+                                <section className="heard-about-section">
+                                    <h3 className="module-title-medium">
+                                        <FormattedMessage
+                                            id="pages.apply.other"
+                                            defaultMessage="Other"
+                                        />
+                                    </h3>
+                                    <label htmlFor="heard-about">
+                                        <FormattedMessage
+                                            id="pages.apply.whatIs"
+                                            defaultMessage="How did you hear about us?"
+                                        /><span
+                                        className="required">*</span></label>
+                                    <select name="tech-background" id="tech-background" aria-required={true} required>
+                                        <option value="">
+                                            <FormattedMessage
+                                                id="pages.apply.select"
+                                                defaultMessage="-- select --"
+                                            />
+                                        </option>
+                                        <option value="Google">
+                                            <FormattedMessage
+                                                id="pages.apply.google"
+                                                defaultMessage="Google"
+                                            />
+                                        </option>
+                                        <option value="Social Media">
+                                            <FormattedMessage
+                                                id="pages.apply.social"
+                                                defaultMessage="Social Media"
+                                            />
+                                        </option>
+                                        <option value="Referral">
+                                            <FormattedMessage
+                                                id="pages.apply.referral"
+                                                defaultMessage="Referral"
+                                            />
+                                        </option>
+                                        <option value="Event">
+                                            <FormattedMessage
+                                                id="pages.apply.event"
+                                                defaultMessage="Event"
+                                            />
+                                        </option>
+                                        <option value="Other">
+                                            <FormattedMessage
+                                                id="pages.apply.other"
+                                                defaultMessage="Other"
+                                            />
+                                        </option>
+                                    </select>
+                                    {/* /.heard about us dropdown */}
+                                </section>
+                                {/* /.heard-about-section */}
+
                                 {/* ======== About yourself ======== */}
                                 <section className="about-section">
                                     <h3 className="module-title-medium">
