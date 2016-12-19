@@ -43,7 +43,7 @@ return sentence;
 }
 
 
-//8. Create and empty array "names"
+//8. Create an empty array "names"
 
 var names = [];
 
@@ -62,23 +62,23 @@ greeting.names = names;
 //11. Assign a property "greetAll" to the "greeting" object and set its value to a method that loops over all the names in the "names" property of the object and for each name displays to the console the message "Hello " + the name.
 
 greeting.greetAll = function () {
-for (var i=0; i<names.length; i++) {
-console.log("Hello " + names[i]);
+  for (var i=0; i<names.length; i++) {
+  console.log("Hello " + names[i]);
 };
 
 
 //13. Create a function that takes two numbers and returns the largest one. Use an "if" statement.
 
 var bigNumber = function (a,b) {
-if (a > b) {
-return a
+  if (a > b) {
+  return a
 }
-else if (a < b) {
-return b
+  else if (a < b) {
+  return b
 }
-else {
-return "Not a number";
-}
+  else {
+    return "Not a number";
+  }
 };
 console.log(bigNumber(2,4);
 

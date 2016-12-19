@@ -209,6 +209,14 @@ module.exports = {
 
     "pages.immersive.softwareEng": "Cours de génie logiciel à Montréal",
 
+    "modules.CourseTuitionDates.fundYour": "Financer vos études pour aussi peu que $30 par mois",
+
+    "modules.CourseTuitionDates.weHave": "En collaboration avec la Banque Nationale du Canada, nous vous offront un prêt étudiant à faible intérêt applicable à tous nos cours.",
+
+    "modules.CourseTuitionDates.contactUs": "Contactez-nous",
+
+    "modules.CourseTuitionDates.toFind": " pour obtenir plus de détails.",
+
 
     //EMPLOYERS
 

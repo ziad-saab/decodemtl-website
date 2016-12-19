@@ -5,7 +5,7 @@ import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import CourseOverview from '../../modules/Overview';
-import CourseTuitionDates from'../../modules/CourseTuitionDates';
+import CourseTuitionDates from '../../modules/CourseTuitionDates';
 import CourseCurriculum from '../../modules/CourseCurriculum';
 import FormOptin from '../../modules/FormOptin';
 import CourseInstructor from '../../modules/CourseInstructor';
