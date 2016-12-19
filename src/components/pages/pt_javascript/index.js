@@ -5,7 +5,7 @@ import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import CourseOverview from '../../modules/Overview';
-import CourseTuitionDates from'../../modules/CourseTuitionDates';
+import CourseTuitionDates from '../../modules/CourseTuitionDates';
 import CourseCurriculum from '../../modules/CourseCurriculum';
 import FormOptin from '../../modules/FormOptin';
 import CourseInstructor from '../../modules/CourseInstructor';
@@ -143,7 +143,7 @@ const Courses = React.createClass({
                     link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='/downloads/javascript_syllabus.pdf'/>
+                    syllabus='/downloads/javascript_syllabus.pdf'/>
                 <CourseHero
                     CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
                     CTASText="Syllabus"
