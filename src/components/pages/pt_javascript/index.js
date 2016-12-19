@@ -143,7 +143,7 @@ const Courses = React.createClass({
                     link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='/downloads/javascript_syllabus.pdf'/>
+                    syllabus='/downloads/javascript_syllabus.pdf'/>
                 <CourseHero
                     CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
                     CTASText="Syllabus"

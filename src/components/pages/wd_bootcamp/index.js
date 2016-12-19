@@ -141,31 +141,31 @@ const Courses = React.createClass({
         const formText = this.props.intl.formatMessage({defaultMessage: 'Enter your email below and get instant access to our curated list of free JavaScript resources.', id: 'pages.wdbootcamp.enterYour'});
         return (
             <div>
-              <Helmet
-                title={this.props.intl.formatMessage({id: "pages.immersive.softwareEng", defaultMessage: "Coding Bootcamp - Web Development School"})}
-                meta={meta[this.props.intl.locale]}
-                link={link[this.props.intl.locale]}
-              />
-              <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                syllabus='/downloads/immersive_syllabus.pdf'/>
-              <CourseHero CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
-                CTASText="Syllabus"
-                CTAPLink="/apply"
-                CTASLink="/downloads/immersive_syllabus.pdf"
-                CTAP={CTAPrimaryLarge}
-                CTAS={CTASecondaryLarge}
-                ref={hero => {
+                <Helmet
+                    title={this.props.intl.formatMessage({id: "pages.immersive.softwareEng", defaultMessage: "Coding Bootcamp - Web Development School"})}
+                    meta={meta[this.props.intl.locale]}
+                    link={link[this.props.intl.locale]}
+                />
+                <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
+                    syllabus='/downloads/immersive_syllabus.pdf'/>
+                <CourseHero CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
+                    CTASText="Syllabus"
+                    CTAPLink="/apply"
+                    CTASLink="/downloads/immersive_syllabus.pdf"
+                    CTAP={CTAPrimaryLarge}
+                    CTAS={CTASecondaryLarge}
+                    ref={hero => {
                                 this._hero = hero
-                }}
-                moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
-                jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
-                text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
-                subText={""}/>
-              <Element name="overview" className="element">
-                <CourseOverview overview={overview}/>
-              </Element>
-              <Element name="tuition-dates">
-                <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]} />
+                    }}
+                    moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
+                    jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
+                    text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
+                    subText={""}/>
+                <Element name="overview" className="element">
+                    <CourseOverview overview={overview}/>
+                </Element>
+                <Element name="tuition-dates">
+                    <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]} />
                 </Element>
                 <Element name="curriculum">
                     <CourseCurriculum subjects={subjects[this.props.intl.locale]}/>
