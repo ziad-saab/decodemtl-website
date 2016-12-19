@@ -147,25 +147,25 @@ const Courses = React.createClass({
                     link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='/downloads/immersive_syllabus.pdf'/>
+                    syllabus='/downloads/immersive_syllabus.pdf'/>
                 <CourseHero CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
-                            CTASText="Syllabus"
-                            CTAPLink="/apply"
-                            CTASLink="/downloads/immersive_syllabus.pdf"
-                            CTAP={CTAPrimaryLarge}
-                            CTAS={CTASecondaryLarge}
-                            ref={hero => {
+                    CTASText="Syllabus"
+                    CTAPLink="/apply"
+                    CTASLink="/downloads/immersive_syllabus.pdf"
+                    CTAP={CTAPrimaryLarge}
+                    CTAS={CTASecondaryLarge}
+                    ref={hero => {
                                 this._hero = hero
-                            }}
-                            moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
-                            jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
-                            text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
-                            subText={""}/>
+                    }}
+                    moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
+                    jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
+                    text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
+                    subText={""}/>
                 <Element name="overview" className="element">
                     <CourseOverview overview={overview}/>
                 </Element>
                 <Element name="tuition-dates">
-                    <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]}/>
+                    <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]} />
                 </Element>
                 <Element name="curriculum">
                     <CourseCurriculum subjects={subjects[this.props.intl.locale]}/>
