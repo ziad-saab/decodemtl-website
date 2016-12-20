@@ -47,7 +47,7 @@ const meta = {
 const link = {
     en: [
         {"rel": "alternate", "hreflang": "fr","href":"https://www.decodemtl.com/fr/postuler"},
-],
+    ],
     fr: [
         {"rel": "alternate", "hreflang": "en","href":"https://www.decodemtl.com/apply"},
     ]
@@ -124,8 +124,8 @@ const Apply = React.createClass({
                                     </div>
                                     {/* /email */}
                                     <div>
-                                      <label htmlFor="linkedin" className="visually-hidden">LinkedIn URL</label>
-                                      <input type="text" name="linkedin" id="linkedin" placeholder={this.props.intl.formatMessage({id: "pages.apply.linkedin", defaultMessage: "Linkedin URL"})}/>
+                                        <label htmlFor="linkedin" className="visually-hidden">LinkedIn URL</label>
+                                        <input type="text" name="linkedin" id="linkedin" placeholder={this.props.intl.formatMessage({id: "pages.apply.linkedin", defaultMessage: "Linkedin URL"})}/>
                                     </div>
                                     {/* /linkedin */}
                                 </section>
@@ -179,7 +179,7 @@ const Apply = React.createClass({
                                             id="pages.apply.whatIs"
                                             defaultMessage="What is your current level of technical knowledge:"
                                         /><span
-                                            className="required">*</span></label>
+                                        className="required">*</span></label>
                                     <select name="tech-background" id="tech-background" aria-required={true} required>
                                         <option value="">
                                             <FormattedMessage

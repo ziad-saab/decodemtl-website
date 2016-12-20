@@ -41,7 +41,7 @@ const ScheduleVisit = React.createClass({
                                 defaultMessage="Enter your email and we will get back to you asap to schedule a visit."
                             />
                         </p>
-                        <form className="optin-form" onSubmit={this._handleSubmit}>
+                        <form className="optin-form schedule-visit" onSubmit={this._handleSubmit}>
                             <label htmlFor="email" className="visually-hidden">Email</label>
                             <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} ref={email => {
                                 this._email = email
