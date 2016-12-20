@@ -1,10 +1,10 @@
-# DecodeMTL WordPress Frontend
+# DecodeMTL Website
 
-This project is the front-end portion of DecodeMTL's site. It talks to a WordPress API and generates pages using a React-based stack.
+This is DecodeMTL's site. It is an isomorphic javascript project which renders React views on the server to serve to the client.
 
 ## Overview of technologies
 
-In no particular order, the front-end makes use of the following technologies. They have not only been chosen for their universality -- they do have to run on the browser and in Node -- but also for their excellence at doing what they do:
+In no particular order, this website makes use of the following technologies. They have not only been chosen for their universality -- they do have to run on the browser and in Node (server) -- but also for their excellence at doing what they do:
 
 * [react](https://facebook.github.io/react/) for its awesome view library
 * [react-router](https://github.com/reactjs/react-router) for URL-based routing
@@ -14,8 +14,9 @@ In no particular order, the front-end makes use of the following technologies. T
 * [redux-connect](https://github.com/makeomatic/redux-connect) for loading all initial data associated to a route
 * [redux-thunk](https://github.com/gaearon/redux-thunk) for dispatching asynchronous operations through Redux
 * [react-intl](https://github.com/yahoo/react-intl) for i18n in React components
-* [react-helmet](https://github.com/nfl/react-helmet) to manage the <head> of the document
+* [react-helmet](https://github.com/nfl/react-helmet) to manage the `<head>` of the document
 * [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch) for making HTTP requests with a Promise-based interface
+* [redux-logger](https://github.com/evgenyrodionov/redux-logger) for logging redux actions to console
 * [express](http://expressjs.com/) to do the server-side rendering and support various middleware
 * [ejs](http://www.embeddedjs.com/) to render the page on the server. Eventually this will be switched to React.
 * [babel](https://babeljs.io/) for anything ES6-related. We use babel-register to run the server and babel-loader to transpile client code.
