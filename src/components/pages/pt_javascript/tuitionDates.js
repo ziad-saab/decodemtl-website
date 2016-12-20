@@ -7,7 +7,7 @@ export default {
             hours: '6:30PM-9:30PM',
             price: 1995,
             courseName: 'javascript',
-            earlyBird: true
+            earlyBird: false
         },
         {
             startDate: 'Apr 17th',
@@ -27,7 +27,7 @@ export default {
             hours: '18h30-21h30',
             price: 1995,
             courseName: 'javascript',
-            earlyBird: true
+            earlyBird: false
         },
         {
             startDate: '17 avr',
