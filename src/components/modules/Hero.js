@@ -44,8 +44,8 @@ const Hero = React.createClass({
                     <p className="text-body-small text-subtle">
                         <FormattedMessage
                             id="modules.Hero.nextBootcamp"
-                            defaultMessage="Next bootcamp starts: {date} 2017"
-                            values={{ date: tuitionDates[0].startDate }}
+                            defaultMessage="Next bootcamp starts: {date}"
+                            values={{ date: tuitionDates[0].startDate + " 2017"}}
                         />
                     </p>
                     {CTAS || CTAP ? renderButtons() : null}

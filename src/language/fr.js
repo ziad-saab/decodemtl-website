@@ -344,7 +344,7 @@ module.exports = {
 
     // HERO
 
-    "modules.Hero.nextBootcamp": "Début du prochain bootcamp: {date} 2016",
+    "modules.Hero.nextBootcamp": "Début du prochain bootcamp: {date}",
 
 
     // SITE NAV
