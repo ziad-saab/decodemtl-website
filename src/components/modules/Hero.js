@@ -44,7 +44,7 @@ const Hero = React.createClass({
                     <p className="text-body-small text-subtle">
                         <FormattedMessage
                             id="modules.Hero.nextBootcamp"
-                            defaultMessage="Next bootcamp starts: {date} 2016"
+                            defaultMessage="Next bootcamp starts: {date} 2017"
                             values={{ date: tuitionDates[0].startDate }}
                         />
                     </p>
