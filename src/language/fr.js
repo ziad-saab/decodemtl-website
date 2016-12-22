@@ -342,6 +342,10 @@ module.exports = {
 
     "modules.secondarynav.careers": "Carrière",
 
+    // HERO
+
+    "modules.Hero.nextBootcamp": "Début du prochain bootcamp: {date} 2016",
+
 
     // SITE NAV
 

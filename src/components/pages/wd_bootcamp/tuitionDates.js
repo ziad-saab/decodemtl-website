@@ -21,7 +21,7 @@ export default {
     ],
     fr: [
         {
-            startDate: '9 jav',
+            startDate: '9 jan',
             endDate: '3 Mar',
             days: 'Lundi—Vendredi',
             hours: '10h00—21h00',
