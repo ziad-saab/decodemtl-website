@@ -1,4 +1,11 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
+
+import upcomingCourses from '../../config/upcomingCourses';
+
+
+const nextStartDate = upcomingCourses.en[0].startDate;
+const nextStartDateFR = upcomingCourses.fr[0].startDate;
 
 //DO NOT CONVERT TO PRESENTATIONAL COMPONENT
 //to attach "ref" to component the component must have state
@@ -13,10 +20,11 @@ const Hero = React.createClass({
         moduleTitle: React.PropTypes.string.isRequired,
         jumboTitle: React.PropTypes.string.isRequired,
         text: React.PropTypes.string,
-        subText: React.PropTypes.string
+        subText: React.PropTypes.string,
+        tuitionDates: React.PropTypes.array
     },
     render() {
-        const {CTAP, CTAPText, CTAS, CTASText,  moduleTitle, jumboTitle, text, subText, CTAPLink, CTASLink} = this.props;
+        const {CTAP, CTAPText, CTAS, CTASText,  moduleTitle, jumboTitle, text, subText, CTAPLink, CTASLink, tuitionDates} = this.props;
         function renderButtons() {
             return (
                 <div className="cta-double">
@@ -33,6 +41,13 @@ const Hero = React.createClass({
                     </h1>
                     {text ? <p className="text-body-large text-subtle text-measure">{text}</p> : null}
                     {subText ? <p className="text-body-small text-subtle text-measure">{subText}</p> : null}
+                    <p className="text-body-small text-subtle">
+                        <FormattedMessage
+                            id="modules.Hero.nextBootcamp"
+                            defaultMessage="Next bootcamp starts: {date}"
+                            values={{ date: tuitionDates[0].startDate + " 2017"}}
+                        />
+                    </p>
                     {CTAS || CTAP ? renderButtons() : null}
                 </div>
             </header>
@@ -41,4 +56,3 @@ const Hero = React.createClass({
 });
 
 export default Hero;
-

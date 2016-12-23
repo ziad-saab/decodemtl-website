@@ -5,7 +5,7 @@ import { injectIntl } from 'react-intl';
 
 import CourseHero from '../../modules/Hero';
 import CourseOverview from '../../modules/Overview';
-import CourseTuitionDates from'../../modules/CourseTuitionDates';
+import CourseTuitionDates from '../../modules/CourseTuitionDates';
 import CourseCurriculum from '../../modules/CourseCurriculum';
 import FormOptin from '../../modules/FormOptin';
 import CourseInstructor from '../../modules/CourseInstructor';
@@ -160,7 +160,8 @@ const Courses = React.createClass({
                     moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
                     jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
                     text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
-                    subText={""}/>
+                    subText={""}
+                    tuitionDates={tuitionDates[this.props.intl.locale]} />
                 <Element name="overview" className="element">
                     <CourseOverview overview={overview}/>
                 </Element>
@@ -168,25 +169,25 @@ const Courses = React.createClass({
                     <CourseTuitionDates tuitionDates={tuitionDates[this.props.intl.locale]} />
                 </Element>
                 <Element name="curriculum">
-                    <CourseCurriculum subjects={subjects[this.props.intl.locale]}/>
+                    <CourseCurriculum subjects={subjects[this.props.intl.locale]} />
                 </Element>
                 <Element name="schedule">
-                    <CourseSchedule background={scheduleBackground}/>
+                    <CourseSchedule background={scheduleBackground} />
                 </Element>
-                <CourseTestimonial testimonial={testimonials[this.props.intl.locale][Math.floor(Math.random() * testimonials[this.props.intl.locale].length)]}/>
+                <CourseTestimonial testimonial={testimonials[this.props.intl.locale][Math.floor(Math.random() * testimonials[this.props.intl.locale].length)]} />
                 <FormOptin submitButton={this.props.intl.formatMessage({id: "modules.ScheduleVisit.submit", defaultMessage: "Submit"})} title={formTitle} text={formText} interests={{"7561ee16e5": true}}/>
                 <Element name="instructor">
-                    <CourseInstructor instructors={instructors[this.props.intl.locale]}/>
+                    <CourseInstructor instructors={instructors[this.props.intl.locale]} />
                 </Element>
-                <CourseProjectsSlider projects={projects[this.props.intl.locale]} req={req}/>
+                <CourseProjectsSlider projects={projects[this.props.intl.locale]} req={req} />
                 <Element name="careers">
                     <CourseCareerSupport/>
                 </Element>
                 <Element name="faq">
-                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq[this.props.intl.locale]}/>
+                    <CourseFAQ title={this.props.intl.formatMessage({id: "pages.wdbootcamp.courseFAQ", defaultMessage: "Course FAQ"})} faq={faq[this.props.intl.locale]} />
                 </Element>
                 <PartnersLogos/>
-                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}}/>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: courseJson}} />
             </div>
         );
     }
