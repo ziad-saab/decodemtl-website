@@ -424,6 +424,15 @@ module.exports = {
 
     "pages.apply.applyTo": "Postuler à DecodeMTL",
 
+    "pages.apply.howDid": "Comment avez-vous entendu parler de DecodeMTL?",
+
+    "pages.apply.socialMedia": "Média sociaux",
+
+    "pages.apply.friend": "Ami",
+
+    "pages.apply.ad" : "Publicité",
+
+    "pages.apply.other" : "Autre",
 
     // CONFIRMATION
 

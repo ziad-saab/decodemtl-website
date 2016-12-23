@@ -41,13 +41,16 @@ const Hero = React.createClass({
                     </h1>
                     {text ? <p className="text-body-large text-subtle text-measure">{text}</p> : null}
                     {subText ? <p className="text-body-small text-subtle text-measure">{subText}</p> : null}
-                    <p className="text-body-small text-subtle">
-                        <FormattedMessage
-                            id="modules.Hero.nextBootcamp"
-                            defaultMessage="Next bootcamp starts: {date}"
-                            values={{ date: tuitionDates[0].startDate + " 2017"}}
-                        />
-                    </p>
+                    { tuitionDates && tuitionDates[0] ?
+                        <p className="text-body-small text-subtle">
+                            <FormattedMessage
+                                id="modules.Hero.nextBootcamp"
+                                defaultMessage="Next bootcamp starts: {date}"
+                                values={{ date: tuitionDates[0].startDate + " 2017"}}
+                            />
+                        </p>
+                        : null
+                    }
                     {CTAS || CTAP ? renderButtons() : null}
                 </div>
             </header>

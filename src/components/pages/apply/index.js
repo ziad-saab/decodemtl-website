@@ -98,29 +98,29 @@ const Apply = React.createClass({
                                     <div className="required">
                                         <label htmlFor="first-name" className="visually-hidden">First Name</label>
                                         <input type="text" name="first-name" id="first-name" placeholder={this.props.intl.formatMessage({id: "pages.apply.firstName", defaultMessage: "First Name"})}
-                                               aria-required={true} required/>
+                                            aria-required={true} required/>
                                     </div>
                                     {/* /first-name */}
 
                                     <div className="required">
                                         <label htmlFor="last-name" className="visually-hidden">Last Name</label>
                                         <input type="text" name="last-name" id="last-name" placeholder={this.props.intl.formatMessage({id: "pages.apply.lastName", defaultMessage: "Last Name"})}
-                                               aria-required={true} required/>
+                                            aria-required={true} required/>
                                     </div>
                                     {/* /last-name */}
 
                                     <div className="required">
                                         <label htmlFor="tel" className="visually-hidden">Your Phone</label>
                                         <input type="tel" name="tel" id="tel" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourPhone", defaultMessage: "Your Phone"})}
-                                               aria-required={true}
-                                               required/>
+                                            aria-required={true}
+                                            required/>
                                     </div>
                                     {/* /phone */}
 
                                     <div className="required">
                                         <label htmlFor="email" className="visually-hidden">Email</label>
                                         <input type="email" name="email" placeholder={this.props.intl.formatMessage({id: "pages.apply.yourEmail", defaultMessage: "Your Email"})} aria-required={true}
-                                               required/>
+                                            required/>
                                     </div>
                                     {/* /email */}
                                     <div>
@@ -144,16 +144,16 @@ const Apply = React.createClass({
                                             id="pages.apply.whichCourse"
                                             defaultMessage="Which course are you applying to:"
                                         /><span
-                                        className="required">*</span></label>
+                                            className="required">*</span></label>
                                     <fieldset className="course-selection" aria-required={true}>
                                         {courses[this.props.intl.locale].map((course, i) => {
                                             return course.nextSessions.map(session => {
                                                 return (
                                                     <div key={i + session}>
                                                         <input type="radio" name="course"
-                                                               value={course.title + ' ' + course.jumboTitle + ' ' + session}
-                                                               id={course.jumboTitle + session}
-                                                               required/>
+                                                            value={course.title + ' ' + course.jumboTitle + ' ' + session}
+                                                            id={course.jumboTitle + session}
+                                                            required/>
                                                         <label
                                                             htmlFor={course.jumboTitle + session}>{course.title} {course.jumboTitle} ({session})
                                                         </label>
@@ -179,7 +179,7 @@ const Apply = React.createClass({
                                             id="pages.apply.whatIs"
                                             defaultMessage="What is your current level of technical knowledge:"
                                         /><span
-                                        className="required">*</span></label>
+                                            className="required">*</span></label>
                                     <select name="tech-background" id="tech-background" aria-required={true} required>
                                         <option value="">
                                             <FormattedMessage
@@ -239,7 +239,7 @@ const Apply = React.createClass({
                                     <fieldset className="hopes">
                                         <div>
                                             <input type="checkbox" name="hope" value="Get a job as a developer"
-                                                   id="new-job"/>
+                                                id="new-job"/>
                                             <label htmlFor="new-job">
                                                 <FormattedMessage
                                                     id="pages.apply.getJob"
@@ -249,7 +249,7 @@ const Apply = React.createClass({
                                         </div>
                                         <div>
                                             <input type="checkbox" name="hope" value="Return to a previous job/company"
-                                                   id="old-job"/>
+                                                id="old-job"/>
                                             <label htmlFor="old-job">
                                                 <FormattedMessage
                                                     id="pages.apply.returnTo"
@@ -259,7 +259,7 @@ const Apply = React.createClass({
                                         </div>
                                         <div>
                                             <input type="checkbox" name="hope" value="Start a company"
-                                                   id="start-company"/>
+                                                id="start-company"/>
                                             <label htmlFor="start-company">
                                                 <FormattedMessage
                                                     id="pages.apply.startA"
@@ -269,7 +269,7 @@ const Apply = React.createClass({
                                         </div>
                                         <div>
                                             <input type="checkbox" name="hope"
-                                                   value="Go back to school / continue learning" id="learn"/>
+                                                value="Go back to school / continue learning" id="learn"/>
                                             <label htmlFor="learn">
                                                 <FormattedMessage
                                                     id="pages.apply.goBack"
@@ -308,6 +308,63 @@ const Apply = React.createClass({
                                     <textarea name="message" id="message" placeholder={this.props.intl.formatMessage({id: "pages.apply.anything", defaultMessage: "Anything Goes..."})}/>
                                 </section>
                                 {/* /.about-section */}
+
+                                {/* ======== How did you hear about us ======= */}
+                                <section className="hear-about-us-section">
+                                    <h3 className="module-title-medium">
+                                        <FormattedMessage
+                                            id="pages.apply.howDid"
+                                            defaultMessage="How did you hear about DecodeMTL?"
+                                        />
+                                    </h3>
+                                    {/* <label htmlFor="heard-about-us">
+                                        <FormattedMessage
+                                        id="pages.apply.pleaseLet"
+                                        defaultMessage="Please let us know how you came accross DecodeMTL:"
+                                        /><span
+                                        className="required">*</span>
+                                    </label> */}
+                                    <select name="heard-about-us" id="heard-about-us" aria-required={true} required>
+                                        <option value="">
+                                            <FormattedMessage
+                                                id="pages.apply.select"
+                                                defaultMessage="-- select --"
+                                            />
+                                        </option>
+                                        <option value="Google">
+                                            <FormattedMessage
+                                                id="pages.apply.google"
+                                                defaultMessage="Google"
+                                            />
+                                        </option>
+                                        <option value="Social Media">
+                                            <FormattedMessage
+                                                id="pages.apply.socialMedia"
+                                                defaultMessage="Social Media"
+                                            />
+                                        </option>
+                                        <option value="Friend">
+                                            <FormattedMessage
+                                                id="pages.apply.friend"
+                                                defaultMessage="Friend"
+                                            />
+                                        </option>
+                                        <option value="Ad">
+                                            <FormattedMessage
+                                                id="pages.apply.ad"
+                                                defaultMessage="Ad"
+                                            />
+                                        </option>
+                                        <option value="Other">
+                                            <FormattedMessage
+                                                id="pages.apply.other"
+                                                defaultMessage="Other"
+                                            />
+                                        </option>
+                                    </select>
+                                    {/* /.hear about us  dropdown */}
+                                </section>
+                                {/* /.hear-about-us section */}
 
                                 {/* ======== submit ======== */}
                                 <section className="submit-section">
