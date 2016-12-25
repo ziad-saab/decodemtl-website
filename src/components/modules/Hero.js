@@ -1,11 +1,6 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
-import upcomingCourses from '../../config/upcomingCourses';
-
-
-const nextStartDate = upcomingCourses.en[0].startDate;
-const nextStartDateFR = upcomingCourses.fr[0].startDate;
 
 //DO NOT CONVERT TO PRESENTATIONAL COMPONENT
 //to attach "ref" to component the component must have state
@@ -41,7 +36,7 @@ const Hero = React.createClass({
                     </h1>
                     {text ? <p className="text-body-large text-subtle text-measure">{text}</p> : null}
                     {subText ? <p className="text-body-small text-subtle text-measure">{subText}</p> : null}
-                    { tuitionDates && tuitionDates[0] ?
+                    {tuitionDates && tuitionDates[0] ?
                         <p className="text-body-small text-subtle">
                             <FormattedMessage
                                 id="modules.Hero.nextBootcamp"
