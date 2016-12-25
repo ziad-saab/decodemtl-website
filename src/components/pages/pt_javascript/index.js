@@ -157,7 +157,8 @@ const Courses = React.createClass({
                     moduleTitle={this.props.intl.formatMessage({id: "pages.ptjavascript.parttime", defaultMessage: "Part-Time"})}
                     jumboTitle={this.props.intl.formatMessage({id: "pages.ptjavascript.javascript", defaultMessage: "JavaScript"})}
                     text={this.props.intl.formatMessage({id: "pages.ptjavascript.developA", defaultMessage: "Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks."})}
-                    subText={""}/>
+                    subText={""}
+                    tuitionDates={tuitionDates[this.props.intl.locale]} />
                 <Element name="overview">
                     <CourseOverview overview={overview}/>
                 </Element>
