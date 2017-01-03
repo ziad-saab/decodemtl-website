@@ -14,9 +14,9 @@ export default {
             endDate: 'Jun 22nd',
             days: 'Mon. & Wed.',
             hours: '6:30PM-9:30PM',
-            price: 1995,
+            price: 0,
             courseName: 'javascript',
-            earlyBird: true
+            earlyBird: false
         }
     ],
     fr: [
@@ -34,9 +34,9 @@ export default {
             endDate: '22 juin',
             days: 'Lun. & mer.',
             hours: '18h30-21h30',
-            price: 1995,
+            price: 0,
             courseName: 'javascript',
-            earlyBird: true
+            earlyBird: false
         }
     ]
 }

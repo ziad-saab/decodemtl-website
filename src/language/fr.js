@@ -568,6 +568,8 @@ module.exports = {
 
     "pages.notFound.unstuck": "Utilisez le menu de navigation pour vous sortir d'ici.",
 
-    "pages.notFound.referenceError": "Erreur: la page que vous voulez n'est pas définie."
+    "pages.notFound.referenceError": "Erreur: la page que vous voulez n'est pas définie.",
+
+    "tables.tuitionDates.full": "Complet",
 
 }

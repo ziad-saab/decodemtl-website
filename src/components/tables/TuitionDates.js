@@ -1,5 +1,6 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 const TuitionDates = React.createClass({
     propTypes: {
@@ -27,7 +28,7 @@ const TuitionDates = React.createClass({
                         ? this.props.earlyBird
                         ? this._formatPrice(this.props.price - 500)
                         : this._formatPrice(this.props.price)
-                        : 'Full'}
+                        : this.props.intl.formatMessage({id: "tables.tuitionDates.full", defaultMessage: "Full"})}
                     {this.props.earlyBird
                         ? <span>
                             <span className="fa fa-bolt" aria-hidden="true"/>
@@ -46,4 +47,4 @@ const TuitionDates = React.createClass({
     }
 });
 
-export default TuitionDates;
+export default injectIntl(TuitionDates);
