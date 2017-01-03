@@ -5,7 +5,7 @@ export default {
             endDate: 'Mar 23rd',
             days: 'Tue. & Thu.',
             hours: '6:30PM-9:30PM',
-            price: 1995,
+            price: 0,
             courseName: 'htmlcss',
             earlyBird: false
         },
@@ -14,9 +14,9 @@ export default {
             endDate: 'Jun 23rd',
             days: 'Tue. & Thu.',
             hours: '6:30PM-9:30PM',
-            price: 1995,
+            price: 0,
             courseName: 'htmlcss',
-            earlyBird: true
+            earlyBird: false
         },
     ],
     fr: [
@@ -25,7 +25,7 @@ export default {
             endDate: '23 mar',
             days: 'Mar. & jeu.',
             hours: '18h30-21h30',
-            price: 1995,
+            price: 0,
             courseName: 'htmlcss',
             earlyBird: false
         },
@@ -34,9 +34,9 @@ export default {
             endDate: '23 juin',
             days: 'Mar. & jeu.',
             hours: '18h30-21h30',
-            price: 1995,
+            price: 0,
             courseName: 'htmlcss',
-            earlyBird: true
+            earlyBird: false
         },
     ]
 }
