@@ -129,6 +129,7 @@ app.post('/apply', (req, res) => {
                 <p>Technical Knowledge: ${data['tech-background']}</p>
                 ${data['hope'] && Array.isArray(data['hope']) ? '<p>Goals:</p><ul>' + data['hope'].map(goal => ('<li>' + goal + '</li>')).join('') + '</ul>' : data['hope'] ? '<p>Goal: ' + data['hope'] + '</p>' : ''}
                 <p>About yourself: ${data['message']}</p>
+                <p>How did you hear about DecodeMTL: ${data['heard-about-us']}</p>
                </div>` // html body
     };
 
