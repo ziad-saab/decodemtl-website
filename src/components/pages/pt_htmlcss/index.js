@@ -142,7 +142,7 @@ const Courses = React.createClass({
                     link={link[this.props.intl.locale]}
                 />
                 <SecondaryNav display={this.state.secondaryNav} links={secondaryLinks}
-                              syllabus='/downloads/htmlcss_syllabus.pdf'/>
+                    syllabus='/downloads/htmlcss_syllabus.pdf'/>
                 <CourseHero
                     CTAPText={this.props.intl.formatMessage({id: "pages.wdbootcamp.applyNow", defaultMessage: "Apply Now"})}
                     CTASText="Syllabus"
@@ -156,7 +156,8 @@ const Courses = React.createClass({
                     moduleTitle={this.props.intl.formatMessage({id: "pages.pthtmlcss.parttime", defaultMessage: "Part-Time"})}
                     jumboTitle={this.props.intl.formatMessage({id: "pages.pthtmlcss.htmlcss", defaultMessage: "HTML & CSS"})}
                     text={this.props.intl.formatMessage({id: "pages.pthtmlcss.learnTo", defaultMessage: "Learn to write clean, standards-complient code, and become acquainted with the fundamentals of web design."})}
-                    subText={""}/>
+                    subText={""}
+                    tuitionDates={tuitionDates[this.props.intl.locale]} />
                 <Element name="overview">
                     <CourseOverview overview={overview}/>
                 </Element>
