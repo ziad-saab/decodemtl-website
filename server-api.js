@@ -189,7 +189,7 @@ app.post('/visit', (req, res) => {
     // setup e-mail data
     //proceed editing at own risk
     const mailOptions = {
-        from: '"DecodeMTL Bot "<decodemtl@gmail.com>', // sender address
+        from: data['email'], // sender address
         to: 'hello@decodemtl.com', // list of receivers
         subject: 'New Visit Request', // Subject line
         text: 'Someone wants to schedule a visit.', // plaintext body
@@ -225,7 +225,7 @@ app.post('/contact', (req, res) => {
 
     // setup e-mail data
     const mailOptions = {
-        from: '"DecodeMTL Bot "<decodemtl@gmail.com>', // sender address
+        from: data['email'], // sender address
         to: 'hello@decodemtl.com', // list of receivers
         subject: 'New Message from ' + data['first-name'] + ' ' + data['last-name'] + '', // Subject line
         text: 'New Message', // plaintext body
