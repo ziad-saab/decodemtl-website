@@ -115,7 +115,7 @@ app.post('/apply', (req, res) => {
     // setup e-mail data
     //proceed editing at own risk
     const mailOptions = {
-        from: data['first-name'] + ' ' + data['last-name']+ '' + data['email'], // sender address
+        from: data['email'], // sender address
         to: 'hello@decodemtl.com', // list of receivers
         subject: 'New Application from ' + data['first-name'] + ' ' + data['last-name'] + '', // Subject line
         text: 'New Application', // plaintext body
