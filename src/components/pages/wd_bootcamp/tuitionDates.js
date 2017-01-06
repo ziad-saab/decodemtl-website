@@ -1,17 +1,17 @@
 export default {
     en: [
         {
-            startDate: 'Jan 9th',
-            endDate: 'Mar 3rd',
+            startDate: 'Apr 3rd',
+            endDate: 'May 26th',
             days: 'Monday—Friday',
             hours: '10AM—9PM',
             price: 6495,
             courseName: 'Bootcamp',
-            earlyBird: false
+            earlyBird: true
         },
         {
-            startDate: 'Apr 3rd',
-            endDate: 'May 26th',
+            startDate: 'Jul 3rd',
+            endDate: 'Aug 25th',
             days: 'Monday—Friday',
             hours: '10AM—9PM',
             price: 6495,
@@ -21,17 +21,17 @@ export default {
     ],
     fr: [
         {
-            startDate: '9 jan',
-            endDate: '3 Mar',
+            startDate: '3 avr',
+            endDate: '26 mai',
             days: 'Lundi—Vendredi',
             hours: '10h00—21h00',
             price: 6495,
             courseName: 'Bootcamp',
-            earlyBird: false
+            earlyBird: true
         },
         {
-            startDate: '3 avr',
-            endDate: '26 mai',
+            startDate: '3 juil',
+            endDate: '25 aout',
             days: 'Lundi—Vendredi',
             hours: '10h00—21h00',
             price: 6495,
