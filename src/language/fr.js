@@ -4,9 +4,9 @@ module.exports = {
 
     "modules.HomeHero.heading": "Apprenez à Programmer",
 
-    "modules.HomeHero.subText": "Nous offrons les cours de technologie les plus dynamiques à Montréal. Apprenez à programmer dans un environnement stimulant à travers une formation à base de projets menée par nos experts de l’industrie.",
+    "modules.HomeHero.subText": "Apprenez à programmer dans un environnement stimulant, grâce à une approche pédagogique basée sur des projets menés par nos experts de l’industrie.",
 
-    "modules.HomeHero.button": "Naviguer nos cours",
+    "modules.HomeHero.button": "Postulez Maintenant",
 
     "modules.HomeEvolving.header": "Une Éducation Moderne",
 

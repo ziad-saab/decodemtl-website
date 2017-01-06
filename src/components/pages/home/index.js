@@ -23,7 +23,7 @@ var req = require.context('APP/assets/images', true, /^\.\/wework(.*)\.jpg$/i);
 
 const meta = {
     en: [
-        {name: 'description', content: 'Browse Full-Time & Part-Time Web Development courses offered by DecodeMTL. Become a Web Developer through hands-on learning with our Web Development Training.'},
+        {name: 'description', content: 'Learn Web Development at Montreal\'s leading coding bootcamp. Become a Web Developer through hands-on learning with our Web Development Training.'},
         {property: 'og:url', content: 'https://www.decodemtl.com'},
         {property: 'og:title', content: 'Learn Web Development - Montreal Coding Bootcamp'},
         {property: 'og:description', content: 'DecodeMTL offer\'s Montreal\'s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment.'},
@@ -39,10 +39,10 @@ const meta = {
         {name: 'twitter:image:alt', content: 'DecodeMTL Students in Action'}
     ],
     fr: [
-        {name: 'description', content: 'Parcourez les cours de développement Web à temps plein et à temps partiel offerts par DecodeMTL. Devenez un développeur Web grâce à l\'apprentissage pratique avec notre formation sur le développement Web.'},
+        {name: 'description', content: 'Apprenez le développement Web au cours les plus dynamiques à Montréal. Devenez un développeur Web grâce à une approche pédagogique basée sur des projets.'},
         {property: 'og:url', content: 'https://www.decodemtl.com/fr'},
         {property: 'og:title', content: 'Apprendre le développement Web - Bootcamp de programmation à Montréal'},
-        {property: 'og:description', content: 'Parcourez les cours de développement Web à temps plein et à temps partiel offerts par DecodeMTL. Devenez un développeur Web grâce à l\'apprentissage pratique avec notre formation sur le développement Web.'},
+        {property: 'og:description', content: 'Apprenez le développement Web au cours les plus dynamiques à Montréal. Devenez un développeur Web grâce à une approche pédagogique basée sur des projets.'},
         {property: 'og:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
         {property: 'og:image:width', content: '1200'},
         {property: 'og:image:height', content: '630'},
@@ -50,7 +50,7 @@ const meta = {
         {name: 'twitter:card', content: 'summary_large_image'},
         {name: 'twitter:site', content: '@decodemtl'},
         {name: 'twitter:title', content: 'Apprendre le développement Web - Bootcamp de programmation à Montréal'},
-        {name: 'twitter:description', content: 'Parcourez les cours de développement Web à temps plein et à temps partiel offerts par DecodeMTL. Devenez un développeur Web grâce à l\'apprentissage pratique avec notre formation sur le développement Web.'},
+        {name: 'twitter:description', content: 'Apprenez le développement Web au cours les plus dynamiques à Montréal. Devenez un développeur Web grâce à une approche pédagogique basée sur des projets.'},
         {name: 'twitter:image', content: 'https://www.decodemtl.com/downloads/decode_main.png'},
         {name: 'twitter:image:alt', content: 'Les étudiants de DecodeMTL en action'}
     ]

@@ -8,7 +8,7 @@ export default {
             duration: "8 weeks",
             hours: "400 hours",
             days: 'Monday - Friday',
-            nextSessions: ["January 9th, 2017", "April 3rd, 2017"],
+            nextSessions: ["April 3rd, 2017", "July 3rd, 2017"],
             link: 'web-development-immersive'
         },
         {
@@ -19,7 +19,7 @@ export default {
             duration: "10 weeks",
             hours: "60 hours",
             days: 'Tuesday & Thursday',
-            nextSessions: ["January 17th, 2017", "April 18th, 2017"],
+            nextSessions: [""],
             link: 'html-css'
         },
         {
@@ -30,7 +30,7 @@ export default {
             duration: "10 weeks",
             hours: "60 hours",
             days: 'Monday & Wednesday',
-            nextSessions: ["January 16th, 2017", "April 17th, 2017"],
+            nextSessions: ["January 16th, 2017"],
             link: 'javascript'
         }
     ],
@@ -43,7 +43,7 @@ export default {
             duration: "8 semaines",
             hours: "400 heures",
             days: 'Lundi - Vendredi',
-            nextSessions: ["9 janvier, 2017", "3 avril, 2017"],
+            nextSessions: ["3 avril, 2017", "3 juillet, 2017"],
             link: 'web-development-immersive'
         },
         {
@@ -54,7 +54,7 @@ export default {
             duration: "10 semaines",
             hours: "60 heures",
             days: 'Mardi et jeudi',
-            nextSessions: ["17 janvier, 2017", "18 avril, 2017"],
+            nextSessions: [],
             link: 'html-css'
         },
         {
@@ -65,7 +65,7 @@ export default {
             duration: "10 semaines",
             hours: "60 heures",
             days: 'Lundi et mercredi',
-            nextSessions: ["16 janvier, 2017", "17 avril, 2017"],
+            nextSessions: ["16 janvier, 2017"],
             link: 'javascript'
         }
     ]
