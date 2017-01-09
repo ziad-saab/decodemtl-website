@@ -26,15 +26,12 @@ const PrepCourse = React.createClass({
                     <p>The goal of this prep course is to get your feet wet with programming, so that we can start the first day of class without wasting any time.</p>
 
                     <h3>Commitment</h3>
-                    <p>This preparatory material will take anywhere between 30-60 hours of hard work to complete. If you are applying to our full-time bootcamp, <strong>completing this material before starting the bootcamp is mandatory</strong>.</p>
+                    <p>This preparatory material will take anywhere between 30-60 hours of hard work to complete. If you are applying to our full-time bootcamp, <strong>understanding this material before starting the bootcamp is mandatory</strong>.</p>
 
                     <h3>Community and mentoring</h3>
                     <p>If you are stuck, it’s perfectly normal. Even though this is only a preparatory course, it does not make it easy. That being said, you are not alone in your quest :)</p>
 
                     <p>At the first sign of confusion, you should take a step back and re-read what has confused you. Search Google, MDN or Stack Overflow for answers to your questions.</p>
-
-                    <p>If you get stuck for too long and cannot find a satisfactory answer online, don’t hesitate to ping us on Slack. We may not always be available, but we will do our best to make sure you can complete the prep course in time, successfully.</p>
-
                   </div>
                 </section>
 
@@ -74,13 +71,12 @@ const PrepCourse = React.createClass({
                       </li>
                     </ul>
 
-                    <h3>Submit your work</h3>
-                    <p>Login to Slack and submit the following information to your instructor. If you are not on Slack yet, please email us. If you are unsure who your instructor is, please email us as well.</p>
+                    <h3>Checkpoint</h3>
+                    <p>Before moving on, make sure that you have the following:</p>
 
                     <ul>
-                      <li>Your GitHub username</li>
-                      <li>Your Cloud9 username</li>
-                      <li>Your Codecademy username</li>
+                      <li>A GitHub account</li>
+                      <li>A Cloud9 account</li>
                     </ul>
 
                   </div>
@@ -122,8 +118,8 @@ const PrepCourse = React.createClass({
                       </li>
                     </ul>
 
-                    <h3>Submit your work</h3>
-                    <p>Login to Slack and submit the following information to your instructor. If you are not on Slack yet, please email us. If you are unsure who your instructor is, please email us as well.</p>
+                    <h3>Checkpoint</h3>
+                    <p>Before moving on, make sure you can at least answer the following questions:</p>
 
                     <ul>
                       <li>How do I figure out which directory I’m currently in?</li>
@@ -160,8 +156,8 @@ const PrepCourse = React.createClass({
                       </li>
                     </ul>
 
-                    <h3>Submit your work</h3>
-                    <p>Login to Slack and submit the following information to your instructor. If you are not on Slack yet, please email us. If you are unsure who your instructor is, please email us as well.</p>
+                    <h3>Checkpoint</h3>
+                    <p>Before moving on to the next section, try to answer the following questions:</p>
 
                     <ul>
                       <li>Describe the activity of programming <strong>in your own words</strong>, using a few sentences.</li>
@@ -199,10 +195,8 @@ const PrepCourse = React.createClass({
                       </li>
                     </ul>
 
-                    <h3>Submit your work</h3>
-                    <p>Create a small HTML &amp; CSS résumé that showcases what you have learned in this section.</p>
-
-                    <p>When you are done – don’t spend more than a few hours on this – login to Slack and submit the following information to your instructor. If you are not on Slack yet, please email us. If you are unsure who your instructor is, please email us as well.</p>
+                    <h3>Checkpoint</h3>
+                    <p>If you don't already have one, create a small HTML and CSS CV that showcases what you have learned in this section.</p>
 
                   </div>
                 </section>
@@ -229,8 +223,8 @@ const PrepCourse = React.createClass({
                       </li>
                     </ul>
 
-                    <h3>Submit your work</h3>
-                    <p>Login to Slack and submit the following information to your instructor. If you are not on Slack yet, please email us. If you are unsure who your instructor is, please email us as well.</p>
+                    <h3>Checkpoint</h3>
+                    <p>Make sure that you can answer most if not all of the following questions. Some of them will be part of your technical interview:</p>
 
                     <ul>
                       <li>Describe what is Git <strong>in your own words</strong>, using a few sentences.</li>
@@ -251,7 +245,7 @@ const PrepCourse = React.createClass({
 
                     <p>Pat yourself on the back. If you’ve successfully completed all the sections above, you should now have a pretty solid introduction to many of the tools and languages used in web development.</p>
 
-                    <p>Now would be a good time to look back at what you have done, and, with your newly acquired powers and skills, take all the assignments that you have done and publish them on GitHub as separate projects.</p>
+                    <p>The next step would be to schedule your technical interview as soon as possible.</p>
 
                     <p>If you have any questions about the full-time class, don’t hesitate to e-mail <a href="mailto:hello@decodemtl.com?subject=Prep Course question">hello@decodemtl.com</a> with your questions :)</p>
 
