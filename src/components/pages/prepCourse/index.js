@@ -18,18 +18,11 @@ const PrepCourse = React.createClass({
                 <section className="module">
                   <div className="wrapper">
 
-                    <h2 className="module-title">Welcome to DecodeMTL</h2>
+                    <h2 className="module-title">Welcome!</h2>
 
-                    <p>Welcome to DecodeMTL’s full-stack web development bootcamp!</p>
-                    <p>In this prep course, we compiled and organized a set of online resources that will help you get started with web development.</p>
+                    <p>We are super excited that you want to join DecodeMTL. We have created this prep course to help you prepare for your technical interview.</p>
 
-                    <p>The goal of this prep course is to get your feet wet with programming, so that we can start the first day of class without wasting any time.</p>
-
-                    <h3>Commitment</h3>
-                    <p>This preparatory material will take anywhere between 30-60 hours of hard work to complete. If you are applying to our full-time bootcamp, <strong>understanding this material before starting the bootcamp is mandatory</strong>.</p>
-
-                    <h3>Community and mentoring</h3>
-                    <p>If you are stuck, it’s perfectly normal. Even though this is only a preparatory course, it does not make it easy. That being said, you are not alone in your quest :)</p>
+                    <p>You should expect to spend 40 - 60 hours to get through all of the material.</p>
 
                     <p>At the first sign of confusion, you should take a step back and re-read what has confused you. Search Google, MDN or Stack Overflow for answers to your questions.</p>
                   </div>
@@ -45,7 +38,7 @@ const PrepCourse = React.createClass({
                     <ul>
                       <li>
                         <h4><a href="http://www.google.com/chrome/" target="_blank">Download Google Chrome</a></h4>
-                        <p>Google Chrome will be used as the main development browser during the training. Its integrated set of debugging tools makes developers’ lives easier. Chrome’s rendering engine is used by multiple browsers, giving you a good idea of what your pages would look like in many different settings.</p>
+                        <p>Google Chrome will be used as the main development browser during the course. Its integrated set of debugging tools makes developers’ lives easier. Chrome’s rendering engine is used by multiple browsers, giving you a good idea of what your pages would look like in many different settings.</p>
                       </li>
                       <li>
                         <h4><a href="https://www.github.com/" target="_blank">Signup for a GitHub account</a></h4>
@@ -134,7 +127,7 @@ const PrepCourse = React.createClass({
                   <div className="wrapper">
 
                     <h2 className="module-title">Part 3: Programming with JavaScript</h2>
-                    <p>JavaScript is the main language of this bootcamp. We will be using JavaScript for the front-end – the browser – as well as the back-end – the server and database. It is therefore crucial that you complete this section of the prep course before the first day of class.</p>
+                    <p>JavaScript is the main language of this bootcamp. We will be using JavaScript for the front-end – the browser – as well as the back-end – the server and database.</p>
 
                     <h3>Do your work</h3>
                     <ul>
@@ -196,7 +189,7 @@ const PrepCourse = React.createClass({
                     </ul>
 
                     <h3>Checkpoint</h3>
-                    <p>If you don't already have one, create a small HTML and CSS CV that showcases what you have learned in this section.</p>
+                    <p>If you don't already have one, create a simple HTML and CSS personal webpage that showcases what you have learned in this section.</p>
 
                   </div>
                 </section>
@@ -233,6 +226,7 @@ const PrepCourse = React.createClass({
                       <li>Do you need an internet connection to use GitHub?</li>
                       <li>What is the difference between <code className="highlighter-rouge">git add</code> and <code className="highlighter-rouge">git commit</code>?</li>
                       <li>What is the difference between <code className="highlighter-rouge">git commit</code> and <code className="highlighter-rouge">git push</code>?</li>
+                      <li>Publish the webpage you created in section 4 to Github pages. <em>Hint, read this: <a href="https://pages.github.com/">https://pages.github.com/</a></em>.</li>
                     </ul>
 
                   </div>
@@ -245,9 +239,20 @@ const PrepCourse = React.createClass({
 
                     <p>Pat yourself on the back. If you’ve successfully completed all the sections above, you should now have a pretty solid introduction to many of the tools and languages used in web development.</p>
 
-                    <p>The next step would be to schedule your technical interview as soon as possible.</p>
+                    <p>The next step is to complete your technical interview. If you have not yet scheduled it, you should contact us.</p>
 
-                    <p>If you have any questions about the full-time class, don’t hesitate to e-mail <a href="mailto:hello@decodemtl.com?subject=Prep Course question">hello@decodemtl.com</a> with your questions :)</p>
+                    <p>Most people tend to over prepare for their technical interview. Generally, if you have gone through all of the material, you should be fine. If you fail your interview the first time, you can always study more and try again.</p>
+
+                    <p>Here is what you will be tested on:
+                      <ol>
+                        <li>You have a GitHub and Cloud9 account.</li>
+                        <li>You are OK with the basics of HTML and CSS. To show it, you have a small web page that you created and uploaded on GitHub Pages.</li>
+                        <li>You are OK with the basics of JavaScript strings, numbers, booleans, arrays, objects, functions, variables, loops and conditionals. You can declare a variable, assign it a value, create an object with some properties, assign new properties to an object, do a basic loop, run code conditionally and create basic functions.</li>
+                        <li>You are OK with the basics of the Mac or Linux command line. You can move from directory to directory, list files, see which directory you're in, and operate the basics of Git (add, commit, push) from the command line.</li>
+                      </ol>
+                    </p>
+
+                    <p>If you have any questions, don’t hesitate to e-mail <a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>.</p>
 
                   </div>
                 </section>
