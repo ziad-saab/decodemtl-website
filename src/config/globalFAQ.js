@@ -67,22 +67,22 @@ export const generalFAQ = {
 export const financialsFAQ = {
     en: [
         {
-            question: 'Do you offer financial aid?',
-            answer: 'Yes! In fact, you can finance your tuition for as low as $30 per month with a low-interest student loan backed by the National Bank of Canada. Contact us for details.'
+            question: 'Do you offer financial assistance?',
+            answer: 'Yes, we have partnered with the National Bank of Canada to offer low-interest student loans. We have a dedicated loan officer who will be happy to sit down with you and discuss the details. These student loans are low interest and offer flexible re-payment options. Contact us for more details.'
         },
         {
-            question: 'What are your payment options?',
-            answer: 'We accept credit card, email money transfer, and cheque.'
+            question: 'What methods of payment to you accept?',
+            answer: 'Payments can be made by cash or cheque, and can be paid at our office.'
         },
     ],
     fr: [
         {
             question: 'Offrez-vous de l\'aide financière?',
-            answer: 'Oui! Vous pouvez financer vos frais de scolarité pour seulement 30$ par mois, grâce au prêt étudiant à faible intérêt offert en collaboration avec la Banque Nationale du Canada. Contactez-nous pour obtenir les détails.'
+            answer: 'Oui, vous pouvez financer vos frais de scolarité grâce au prêt étudiant à faible intérêt offert en collaboration avec la Banque Nationale du Canada. Nous avons un agent dédié qui sera heureux de s\'asseoir avec vous et de discuter les détails. Ces prêts étudiants sont de faible intérêt et offrent des options flexibles de remboursement. Contactez-nous pour plus de détails.'
         },
         {
             question: 'Quelles sont vos options de paiement?',
-            answer: 'Nous acceptons les cartes de crédit, les transferts d\'argent par courriel et les chèques.',
+            answer: 'Les paiements peuvent être effectués en espèces ou par chèque, et peuvent être payés à notre bureau.',
         },
     ]
 }
