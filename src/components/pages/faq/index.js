@@ -8,7 +8,7 @@ import FAQ from '../../../components/modules/FAQ';
 import GenericTextModule from '../../../components/modules/GenericTextModule';
 
 
-import {generalFAQ, financialsFAQ, immersiveFAQ, partTimeFAQ} from '../../../config/globalFAQ';
+import {generalFAQ, financialsFAQ, immersiveFAQ} from '../../../config/globalFAQ';
 
 const meta = {
     en: [
@@ -88,7 +88,6 @@ const Faq = (props) => {
             <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.general", defaultMessage: "General"})} faq={generalFAQ[props.intl.locale]} />
             <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.financials", defaultMessage: "Financials"})} faq={financialsFAQ[props.intl.locale]} />
             <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.immersive", defaultMessage: "Immersive"})} faq={immersiveFAQ[props.intl.locale]} />
-            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.parttime", defaultMessage: "Part-Time"})} faq={partTimeFAQ[props.intl.locale]} />
             <GenericTextModule title={props.intl.formatMessage({id: "pages.faq.waitI", defaultMessage: "Wait I still have questions!"})} paragraphs={paragraphs}/>
         </div>
     );
