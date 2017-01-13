@@ -101,7 +101,7 @@ const LocationSlider = React.createClass({
                         <Link to="/wework">
                             <FormattedMessage
                                 id="modules.LocationSlider.link"
-                                defaultMessage="Learn more about the WeWork experience"
+                                defaultMessage="Learn more about our location here"
                             /><span className="fa fa-caret-right" aria-hidden="true"/>
                         </Link>
                     </div>

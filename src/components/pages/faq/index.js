@@ -87,7 +87,7 @@ const Faq = (props) => {
             <Hero moduleTitle={props.intl.formatMessage({id: "pages.faq.frequentlyAsked", defaultMessage: "Frequently Asked"})} jumboTitle={props.intl.formatMessage({id: "pages.faq.questions", defaultMessage: "Questions"})}/>
             <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.general", defaultMessage: "General"})} faq={generalFAQ[props.intl.locale]} />
             <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.financials", defaultMessage: "Financials"})} faq={financialsFAQ[props.intl.locale]} />
-            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.immersive", defaultMessage: "Immersive"})} faq={immersiveFAQ[props.intl.locale]} />
+            <FAQ isFaqPage title={props.intl.formatMessage({id: "pages.faq.immersive", defaultMessage: "Bootcamp"})} faq={immersiveFAQ[props.intl.locale]} />
             <GenericTextModule title={props.intl.formatMessage({id: "pages.faq.waitI", defaultMessage: "Wait I still have questions!"})} paragraphs={paragraphs}/>
         </div>
     );

@@ -3,32 +3,24 @@ import React from 'react';
 export default {
     en: [
         {
-            question: 'Why Should I attend DecodeMTL?',
-            answer: 'If you are looking to quickly advance into the field of Web Development, either as a career move or to launch your own product, DecodeMTL will equip you with the skills to do so. Our teachers are top-notch, our curriculum teaches the most in-demand technologies, and our work environment is awesome.'
+            question: 'I’m a beginner, can I still apply?',
+            answer: 'Absolutely! We encourage everyone with an interest in programming wanting to join our course to apply, regardless of your skill level. If you have never coded before, we have developed a free prep-course which you can do on your own time before committing to take our course. This is meant to teach you the fundamentals required for our course, as well as give you a taste for what web development is. If you are still unsure whether or not you should apply, we suggest you schedule a visit so we can take the time to speak 1 on 1.'
         },
         {
-            question: 'What are the technical qualifications?',
-            answer: 'Most of our students have dabbled in code, either in school, professionally, or out of curiosity. You should have a high-level knowledge of the different types of programming and languages that exist, and have at the very least tinkered with sites like CodeSchool or Codecademy. Our admissions process and pre-course work are designed to get you up to speed and ready for the bootcamp, so you don\'t need to be a coding ninja to apply. If you\'re not sure if you are ready to apply, contact us and we will point you in the right direction.',
-        },
-        {
-            question: 'What are the non technical qualifications?',
-            answer: 'You need passion, and lots of it! Passion is the recurring characteristic we find in all successful students. If you love what you do, you will ultimately be successful.'
-        },
-        {
-            question: 'Will I build an App in this course?',
-            answer: 'Absolutely! In the last two weeks of the course, you will be placed in a team and tasked to build a web based application from the ground up. This capstone project will then be presented to a large audience on the last day of the course. This Demo Day event will serve as a way to network with potential employers who will be in the room watching your presentation.'
-        },
-        {
-            question: 'I am an international student, do you offer housing?',
-            answer: (<div>We have partnered with EVO, a student residence just down the street from us. You can read more about EVO <a href="/housing">here</a>.</div>)
+            question: 'How does the application process work?',
+            answer: (<div><p>It all starts by submitting an application online. It’s a simple form with a few questions, and only takes a couple of minutes to complete. Once we receive your application, you will receive an email to schedule a Skype call with a member of our team. There is no need to prepare for this call. We simply want to talk to you in person, learn a bit more about your goals, and discuss the details of our course. After our Skype call, the next step is a technical interview. The technical interview can be done either in person or online, and takes an hour.</p><p>In order to prepare yourself, we have created a free prep-course which you can use as a study guide. In general, it takes about 40-60 hours of practice if you have never coded before to prepare. Once you pass the technical interview, you can join any of our upcoming courses. If you fail, we will give you some feedback and encourage you come back and try again.</p></div>)
         },
         {
             question: 'What do I need to bring with me?',
-            answer: 'Any fast laptop will do. MacOS, Linux, or Windows all work fine.'
+            answer: 'You will need to bring your own laptop. We use a development environment in the cloud, this means that you can use MacOS, Linux or Windows, and it won’t make a difference. As long as you have a fast, reliable computer, you are good to go.'
         },
         {
             question: 'When should I apply to an upcoming cohort?',
-            answer: 'As soon as you know you are ready to commit, you should apply. At the very latest, we suggest two months before the course start date. This gives you time to get through admissions and adequately prepare for the course.'
+            answer: 'We recommend applying at least 3 months before your desired start date. For one, it will give you access to the early bird discount (save $500). Secondly, it will give you ample time to do our prep-course and prepare for your technical interview. It will also ensure that you can get a seat in the class of your choice, and not have to worry about the course being full.'
+        },
+        {
+            question: 'How big are your class sizes?',
+            answer: 'Our maximum intake for any given cohort is 18 students.'
         },
         {
             question: 'I have more questions, who can I ask?',

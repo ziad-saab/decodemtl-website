@@ -58,7 +58,7 @@ const CourseCareerSupport = (props) => {
                             <p>
                                 <FormattedMessage
                                     id="modules.CourseCareerSupport.learnJob"
-                                    defaultMessage="Learn job relevant skills, build a portfolio of projects, get resume help, and practice mock interviews."
+                                    defaultMessage="Learn job relevant skills, build a portfolio of projects, and get resume help."
                                 />
                             </p>
                         </div>

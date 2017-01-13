@@ -12,7 +12,7 @@ export default {
         },
         {
             title: 'Databases and Back-End Web Development',
-            text: 'In this section, we will concentrate on data modeling and persistence with MySQL. We will also practice exposing data from our database by creating Reddit.com web server clone using ExpressJS, Node and MySQL.',
+            text: 'In this section, we will concentrate on data modeling and persistence with MySQL. We will also practice exposing data from our database by creating a Reddit.com web server clone using ExpressJS, Node and MySQL.',
             icon: iconLearn
         },
         {
