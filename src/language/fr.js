@@ -303,7 +303,7 @@ module.exports = {
 
     "navigation.MainFooter.contactUs": "Nous joindre",
 
-    "navigation.MainFooter.webDevelopment": "Développement Web",
+    "navigation.MainFooter.webDevelopment": "Bootcamp",
 
     "navigation.MainFooter.courses": "Cours",
 
@@ -349,7 +349,7 @@ module.exports = {
 
     // SITE NAV
 
-    "navigation.SiteNav.courses": "Cours",
+    "navigation.SiteNav.courses": "Bootcamp",
 
     "navigation.SiteNav.about": "À Propos",
 

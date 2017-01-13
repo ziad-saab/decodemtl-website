@@ -234,11 +234,9 @@ const MainFooter = React.createClass({
                                     <li className="course-list-item"><Link to="/courses/web-development-immersive">
                                         <FormattedMessage
                                             id="navigation.MainFooter.webDevelopment"
-                                            defaultMessage="Web Development"
+                                            defaultMessage="Bootcamp"
                                         /></Link>
                                     </li>
-                                    <li className="course-list-item"><Link to="/courses/html-css">HTML & CSS</Link></li>
-                                    <li className="course-list-item"><Link to="/courses/javascript">JavaScript</Link></li>
                                     <li className="course-list-item"><Link to="/faq">FAQ</Link></li>
                                     <li className="course-list-item"><Link to="/apply">
                                         <FormattedMessage
