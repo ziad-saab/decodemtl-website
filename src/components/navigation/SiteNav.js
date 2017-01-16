@@ -118,16 +118,16 @@ const SiteNav = React.createClass({
                         {/* .site-header-nav */}
                         <nav className="site-header-nav" role="navigation">
                             <ul className="site-header-menu" role="menu">
-                                <li><Link activeClassName={this.props.activeClass} to="/courses">
+                                <li><Link activeClassName={this.props.activeClass} to="/courses/web-development-immersive">
                                     <FormattedMessage
                                         id="navigation.SiteNav.courses"
-                                        defaultMessage="Courses"
+                                        defaultMessage="Bootcamp"
                                     /></Link>
                                 </li>
-                                <li><Link activeClassName={this.props.activeClass} to="/about">
+                                <li><Link activeClassName={this.props.activeClass} to="/faq">
                                     <FormattedMessage
-                                        id="navigation.SiteNav.about"
-                                        defaultMessage="About"
+                                        id="navigation.SiteNav.faq"
+                                        defaultMessage="FAQ"
                                     /></Link>
                                 </li>
                                 <li><Link onClick={this.props.handleScheduleVisit}
@@ -178,16 +178,16 @@ const SiteNav = React.createClass({
                     <nav className="nav-content" role="navigation">
                         {/* primary menu */}
                         <ul className="nav-primary-menu" role="menu">
-                            <li><Link onClick={this._toggleNav} to="/courses">
+                            <li><Link onClick={this._toggleNav} to="/courses/web-development-immersive">
                                 <FormattedMessage
                                     id="navigation.SiteNav.courses"
-                                    defaultMessage="Courses"
+                                    defaultMessage="Bootcamp"
                                 /></Link>
                             </li>
-                            <li><Link onClick={this._toggleNav} to="/about">
+                            <li><Link onClick={this._toggleNav} to="/faq">
                                 <FormattedMessage
-                                    id="navigation.SiteNav.about"
-                                    defaultMessage="About"
+                                    id="navigation.SiteNav.faq"
+                                    defaultMessage="FAQ"
                                 /></Link>
                             </li>
                             <li><Link onClick={this._toggleNav.bind(this, true)} to="/schedule">
@@ -220,7 +220,12 @@ const SiteNav = React.createClass({
                                     defaultMessage="Events"
                                 /></Link>
                             </li>
-                            <li><Link onClick={this._toggleNav} to="/faq">FAQ</Link></li>
+                            <li><Link onClick={this._toggleNav} to="/about">
+                                <FormattedMessage
+                                    id="navigation.SiteNav.about"
+                                    defaultMessage="About"
+                                /></Link>
+                            </li>
                             {/*<li><Link onClick={this._toggleNav} to="/blog">Blog</Link></li>*/}
                             <li><Link onClick={this._toggleNav} to="/contact">
                                 <FormattedMessage

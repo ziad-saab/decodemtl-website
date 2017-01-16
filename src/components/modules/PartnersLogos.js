@@ -32,7 +32,7 @@ const PartnersLogos = (props) => {
                     <Link to={employerLink}>
                         <FormattedMessage
                             id="modules.PartnersLogos.joinOur"
-                            defaultMessage="Join our growing network of hiring partners"
+                            defaultMessage="Looking to hire our grads? Click here"
                         /><span className="fa fa-caret-right" aria-hidden="true"/>
                     </Link>
                 </div>

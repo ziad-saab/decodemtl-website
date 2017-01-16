@@ -24,7 +24,7 @@ module.exports = {
 
     "modules.LocationSlider.header": "Apprendre à l'endroit idéal à Montréal",
 
-    "modules.LocationSlider.link": "En savoir plus sur l'expérience WeWork",
+    "modules.LocationSlider.link": "En savoir plus sur notre emplacement ici",
 
     "modules.UpcomingEvents.viewAll": "Afficher tous les événements",
 
@@ -155,7 +155,7 @@ module.exports = {
 
     "modules.PartnersLogos.ourGrads": "Nos diplômés travaillent avec ces entreprises",
 
-    "modules.PartnersLogos.joinOur": "Joignez notre grand réseau de partenaires d'embauche",
+    "modules.PartnersLogos.joinOur": "Vous cherchez à embaucher nos diplômés? Cliquez ici",
 
     "tables.TuitionDates.earlyBird": "Tarifs privilège",
 
@@ -181,7 +181,7 @@ module.exports = {
 
     "modules.CourseCareerSupport.learAnd": "Apprendre et produire",
 
-    "modules.CourseCareerSupport.learnJob": "Apprenez les compétences nécessaires sur le marché du travail, développer un portfolio de projets, obtenez de l'aide sur votre CV et pratiquez des entrevues simulées.",
+    "modules.CourseCareerSupport.learnJob": "Apprenez les compétences nécessaires sur le marché du travail, développer un portfolio de projets, et obtenez de l'aide sur votre CV.",
 
     "modules.CourseCareerSupport.networkPlacement": "Réseau de placement",
 
@@ -277,7 +277,7 @@ module.exports = {
 
     "pages.faq.financials": "Finances",
 
-    "pages.faq.immersive": "Intensif",
+    "pages.faq.immersive": "Bootcamp",
 
     "pages.faq.parttime": "Temps partiel",
 
@@ -303,7 +303,7 @@ module.exports = {
 
     "navigation.MainFooter.contactUs": "Nous joindre",
 
-    "navigation.MainFooter.webDevelopment": "Développement Web",
+    "navigation.MainFooter.webDevelopment": "Bootcamp",
 
     "navigation.MainFooter.courses": "Cours",
 
@@ -349,7 +349,7 @@ module.exports = {
 
     // SITE NAV
 
-    "navigation.SiteNav.courses": "Cours",
+    "navigation.SiteNav.courses": "Bootcamp",
 
     "navigation.SiteNav.about": "À Propos",
 

@@ -11,28 +11,6 @@ export default {
             nextSessions: ["April 3rd, 2017", "July 3rd, 2017"],
             link: 'web-development-immersive'
         },
-        {
-            title: "Part-Time",
-            jumboTitle: "HTML & CSS",
-            text: 'Learn to write clean, standards-complient code, and become acquainted with the fundamentals of web design.',
-            type: "Part-time",
-            duration: "10 weeks",
-            hours: "60 hours",
-            days: 'Tuesday & Thursday',
-            nextSessions: [""],
-            link: 'html-css'
-        },
-        {
-            title: "Part-Time",
-            jumboTitle: "JavaScript",
-            text: 'Develop a strong base in programming and master JavaScript fundamentals like object prototypes, higher order functions, and programming with asynchronous callbacks.',
-            type: "Part-time",
-            duration: "10 weeks",
-            hours: "60 hours",
-            days: 'Monday & Wednesday',
-            nextSessions: ["January 16th, 2017"],
-            link: 'javascript'
-        }
     ],
     fr: [
         {
@@ -46,27 +24,5 @@ export default {
             nextSessions: ["3 avril, 2017", "3 juillet, 2017"],
             link: 'web-development-immersive'
         },
-        {
-            title: "Temps Partiel",
-            jumboTitle: "HTML & CSS",
-            text: 'Apprenez à programmer efficacement et conformément aux normes en vous familiarisant avec les principes fondamentaux de la conception web.',
-            type: "Temps partiel",
-            duration: "10 semaines",
-            hours: "60 heures",
-            days: 'Mardi et jeudi',
-            nextSessions: [],
-            link: 'html-css'
-        },
-        {
-            title: "Temps Partiel",
-            jumboTitle: "JavaScript",
-            text: 'Développer une base solide dans la programmation et maîtriser les fondements de JavaScript tel que les prototypes d\'objets, les fonctions d\'ordre supérieur et la programmation avec des rappels asynchrones.',
-            type: "Temps partiel",
-            duration: "10 semaines",
-            hours: "60 heures",
-            days: 'Lundi et mercredi',
-            nextSessions: ["16 janvier, 2017"],
-            link: 'javascript'
-        }
     ]
 }

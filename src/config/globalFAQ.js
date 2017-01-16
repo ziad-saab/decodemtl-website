@@ -5,31 +5,39 @@ export const generalFAQ = {
     en: [
         {
             question: 'What is DecodeMTL?',
-            answer: 'DecodeMTL is a Web Development school located in downtown Montreal. Our courses teach the most relevant, up-to-date digital skills required to excel in todays economy. Through project based teaching, our students are able to learn the fundamental languages powering the web today.'
+            answer: (<div>DecodeMTL is a coding school which specializes in teaching Web Development. We teach coding skills through project based teaching. We were founded in 2014, with the goal of teaching more people to code, and filling the talent gap in the job market for developers. Our courses teach the most relevant, and up-to-date technical skills used by today's top companies. You can read more about us <Link to="/wework">here</Link>.</div>)
         },
         {
-            question: 'Will I get a diploma after completing one of your courses?',
-            answer: 'We do not give diplomas to any of our graduates, but we will teach you modern technical skills that can be a lot more valuable than a diploma.',
+            question: 'Why should I attend DecodeMTL?',
+            answer: (<div><p>If you want to kickstart your career in Web Development, DecodeMTL was built just for you. Our graduates go on to do amazing things. From launching companies, to becoming developers at startups and tech companies, DecodeMTL grads are able to pursue their passion for coding in incredible ways.</p> <p>Our teaching staff are developers, consultants, and educators at companies that use what we teach on a daily basis. Our curriculum is updated regularly with new industry standards, and our small class size ensures you get 1 on 1 attention. On top of this, we are located in Montreal's coolest co-working space at WeWork Place Ville Marie.</p></div>)
         },
         {
-            question: 'Do you offer job placement assistance?',
-            answer: 'For our full-time programs, we do offer assistance. You will have the opportunity to work on your CV, Linkedin profile, as well as get personalized introductions to hiring companies. However, you are ultimately responsible for your own outcomes. Nonetheless, our top students find jobs fairly quickly without any help.'
+            question: 'What diploma will I receive after graduating?',
+            answer: (<div><p>“Coding Bootcamps” are typically non-accredited institutions. Meaning, we are not recognized by the Quebec ministry of education. Therefore, we do not give out diplomas.</p><p>However, you don’t really need a diploma to get a job in this field. Our students are getting hired quickly after graduation. They do this by demonstrating their passion for coding, a strong work ethic, and a portfolio of code that they put together before, during, and after our course. Your biggest asset is your ability to write code. Through our rigorous course, we will make sure you write a lot of it!</p></div>)
+        },
+        {
+            question: 'How do you help me get a job?',
+            answer: (<div><p>In several ways. In fact, it all starts with our curriculum and teaching process. You are learning a very in-demand skill, and you will have written an ample amount of code to demonstrate your abilities at the end of our course. </p><p>Aside from the technical aspect, you will learn to work in teams, basic project management and delegation skills, as well as working with deadlines throughout your final project. We will walk you through the best ways to market yourself as a developer, and help you write a Linkedin profile and resume.</p><p>Lastly, we host a hiring event on the last day of every class. Employers are invited to DecodeMTL, and you will be presenting your final project to them. This is followed by networking where many students will begin talking to potential employers.</p></div>)
         },
         {
             question: 'Do you accept international students?',
-            answer: 'As long as you\'re aloud in the country for the duration of the course, we are happy to have you. However, job placement assistance is only available for Canadians or those eligible to work in Canada.'
+            answer: 'Yes absolutely. Since DecodeMTL is only an 8-week program, most international students are welcome on a tourist visa.'
+        },
+        {
+            question: 'Do you offer student housing?',
+            answer: (<div>We have partnered with EVO Montreal, to offer housing to those wishing to take our course from outside of Montreal. EVO offers fully furnished, move-in ready housing just 5 minutes away from DecodeMTL. You can read more about EVO <Link to="/housing">here</Link>.</div>)
         },
         {
             question: 'Are your courses taught in English or French?',
-            answer: 'For the time being, we are teaching in English. However, most of our classes are pretty bilingual.'
+            answer: 'Our courses and material are all taught in English. The language of the Web, and all documentation is generally in English, so students wishing to join us should have a basic working proficiency in English. However, our staff is fully bilingual, and many of our students are francophone. Questions can be asked in your language of choice, and we will help you in your own language. You can also do your final presentation in French or English.'
         },
         {
             question: 'Where are you located?',
             answer: (<div>We are located in downtown Montreal in the Place Ville Marie complex. We are part of the WeWork co-working space located on the 4th floor of 3 Place Ville Marie. You can learn more about WeWork <Link to="/wework">here</Link>.</div>)
         },
         {
-            question: 'How do I know which course to take?',
-            answer: 'If you are not sure which course is right for you, we suggest you contact us so we can discuss your options together.'
+            question: 'Can I schedule an in person visit to learn more?',
+            answer: (<div>Yes, we would be more than happy to meet you in person. You can schedule a visit with us by clicking <Link to="/schedule">here</Link>.</div>)
         },
     ],
     fr: [
@@ -68,11 +76,15 @@ export const financialsFAQ = {
     en: [
         {
             question: 'Do you offer financial assistance?',
-            answer: 'Yes, we have partnered with the National Bank of Canada to offer low-interest student loans. We have a dedicated loan officer who will be happy to sit down with you and discuss the details. These student loans are low interest and offer flexible re-payment options. Contact us for more details.'
+            answer: 'Yes, we have partnered with the National Bank of Canada to offer low-interest student loans. We have a dedicated loan officer who will be happy to sit down with you and discuss the details. These student loans are low interest and offer flexible repayment options. Contact us for more details.'
         },
         {
             question: 'What methods of payment to you accept?',
             answer: 'Payments can be made by cash or cheque, and can be paid at our office.'
+        },
+        {
+            question: 'How much is tuition and what does the payment schedule look like?',
+            answer: 'Tuition for our immersive course is $5,995 for those who are registered 60 days or more before the course start date. For those who register after that, tuition increases to $6,495. GST and QST must be added to the price of tuition. Upon acceptance into our program, a 10% deposit is required to secure your seat. The balance is due two weeks before the course start date.'
         },
     ],
     fr: [
@@ -90,32 +102,24 @@ export const financialsFAQ = {
 export const immersiveFAQ = {
     en: [
         {
-            question: 'Why Should I attend DecodeMTL?',
-            answer: 'If you are looking to quickly advance into the field of Web Development, either as a career move or to launch your own product, DecodeMTL will equip you with the skills to do so. Our teachers are top-notch, our curriculum teaches the most in-demand technologies, and our work environment is awesome.'
+            question: 'I’m a beginner, can I still apply?',
+            answer: 'Absolutely! We encourage everyone with an interest in programming wanting to join our course to apply, regardless of your skill level. If you have never coded before, we have developed a free prep-course which you can do on your own time before committing to take our course. This is meant to teach you the fundamentals required for our course, as well as give you a taste for what web development is. If you are still unsure whether or not you should apply, we suggest you schedule a visit so we can take the time to speak 1 on 1.'
         },
         {
-            question: 'What are the technical qualifications?',
-            answer: 'Most of our students have dabbled in code, either in school, professionally, or out of curiosity. You should have a high-level knowledge of the different types of programming and languages that exist, and have at the very least tinkered with sites like CodeSchool or Codecademy. Our admissions process and pre-course work are designed to get you up to speed and ready for the bootcamp, so you don\'t need to be a coding ninja to apply. If you\'re not sure if you are ready to apply, contact us and we will point you in the right direction.',
-        },
-        {
-            question: 'What are the non technical qualifications?',
-            answer: 'You need passion, and lots of it! Passion is the recurring characteristic we find in all successful students. If you love what you do, you will ultimately be successful.'
-        },
-        {
-            question: 'Will I build an App in this course?',
-            answer: 'Absolutely! In the last two weeks of the course, you will be placed in a team and tasked to build a web based application from the ground up. This capstone project will then be presented to a large audience on the last day of the course. This Demo Day event will serve as a way to network with potential employers who will be in the room watching your presentation.'
-        },
-        {
-            question: 'I am an international student, do you offer housing?',
-            answer: (<div>We have partnered with EVO, a student residence just down the street from us. You can read more about EVO <Link to="/housing">here</Link>.</div>)
+            question: 'How does the application process work?',
+            answer: (<div><p>It all starts by submitting an application online. It’s a simple form with a few questions, and only takes a couple of minutes to complete. Once we receive your application, you will receive an email to schedule a Skype call with a member of our team. There is no need to prepare for this call. We simply want to talk to you in person, learn a bit more about your goals, and discuss the details of our course. After our Skype call, the next step is a technical interview. The technical interview can be done either in person or online, and takes an hour.</p><p>In order to prepare yourself, we have created a free prep-course which you can use as a study guide. In general, it takes about 40-60 hours of practice if you have never coded before to prepare. Once you pass the technical interview, you can join any of our upcoming courses. If you fail, we will give you some feedback and encourage you come back and try again.</p></div>)
         },
         {
             question: 'What do I need to bring with me?',
-            answer: 'Any fast laptop will do. MacOS, Linux, or Windows all work fine.'
+            answer: 'You will need to bring your own laptop. We use a development environment in the cloud, this means that you can use MacOS, Linux or Windows, and it won’t make a difference. As long as you have a fast, reliable computer, you are good to go.'
         },
         {
             question: 'When should I apply to an upcoming cohort?',
-            answer: 'As soon as you know you are ready to commit, you should apply. At the very latest, we suggest two months before the course start date. This gives you time to get through admissions and adequately prepare for the course.'
+            answer: 'We recommend applying at least 3 months before your desired start date. For one, it will give you access to the early bird discount (save $500). Secondly, it will give you ample time to do our prep-course and prepare for your technical interview. It will also ensure that you can get a seat in the class of your choice, and not have to worry about the course being full.'
+        },
+        {
+            question: 'How big are your class sizes?',
+            answer: 'Our maximum intake for any given cohort is 18 students.'
         },
     ],
     fr: [
@@ -146,29 +150,6 @@ export const immersiveFAQ = {
         {
             question: 'Quand est-ce que devrais-je présenter une demande d’admission au programme?',
             answer: 'Dès que vous savez que vous êtes prêt à vous engager, vous devriez appliquer. Au plus tard, nous vous recommandons d’appliquer deux mois avant la date du début du cours. Ceci vous donnera amplement de temps pour finaliser votre admission et de vous préparer adéquatement pour le cours.'
-        },
-    ]
-}
-
-export const partTimeFAQ = {
-    en: [
-        {
-            question: 'I work full-time, can I still take this course?',
-            answer: 'Definitely! We\'ve designed our Part-Time courses to work around most peoples work schedule. Our courses start at 6:30PM, giving you enough time to have dinner and travel to our campus.'
-        },
-        {
-            question: 'What do I need to bring with me?',
-            answer: 'Any fast laptop will do. MacOS, Linux, or Windows all work fine.'
-        },
-    ],
-    fr: [
-        {
-            question: 'Je travaille à temps plein, puis-je suivre ce cours?',
-            answer: 'Définitivement! Nous avons conçu nos cours à temps partiel pour faciliter la plupart des horaires. Nos cours commencent à 18h30, ce qui vous permet suffisamment de temps pour souper et vous rendre à notre campus.'
-        },
-        {
-            question: 'Que dois-je apporter avec moi?',
-            answer: 'Tout simplement un ordinateur portable et rapide. MacOS, Linux ou Windows fonctionnent bien.'
         },
     ]
 }

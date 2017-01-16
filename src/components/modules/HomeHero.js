@@ -57,7 +57,7 @@ const HomeHero = React.createClass({
                             <p className="text-body-large text-subtle">
                                 <FormattedMessage
                                     id="modules.HomeHero.subText"
-                                    defaultMessage="We offer Montreal’s most dynamic courses in tech. Learn to code through project based teaching from industry experts in a stimulating environment."
+                                    defaultMessage="We offer Montreal’s top rated Web Development Bootcamp. Learn to code through project based teaching from industry experts in a stimulating environment."
                                 />
                             </p>
                             <div className="cta-single">
