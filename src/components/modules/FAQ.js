@@ -34,7 +34,7 @@ const FAQ = React.createClass({
 
         };
         const showStyle = {
-            maxHeight: 500,
+            maxHeight: 800,
             overflow: 'hidden',
             transition: 'max-height 1s ease-out'
         };
