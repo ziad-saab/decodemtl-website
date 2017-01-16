@@ -37,7 +37,7 @@ export const generalFAQ = {
         },
         {
             question: 'Can I schedule an in person visit to learn more?',
-            answer: (<div>Yes, we would be more than happy to meet you in person. You can schedule a visit with us by clicking <Link to="/schedule">here</Link>.</div>)
+            answer: (<div>Yes, we would be more than happy to meet you in person. You can schedule a visit with us by clicking the link in our navigation menu.</div>)
         },
     ],
     fr: [

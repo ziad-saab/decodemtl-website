@@ -163,7 +163,7 @@ module.exports = {
 
     "pages.wdbootcamp.WebDevelopment": "Développement Web",
 
-    "pages.wdbootcamp.immersive": "Intensif",
+    "pages.wdbootcamp.immersive": "Bootcamp",
 
     "pages.wdbootcamp.8Weeks": "8 semaines d'apprentissage intensif. Obtenez suffisamment d'expérience pratique pour lancer votre nouvelle carrière ou entreprise.",
 

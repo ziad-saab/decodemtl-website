@@ -78,7 +78,7 @@ const link = {
 const courseJson = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "Course",
-    "name": "Web Development Immersive",
+    "name": "Web Development Bootcamp",
     "description": "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup.",
     "provider": {
         "@type": "Organization",
@@ -158,7 +158,7 @@ const Courses = React.createClass({
                                 this._hero = hero
                     }}
                     moduleTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.WebDevelopment", defaultMessage: "Web Development"})}
-                    jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Immersive"})}
+                    jumboTitle={this.props.intl.formatMessage({id: "pages.wdbootcamp.immersive", defaultMessage: "Bootcamp"})}
                     text={this.props.intl.formatMessage({id: "pages.wdbootcamp.8Weeks", defaultMessage: "8 weeks of intensive learning. Gain enough practical experience to launch your new career or startup."})}
                     subText={""}
                     tuitionDates={tuitionDates[this.props.intl.locale]} />
