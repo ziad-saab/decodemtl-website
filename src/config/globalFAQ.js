@@ -42,7 +42,7 @@ export const generalFAQ = {
     ],
     fr: [
         {
-            question: 'Qu\'est-ce que c’est DecodeMTL?',
+            question: 'DecodeMTL en bref?',
             answer: (<div>DecodeMTL est une école de programmation spécialisée dans l’enseignement du développement Web avec une approche pédagogique basée sur des projets. L’école a été fondée en 2014 avec pour objectif de former des développeurs Web afin de combler les besoins criants du marché du travail dans ce domaine. Nos cours permettent d’acquérir les compétences techniques de pointe les plus recherchées et utilisées par les meilleures entreprises d’aujourd’hui. Pour en savoir plus à propos de nous, cliquez <Link to="/about">ici</Link>.</div>)
         },
         {
@@ -75,7 +75,7 @@ export const generalFAQ = {
         },
         {
             question: 'Puis-je vous rencontrer en personne pour en savoir plus?',
-            answer: 'Oui, nous serions très heureux de vous rencontrer. Vous pouvez prendre rendez-vous avec nous en cliquant "Planifier une visite" dans le menu de navigation.'
+            answer: 'Oui, nous serions très heureux de vous rencontrer. Vous pouvez prendre rendez-vous avec nous en cliquant sur "Planifier une visite" dans le menu de navigation.'
         },
     ]
 }
