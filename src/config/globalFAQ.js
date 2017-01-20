@@ -5,7 +5,7 @@ export const generalFAQ = {
     en: [
         {
             question: 'What is DecodeMTL?',
-            answer: (<div>DecodeMTL is a coding school which specializes in teaching Web Development. We teach coding skills through project based teaching. We were founded in 2014, with the goal of teaching more people to code, and filling the talent gap in the job market for developers. Our courses teach the most relevant, and up-to-date technical skills used by today's top companies. You can read more about us <Link to="/wework">here</Link>.</div>)
+            answer: (<div>DecodeMTL is a coding school which specializes in teaching Web Development. We teach coding skills through project based teaching. We were founded in 2014, with the goal of teaching more people to code, and filling the talent gap in the job market for developers. Our courses teach the most relevant, and up-to-date technical skills used by today's top companies. You can read more about us <Link to="/about">here</Link>.</div>)
         },
         {
             question: 'Why should I attend DecodeMTL?',
@@ -43,31 +43,39 @@ export const generalFAQ = {
     fr: [
         {
             question: 'Qu\'est-ce que c’est DecodeMTL?',
-            answer: 'DecodeMTL est une école de développement web située au centre-ville de Montréal. Nos cours enseignent les compétences numériques les plus pertinentes et les plus récentes essentielles pour réussir dans l\'économie d\'aujourd\'hui. Grâce à un enseignement basé sur des projets, nos étudiants sont capables d\'apprendre les langues de programmation qui alimentent le l’internet aujourd\'hui.'
+            answer: (<div>DecodeMTL est une école de programmation spécialisée dans l’enseignement du développement Web avec une approche pédagogique basée sur des projets. L’école a été fondée en 2014 avec pour objectif de former des développeurs Web afin de combler les besoins criants du marché du travail dans ce domaine. Nos cours permettent d’acquérir les compétences techniques de pointe les plus recherchées et utilisées par les meilleures entreprises d’aujourd’hui. Pour en savoir plus à propos de nous, cliquez <Link to="/about">ici</Link>.</div>)
         },
         {
-            question: 'Est-ce que j\'obtiendrai un diplôme après avoir suivi un de vos cours?',
-            answer: 'Nous ne donnons pas de certification à nos diplômés, mais nous allons vous enseigner des compétences techniques qui peuvent être beaucoup plus utile qu\'un diplôme.',
+            question: 'Les cours de DecodeMTL sont-ils pour moi?',
+            answer: <div><p>Si vous souhaitez vous lancer dans une carrière en développement Web, DecodeMTL a été créée pour vous. Nos diplômés accomplissent des choses remarquables. Qu’ils souhaitent démarrer une entreprise ou être embauchés comme développeurs par une startup ou une entreprise du secteur des TI, les diplômés de DecodeMTL sont bien outillés pour vivre de leur passion pour la programmation d’une multitude de façons.</p><p>Notre personnel enseignant est composé de développeurs, de consultants et de formateurs issus d’entreprises qui utilisent au quotidien les notions que nous enseignons. Nous mettons à jour notre programme régulièrement en fonction de l’évolution des normes de l’industrie et comme nous sommes une école à échelle humaine, vous avez toute notre attention. Pour couronner le tout, nous sommes situés dans les locaux de WeWork Place Ville Marie, l’espace de travail partagé le plus agréable de Montréal.</p></div>
         },
         {
-            question: 'Offrez-vous de l\'aide en placement?',
-            answer: 'Pour nos programmes à temps plein, nous vous offrons de l\'aide. Vous aurez l\'occasion de travailler sur votre CV, votre profil LinkedIn et ainsi que des rencontres uniques avec des entreprises d\'embauche. Par contre, vous êtes responsable de vos propres résultats. Néanmoins, nos meilleurs étudiants trouvent des emplois assez rapidement sans aucune aide.'
+            question: 'Quel diplôme obtiendrai-je au terme de ma formation?',
+            answer: <div><p>Les écoles qui offrent des formations intensives en programmation ne sont habituellement pas des établissements d’enseignement accrédités. En d’autres termes, nos cours ne sont pas reconnus par le ministère de l’Éducation du Québec et pour cette raison, nous ne décernons pas de diplôme.</p><p>Toutefois, pour décrocher un emploi dans ce domaine, vous n’avez pas vraiment besoin d’un diplôme. Nos étudiants sont embauchés très rapidement après leur formation. Leur passion pour le code, leur éthique professionnelle irréprochable et un portfolio bien étoffé de travaux de programmation réunis avant, pendant et après la formation témoignent de leurs réalisations et de leurs compétences. Votre plus grand atout est votre capacité à écrire du code de qualité. Dans le cadre de notre formation rigoureuse, nous veillons à vous en faire produire énormément!</p></div>
         },
         {
-            question: 'Acceptez-vous des étudiants de l’étranger?',
-            answer: 'Tant que vous avez le droit d’être dans le pays, nous sommes heureux de vous avoir parmi nous. Par contre, l\'aide aux placements sont offerts qu\'aux Canadiens et aux Canadiennes et ceux qui ont le droit de travailler au Canada.'
+            question: 'M’aidez-vous à décrocher un emploi?',
+            answer: <div><p>Vous pouvez compter sur nous! Tout d’abord, tout commence par notre programme et notre méthode d’enseignement. Au terme de la formation, vous aurez acquis des compétences très recherchées et aurez écrit une quantité de lignes de code largement suffisante pour démontrer vos capacités.</p><p>Outre l'aspect technique, vous apprendrez à travailler en équipe, vous acquerrez des compétences de base en gestion de projet et vous apprendrez à déléguer et à respecter des échéances dans le cadre de votre projet final. Nous vous expliquerons en détail les meilleures façons de vous mettre en valeur comme développeur et nous vous aiderons à rédiger votre profil LinkedIn et votre curriculum vitae.</p><p>Finalement, le dernier jour de chaque formation, nous organisons un événement de recrutement dans le cadre duquel vous présentez votre projet final à des employeurs potentiels que nous invitons à venir vous rencontrer à DecodeMTL. Les présentations sont suivies d’une activité de réseautage durant laquelle vous avez l’occasion de discuter avec ces employeurs potentiels.</p></div>
         },
         {
-            question: 'Vos cours sont enseignés en anglais ou en français?',
-            answer: 'Pour le moment, nous enseignons seulement qu’en anglais. Toutefois, la plupart de nos cours sont assez bilingues.'
+            question: 'Acceptez-vous les étudiants étrangers?',
+            answer: 'Oui, absolument. Comme la formation de DecodeMTL dure huit semaines, la plupart des personnes qui viennent de l’étranger peuvent la suivre en étant au Canada à titre de touristes, tout simplement.'
+        },
+        {
+            question: 'Avez-vous des logements pour étudiants?',
+            answer: (<div>En partenariat avec EVO Montréal, nous proposons une solution de logement à ceux qui viennent de l’extérieur pour suivre nos formations. EVO offre des chambres entièrement meublées en formule tout inclus qui sont situées à cinq minutes de DecodeMTL. Pour en savoir plus à propos d’EVO, cliquez <Link to="/housing">ici</Link>.</div>)
+        },
+        {
+            question: 'Vos cours sont-ils donnés en français ou en anglais?',
+            answer: 'Les cours et le matériel didactique sont en anglais. L’anglais étant la langue du Web et la documentation étant habituellement en anglais, les étudiants qui souhaitent se joindre à nous doivent pouvoir se débrouiller dans cette langue. Toutefois, notre personnel enseignant est parfaitement bilingue et bon nombre de nos étudiants sont francophones. Vous pouvez poser vos questions dans la langue de votre choix et nous vous répondrons en anglais. Vous avez également la possibilité de faire votre présentation finale dans la langue dans laquelle vous êtes le plus à l’aise, que ce soit le français ou l’anglais.'
         },
         {
             question: 'Où êtes-vous situés?',
-            answer: (<div>Nous sommes situés au centre-ville de Montréal dans le complexe de la Place Ville Marie. Nous faisons partie de l'espace de travail collaboratif WeWork situé au 4e étage du 3 Place Ville Marie. Vous pouvez en savoir plus sur WeWork <Link to="/wework">ici</Link>.</div>)
+            answer: (<div>Nous sommes au coeur du centre-ville de Montréal, dans l’espace de bureaux de WeWork, au quatrième étage du 3, Place Ville Marie. Pour en savoir plus à propos de WeWork, cliquez <Link to="/wework">ici</Link>.</div>)
         },
         {
-            question: 'Comment puis-je savoir quel cours suivre?',
-            answer: 'Si vous ne savez pas quel cours est idéal pour vous, nous vous suggérons de nous contacter afin que nous puissions discuter de vos options ensemble.'
+            question: 'Puis-je vous rencontrer en personne pour en savoir plus?',
+            answer: 'Oui, nous serions très heureux de vous rencontrer. Vous pouvez prendre rendez-vous avec nous en cliquant "Planifier une visite" dans le menu de navigation.'
         },
     ]
 }
@@ -89,12 +97,16 @@ export const financialsFAQ = {
     ],
     fr: [
         {
-            question: 'Offrez-vous de l\'aide financière?',
-            answer: 'Oui, vous pouvez financer vos frais de scolarité grâce au prêt étudiant à faible intérêt offert en collaboration avec la Banque Nationale du Canada. Nous avons un agent dédié qui sera heureux de s\'asseoir avec vous et de discuter les détails. Ces prêts étudiants sont de faible intérêt et offrent des options flexibles de remboursement. Contactez-nous pour plus de détails.'
+            question: 'Offrez-vous une aide financière?',
+            answer: 'Absolument. Nous avons formé un partenariat avec la Banque Nationale du Canada afin d’offrir à nos étudiants des prêts d’études à faible taux d’intérêt. Un prêteur désigné se fera un plaisir de vous rencontrer pour discuter de toutes les modalités. Ces prêts d’études, en plus d’être à faible taux d’intérêt, sont assortis de modalités de remboursement souples. Communiquez avec nous pour de plus amples renseignements.'
         },
         {
-            question: 'Quelles sont vos options de paiement?',
-            answer: 'Les paiements peuvent être effectués en espèces ou par chèque, et peuvent être payés à notre bureau.',
+            question: 'Quels modes de paiement acceptez-vous?',
+            answer: 'Les frais de scolarité peuvent être payés en argent comptant ou par chèque et le paiement peut être fait à nos bureaux.',
+        },
+        {
+            question: 'À combien s’élèvent les frais de scolarité et quel est le calendrier de paiement?',
+            answer: <div><p>Les frais pour notre cours immersif sont de 5 995 $ si vous vous inscrivez au moins 60 jours avant la date de début du cours. Après cette date, les frais sont de 6 495 $. Au montant des frais de scolarité, il faut ajouter la TPS et la TVQ.</p><p>Lorsque vous êtes admis à notre programme, un acompte de 10 % est exigé pour réserver votre place. Le solde résiduel est payable deux semaines avant la date de début du cours.</p></div>
         },
     ]
 }
@@ -128,32 +140,28 @@ export const immersiveFAQ = {
     ],
     fr: [
         {
-            question: 'Pourquoi devrais-je suivre des cours chez DecodeMTL?',
-            answer: 'Si vous vous cherchez à croître rapidement dans le domaine du développement web, que ce soit en tant que nouvelle carrière ou du lancement d’un nouveau produit, DecodeMTL vous instruira avec toutes les compétences pour réussir. Nos professeurs sont les meilleurs du domaine, notre programme enseigne les technologies les plus en demande et notre environnement de travail est l’un des plus géniaux.'
+            question: 'Puis-je déposer une demande d’admission même si je suis débutant?',
+            answer: 'Absolument! Nous encourageons tous ceux qui s’intéressent à la programmation et qui aimeraient suivre notre cours à nous envoyer une demande, quel que soit leur niveau de compétence. Si vous n’avez jamais touché à du code de votre vie, nous avons conçu une formation préparatoire gratuite que vous pouvez suivre dans vos temps libres avant de vous engager à suivre notre cours. Cette formation vous apprendra les principes fondamentaux que vous devez connaître pour pouvoir suivre notre cours, en plus de vous donner un avant-goût de ce qu’est le développement Web. Si vous hésitez encore à nous envoyer une demande d’admission, nous vous suggérons de prendre rendez-vous pour nous rencontrer en personne afin que nous en discutions ensemble.'
         },
         {
-            question: 'Quelles sont les compétences techniques?',
-            answer: 'La plupart de nos élèves ont joué dans la programmation, soit à l\'école, professionnellement, ou soit par curiosité. Vous devez avoir une connaissance de haut niveau des différents types de programmation et des langues qui existent, et ainsi qu’une expérience minimale avec des sites comme CodeSchool ou Codecademy. Notre processus d\'admission et le travail conçu avant le cours ont été développées pour vous remettre à vitesse et prêts pour le programme. En d’autres mots, vous n\'avez pas besoin d\'être un ninja de programmation pour appliquer. Si vous ne savez pas si vous êtes prêt à postuler, communiquez-nous et nous vous guiderons dans la bonne direction.'
+            question: 'Comment le processus d’admission fonctionne-t-il?',
+            answer: <div><p>Tout d’abord, vous déposez votre demande d’admission en ligne. Il s’agit d’un court formulaire qui ne prend que quelques minutes à remplir. Lorsque nous recevons votre demande, nous vous envoyons un courriel pour planifier un appel Skype avec un membre de notre équipe. Cet appel ne nécessite aucune préparation de votre part. Nous voulons simplement vous parler en personne afin de connaître vos objectifs et discuter de certains détails relatifs au cours. Après l’appel Skype, l’étape suivante est l’entretien technique. Cet entretien, qui dure une heure, peut être réalisé en personne ou en ligne.</p><p>Pour vous y préparer, nous avons créé une formation préparatoire gratuite qui peut vous servir à réviser. Pour vous donner une idée, si vous n’avez jamais codé auparavant, nous vous conseillons de prévoir de 40 à 60 heures de pratique pour vous préparer en vue du cours. Si vous réussissez l’entretien technique, vous pouvez vous inscrire à n’importe lequel de nos cours à venir. En cas d’échec, nous vous expliquons les raisons du refus et nous vous encourageons à tenter de nouveau votre chance lorsque vous serez prêt.</p></div>
         },
         {
-            question: 'Quelles sont les compétences non techniques?',
-            answer: 'Vous avez besoin de passion, et certainement beaucoup! La passion est la caractéristique primordiale que nous retrouvons chez tous nos étudiants qui réussissent et se démarquent. Si vous aimez ce que vous faites, vous aurez certainement du succès.'
+            question: 'Pourquoi apprendre JavaScript full-stack?',
+            answer: <div><p>À titre de développeur Web full-stack, vous serez appelé à coder autant du côté serveur que du côté navigateur. Les navigateurs Web interprètent trois langages, principalement : HTML, CSS et JavaScript. Si vous souhaitez intégrer des éléments interactifs à une page Web, JavaScript est votre seule option. Bien qu’il existe d’autres langages qui interprètent en JavaScript, les bibliothèques les plus utilisées telles que jQuery, Backbone, Angular et React ont fait en sorte que JavaScript soit, à l’heure actuelle, le langage de prédilection à utiliser pour créer des applications Web.</p><p>En ce qui concerne le développement côté serveur (c.-à-d., les éléments exécutés à l’arrière-plan sur le serveur et non pas sur l'appareil de l’utilisateur), plusieurs choix de langages et de plateformes s’offrent à vous, à savoir Ruby on Rails, Python avec Django, PHP avec Laravel et Java avec Play Framework, pour n’en nommer que quelques-uns. Choisir d’apprendre JavaScript avec NodeJS pour le développement côté serveur comporte de nombreux avantages. De nos jours, comme développeur Web, vous serez constamment appelé à jongler avec les différentes couches de la pile. L’utilisation d’un langage unifié facilite ce processus, ce qui vous laisse plus de temps pour vous concentrer sur l’apprentissage de notions intéressantes.</p><p>Désormais, l’utilisation de JavaScript ne se limite plus au monde du développement Web. Des cadres tels que React Native permettent d’utiliser JavaScript et une variante de CSS pour développer des applications natives iOS et Android. Des plateformes telles que Tessel vous permettent d’utiliser JavaScript pour créer des prototypes de solutions de domotique en utilisant du code de type NodeJS pour, par exemple, recueillir des données de capteurs physiques et transmettre des commandes à des actionneurs.</p></div>
         },
         {
-            question: 'Est-ce que je vais créer une application dans ce cours?',
-            answer: 'Absolument! Dans les deux dernières semaines du cours, vous serez placé en équipe et chargés de produire une application web du tout début. Ce projet sera ensuite présenté à un grand public lors du dernier jour du cours. Cette journée de démonstration servira comme moyen de réseautage avec les employeurs potentiels qui seront dans la salle durant votre présentation.'
+            question: 'Que dois-je apporter?',
+            answer: 'Vous devez avoir avec vous un ordinateur portatif rapide et fiable. Notre environnement de développement est dans le nuage, ce qui veut dire que votre ordinateur peut tourner sous macOS, Linux ou Windows sans que cela change quoi que ce soit.'
         },
         {
-            question: 'Je suis un étudiant international, offrez-vous des options de logement?',
-            answer: (<div>Nous avons établi un partenariat avec EVO qui est une résidence d’étudiants qui se trouve au bas de la rue. Vous pouvez en savoir plus sur EVO <Link to="/housing">ici</Link>.</div>)
+            question: 'Quand dois-je déposer ma demande d’admission pour faire partie de la prochaine cohorte?',
+            answer: 'Nous vous recommandons de déposer votre demande au moins trois mois avant la date de début souhaitée. Tout d’abord, cela vous permet de profiter de la réduction pour inscription anticipée (une économie de 500 $). Aussi, cela vous laisse amplement de temps pour suivre la formation préparatoire en prévision de l’entretien technique. Et finalement, cela réserve votre place dans le groupe avant que le cours, ce qui vous évite la déception de voir le groupe convoité afficher complet.'
         },
         {
-            question: 'Que dois-je apporter avec moi?',
-            answer: 'Tout simplement un ordinateur portable et rapide. MacOS, Linux ou Windows fonctionnent bien.'
-        },
-        {
-            question: 'Quand est-ce que devrais-je présenter une demande d’admission au programme?',
-            answer: 'Dès que vous savez que vous êtes prêt à vous engager, vous devriez appliquer. Au plus tard, nous vous recommandons d’appliquer deux mois avant la date du début du cours. Ceci vous donnera amplement de temps pour finaliser votre admission et de vous préparer adéquatement pour le cours.'
+            question: 'Quelle est la taille des groupes?',
+            answer: 'Nos groupes ne comptent jamais plus de 18 étudiants.'
         },
     ]
 }
