@@ -273,9 +273,9 @@ module.exports = {
 
     "pages.faq.questions": "questions",
 
-    "pages.faq.general": "General",
+    "pages.faq.general": "GÉNÉRALITÉS",
 
-    "pages.faq.financials": "Finances",
+    "pages.faq.financials": "QUESTIONS FINANCIÈRES",
 
     "pages.faq.immersive": "Bootcamp",
 
