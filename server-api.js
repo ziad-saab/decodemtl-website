@@ -189,7 +189,7 @@ app.post('/visit', (req, res) => {
     // setup e-mail data
     //proceed editing at own risk
     const mailOptions = {
-        from: data['email'], // sender address
+        from: email, // sender address
         to: 'hello@decodemtl.com', // list of receivers
         subject: 'New Visit Request', // Subject line
         text: 'Someone wants to schedule a visit.', // plaintext body
